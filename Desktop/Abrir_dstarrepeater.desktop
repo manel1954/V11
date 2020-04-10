@@ -7,6 +7,6 @@ Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Terminal=false
-Name[es_ES]=DSTAR REPEATER
+Name[es_ES]=Abrir DSTAR REPEATER
 Hidden=false
 Comment[es_ES]=EA3EIZ

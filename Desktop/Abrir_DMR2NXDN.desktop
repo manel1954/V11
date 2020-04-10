@@ -7,6 +7,6 @@ Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Terminal=false
-Name[es_ES]=DMR2NXDN
+Name[es_ES]=Abrir DMR2NXDN
 Hidden=false
 Comment[es_ES]=EA3EIZ
