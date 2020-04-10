@@ -3,8 +3,8 @@ Version=1.0
 Type=Application
 Name=Editar solo FUSION
 Comment=
-Exec=sh -c "cd /home/pi/V104;lxterminal --geometry=85x52 -e sudo sh  editar_MMDVMFUSION.sh"
-Icon=/home/pi/V104/ICONO_EDITAR_YSF2DMR.png
+Exec=sh -c "cd /home/pi/V105;lxterminal --geometry=85x52 -e sudo sh  editar_MMDVMFUSION.sh"
+Icon=/home/pi/V105/ICONO_EDITAR_YSF2DMR.png
 Path=/home/pi/MMDVMHost
 Terminal=false
 StartupNotify=false

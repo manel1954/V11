@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 Terminal=true
-Exec=sh -c "cd  /home/pi/V104; lxterminal --geometry=80x17 -e sudo sh copiar_restaurar.sh"
-Icon=/home/pi/V104/ICONO_COPIAR_RESTAURAR.png
+Exec=sh -c "cd  /home/pi/V105; lxterminal --geometry=80x17 -e sudo sh copiar_restaurar.sh"
+Icon=/home/pi/V105/ICONO_COPIAR_RESTAURAR.png
 Type=Application
 Categories=GTK;Utility;TerminalEmulator;
 Name[en_US]=MMDVM Connect Screen

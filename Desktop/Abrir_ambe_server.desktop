@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c 'cd /home/pi/V104;lxterminal --geometry=72x15 -e sudo sh ejecutar_ambe_server.sh'
-Icon=/home/pi/V104/ICONO_AMBE_SERVER_OFF.png
+Exec=sh -c 'cd /home/pi/V105;lxterminal --geometry=72x15 -e sudo sh ejecutar_ambe_server.sh'
+Icon=/home/pi/V105/ICONO_AMBE_SERVER_OFF.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;

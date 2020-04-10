@@ -123,7 +123,7 @@ do
 			[sS]* ) echo ""
                         if [ "$version" = "2019" ]
                         then
-                        cd /home/pi/V104
+                        cd /home/pi/V105
                         sh editar_ircddbgateway.sh 
                         else  
                         clear       
@@ -162,7 +162,7 @@ do
                         echo "            *******************************************************"
                         sleep 3
                         else
-                        cd /home/pi/V104
+                        cd /home/pi/V105
                         sh actualizar_ircddb_2019.sh
                         fi
                         break;;
@@ -179,7 +179,7 @@ do
                         read -p '   Estás seguro S/N?: ' actualizar
                         case $actualizar in
                         [sS]* ) echo ""
-                        cd /home/pi/V104
+                        cd /home/pi/V105
                         cp ircddbgateway_config_inicial /etc/ircddbgateway
                         break;;
                         [nN]* ) echo ""

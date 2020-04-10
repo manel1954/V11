@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd /home/pi/V104;lxterminal --geometry=80x50 -e sudo sh editar_svxlink.sh"
-Icon=/home/pi/V104/ICONO_EDITAR_DMRPLUS.png
+Exec=sh -c "cd /home/pi/V105;lxterminal --geometry=80x50 -e sudo sh editar_svxlink.sh"
+Icon=/home/pi/V105/ICONO_EDITAR_DMRPLUS.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;

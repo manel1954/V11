@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
 
-cp /home/pi/V104/icons.screen0-1904x1023.rc /home/pi/.config/xfce4/desktop
+cp /home/pi/V105/icons.screen0-1904x1023.rc /home/pi/.config/xfce4/desktop
 sleep 2
 xfdesktop --reload
 
@@ -29,10 +29,10 @@ fi
 # path usuario
 usuario="/home/pi"
 usuario="$usuario"
-SCRIPTS_version="V104"
+SCRIPTS_version="V105"
 actualizacion=$(awk "NR==1" /home/pi/.config/autostart/actualizacion)
-SCRIPTS_version="V104"
-version="V104-"
+SCRIPTS_version="V105"
+version="V105-"
 version=$version$actualizacion
 #pone todos los status de inicio en OFF
 sed -i "1c D-STAR=OFF" $usuario/status.ini
@@ -299,9 +299,9 @@ sudo systemctl stop nxdngateway.service
 else
 echo ""
 fi
-sudo rm -R /home/pi/V104/associacioader.com
-sudo rm -R /home/pi/V104/Desktop/associacioader.com
-sudo rm /home/pi/V104/Desktop/st-data
+sudo rm -R /home/pi/V105/associacioader.com
+sudo rm -R /home/pi/V105/Desktop/associacioader.com
+sudo rm /home/pi/V105/Desktop/st-data
 sudo rm /home/pi/Desktop/st-data
 
 

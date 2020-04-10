@@ -1,8 +1,8 @@
 [Desktop Entry]
 Comment=EA3EIZ
-Exec=sh -c "cd /home/pi/V104; lxterminal --geometry=40x2 -e sudo sh borrar_logs.sh"
+Exec=sh -c "cd /home/pi/V105; lxterminal --geometry=40x2 -e sudo sh borrar_logs.sh"
 Type=Application
 Terminal=false
 Comment[es_ES]=
 Name[es_ES]=Borrar logs
-Icon=/home/pi/V104/ICONO_BORRAR_LOGS.png
+Icon=/home/pi/V105/ICONO_BORRAR_LOGS.png

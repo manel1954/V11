@@ -6,7 +6,7 @@ cd /home/pi/Desktop
 sudo cp Abrir_dstarrepeater.desktop /home/pi
 sleep 1
 
-sed -i "4c Exec=sh -c 'cd /home/pi/V104; lxterminal --geometry=72x8 -e sudo sh ejecutar_dstarrepeater.sh; sudo dstarrepeater & sudo ircddbgateway -gui'" /home/pi/Abrir_dstarrepeater.desktop
+sed -i "4c Exec=sh -c 'cd /home/pi/V105; lxterminal --geometry=72x8 -e sudo sh ejecutar_dstarrepeater.sh; sudo dstarrepeater & sudo ircddbgateway -gui'" /home/pi/Abrir_dstarrepeater.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/repeater.png" /home/pi/Abrir_dstarrepeater.desktop
 sed -i "10c Name[es_ES]=Abrir DSTAR Repeater" /home/pi/Abrir_dstarrepeater.desktop
 sed -i "9c dstarrepeater=OFF" /home/pi/status.ini
@@ -19,7 +19,7 @@ sudo rm /home/pi/Abrir_dstarrepeater.desktop
 cd /home/pi/Desktop
 sudo cp Abrir_ircDDB.desktop /home/pi
 
-sed -i "4cExec=sh -c 'cd /home/pi/V104; lxterminal --geometry=72x8 -e sudo sh ejecutar_ircDDB.sh; sudo ircddbgateway -gui'" /home/pi/Abrir_ircDDB.desktop
+sed -i "4cExec=sh -c 'cd /home/pi/V105; lxterminal --geometry=72x8 -e sudo sh ejecutar_ircDDB.sh; sudo ircddbgateway -gui'" /home/pi/Abrir_ircDDB.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_IRCDDB_OFF.png" /home/pi/Abrir_ircDDB.desktop
 sed -i "10c Name[es_ES]=Abrir ircDDB" /home/pi/Abrir_ircDDB.desktop
 sed -i "1c D-STAR=OFF" /home/pi/status.ini

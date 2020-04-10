@@ -1,9 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd /home/pi/V104;lxterminal -e sh  editar_dextra.sh"
+Exec=sh -c "cd /home/pi/V105;lxterminal -e sh  editar_dextra.sh"
 #Exec=sudo geany /usr/local/share/opendv/DExtra_Hosts.txt
-Icon=/home/pi/V104/ICONO_EDITAR_SOLODSTAR.png
+Icon=/home/pi/V105/ICONO_EDITAR_SOLODSTAR.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;

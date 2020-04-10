@@ -1,9 +1,9 @@
 [Desktop Entry]
 Comment=EA3EIZ
-Exec=sh -c "cd /home/pi/V104; lxterminal --geometry=78x18 -e sh popus_editar_ircddb.sh"
+Exec=sh -c "cd /home/pi/V105; lxterminal --geometry=78x18 -e sh popus_editar_ircddb.sh"
 Type=Application
 Terminal=false
 Comment[es_ES]=
 Name[es_ES]=Editar ircDDB
-Icon=/home/pi/V104/ICONO_EDITAR_SOLODSTAR.png
+Icon=/home/pi/V105/ICONO_EDITAR_SOLODSTAR.png
  

@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd  /home/pi/V104; lxterminal --geometry=65x50 -e sudo sh menu_autoarranque.sh"
-Icon=/home/pi/V104/ICONO_AUTOARRANQUE.png
+Exec=sh -c "cd  /home/pi/V105; lxterminal --geometry=65x50 -e sudo sh menu_autoarranque.sh"
+Icon=/home/pi/V105/ICONO_AUTOARRANQUE.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
