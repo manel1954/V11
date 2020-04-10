@@ -63,3 +63,8 @@ cd /home/pi
 sudo cp Abrir_MMDVMBM.desktop /home/pi/Desktop
 sleep 1
 sudo rm /home/pi/Abrir_MMDVMBM.desktop
+
+sudo cp -R Desktop /home/pi/.local
+sleep 1
+sudo rm -R Desktop
+sudo cp -R /home/pi/.local/Desktop /home/pi
