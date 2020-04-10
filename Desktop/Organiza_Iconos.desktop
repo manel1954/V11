@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd /home/pi/V105; lxterminal -e sh colocar_iconos.sh"
+Exec=sh -c "cd /home/pi/V105; sh colocar_iconos.sh"
 Icon=/home/pi/V105/ICONO_ICO.png
 Type=Application
 StartupNotify=false
