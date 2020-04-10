@@ -64,16 +64,9 @@ sudo cp $usuario/Desktop/Activar_NextionDriver.desktop $usuario/.local #deja el 
 #sudo cp $usuario/Desktop/Abrir_D-STARRepeater.desktop $usuario #deja con el terminal en el estado que se reinició
 
 
-
-sudo rm -R /home/pi/Desktop
-sudo cp -R $usuario/$SCRIPTS_version/Desktop /home/pi
-
-
-
-
-# cd $usuario/$SCRIPTS_version/Desktop
-# cp * $usuario/Desktop
-# sudo chmod 777 -R $usuario/Desktop
+cd $usuario/$SCRIPTS_version/Desktop
+cp * $usuario/Desktop
+sudo chmod 777 -R $usuario/Desktop
 
 
 sudo cp $usuario/.local/Activar_dvswitch.desktop $usuario/Desktop #deja el icono en el estado que se reinició
