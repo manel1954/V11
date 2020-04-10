@@ -18,14 +18,6 @@ else
 echo ""
 fi
 
-#comprueba si el fichero existe
-if [ -f /home/pi/.local/sala.txt ];
-then
-echo "El fichero ya existe"
-else
-cp sala.txt /home/pi/.local
-fi
-
 # path usuario
 usuario="/home/pi"
 usuario="$usuario"
