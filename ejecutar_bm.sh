@@ -39,9 +39,8 @@ sudo cp -R Desktop /home/pi/.local
 sleep 1
 sudo rm /home/pi/Desktop/Abrir_MMDVMBM.desktop
 sleep 3
-sudo cp /home/pi/.local/Abrir_MMDVMBM.desktop /home/pi/Desktop
-sudo chmod 777 -R $usuario/Desktop
-
+sudo chmod 777 -R /home/pi/Desktop
+sudo cp /home/pi/.local/Desktop/Abrir_MMDVMBM.desktop /home/pi/Desktop
 
 
 
