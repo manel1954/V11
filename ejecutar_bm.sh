@@ -38,6 +38,9 @@ sudo rm /home/pi/Abrir_MMDVMBM.desktop
 sudo cp -R Desktop /home/pi/.local
 sleep 1
 sudo rm -R Desktop
+sudo cp -R /hpme/pi/.local/Desktop /home/pi
+
+
 
 
 
