@@ -7,6 +7,6 @@ Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Terminal=false
-Name[es_ES]=SVXLINK
+Name[es_ES]=Abrir SVXLINK
 Hidden=false
 Comment[es_ES]=EA3EIZ
