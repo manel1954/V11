@@ -7,6 +7,6 @@ Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Terminal=false
-Name[es_ES]=Abrir AMBE SERVER
+Name[es_ES]=AMBE SERVER
 Hidden=false
 Comment[es_ES]=EA3EIZ

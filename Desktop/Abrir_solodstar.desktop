@@ -8,5 +8,5 @@ Icon=/home/pi/V105/SOLO_D-STAR.png
 Path=/home/pi/V105
 Terminal=false
 StartupNotify=false
-Name[es_ES]=Abrir solo DSTAR
+Name[es_ES]=SOLODSTAR
  

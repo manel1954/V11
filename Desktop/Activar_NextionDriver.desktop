@@ -7,6 +7,6 @@ Type=Application
 StartupNotify=false
 Categories=Network;WebBrowser;
 Terminal=false
-Name[es_ES]=Activar NextionDriver
+Name[es_ES]=NextionDriver
 Hidden=false
 Comment[es_ES]=EA3EIZ
