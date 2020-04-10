@@ -68,7 +68,7 @@ sudo cp $usuario/Desktop/Activar_NextionDriver.desktop $usuario/.local #deja el 
 #sudo cp $usuario/Desktop/Abrir_D-STARRepeater.desktop $usuario #deja con el terminal en el estado que se reinició
 
 sudo rm -R /home/pi/Desktop
-sudo cp $usuario/$SCRIPTS_version/Desktop /home/pi
+sudo cp -R $usuario/$SCRIPTS_version/Desktop /home/pi
 
 
 
