@@ -32,15 +32,9 @@ sed -i "7c MMDVMBM=ON" /home/pi/status.ini
 cd /home/pi
 sudo cp Abrir_MMDVMBM.desktop /home/pi/Desktop
 
-sudo rm /home/pi/Abrir_MMDVMBM.desktop
-
-cd /home/pi
-sudo cp -R Desktop /home/pi/.local
-sleep 1
 sudo rm /home/pi/Desktop/Abrir_MMDVMBM.desktop
 sleep 3
-sudo chmod 777 -R /home/pi/Desktop
-sudo cp /home/pi/.local/Desktop/Abrir_MMDVMBM.desktop /home/pi/Desktop
+sudo cp Abrir_MMDVMBM.desktop /home/pi/Desktop
 
 
 
@@ -64,10 +58,7 @@ sed -i "10c Name[es_ES]=Abrir BM" /home/pi/Abrir_MMDVMBM.desktop
 sed -i "7c MMDVMBM=OFF" /home/pi/status.ini
 cd /home/pi
 sudo cp Abrir_MMDVMBM.desktop /home/pi/Desktop
-sleep 1
-sudo rm /home/pi/Abrir_MMDVMBM.desktop
 
-sudo cp -R Desktop /home/pi/.local
-sleep 1
-sudo rm -R Desktop
-sudo cp -R /home/pi/.local/Desktop /home/pi
+sudo rm /home/pi/Desktop/Abrir_MMDVMBM.desktop
+sleep 3
+sudo cp Abrir_MMDVMBM.desktop /home/pi/Desktop
