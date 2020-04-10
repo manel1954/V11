@@ -31,7 +31,6 @@ echo ""
 echo "   Project participants:"
 echo "${BLANCO}   -EA3EIZ (Developer & Designer Programmer)"
 echo "${BLANCO}   -EA3EG  (Innovative & System Tester)"
-echo "${BLANCO}   -EA4AOJ (Technical & Developer)"
 
 echo ""
 echo -n "${VERDE}"
