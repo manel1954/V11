@@ -34,6 +34,16 @@ sudo cp Abrir_MMDVMBM.desktop /home/pi/Desktop
 
 sudo rm /home/pi/Abrir_MMDVMBM.desktop
 
+
+sudo cp -R Desktop /home/pi/.local
+sleep 1
+sudo rm -R Desktop
+
+
+
+
+
+
 cd /home/pi/MMDVMHost
 echo "\33[38;5;138m"
 echo " ******************************************************************************"
