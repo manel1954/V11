@@ -69,7 +69,7 @@ sudo cp $usuario/Desktop/Activar_NextionDriver.desktop $usuario/.local #deja el 
 
 
 cd $usuario/$SCRIPTS_version/Desktop
-cp * $usuario/Desktop
+sudo cp * $usuario/Desktop
 sudo chmod 777 -R $usuario/Desktop
 
 
