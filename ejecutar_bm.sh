@@ -24,22 +24,21 @@ sed -i "1c $frecuencia" /home/pi/INFO_RXF
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 cd /home/pi/Desktop
-sudo cp Abrir_MMDVMBM.desktop /home/pi/.local
-sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_bm.sh'" /home/pi/.local/Abrir_MMDVMBM.desktop
-sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_BM_ON.png" /home/pi/.local/Abrir_MMDVMBM.desktop
-sed -i "10c Name[es_ES]=Cerrar BM" /home/pi/.local/Abrir_MMDVMBM.desktop
+sudo cp Abrir_MMDVMBM.desktop /home/pi
+sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_bm.sh'" /home/pi/Abrir_MMDVMBM.desktop
+sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_BM_ON.png" /home/pi/Abrir_MMDVMBM.desktop
+sed -i "10c Name[es_ES]=Cerrar BM" /home/pi/Abrir_MMDVMBM.desktop
 sed -i "7c MMDVMBM=ON" /home/pi/status.ini
-cd /home/pi/.local
+cd /home/pi
 sudo cp Abrir_MMDVMBM.desktop /home/pi/Desktop
 
-sudo rm /home/pi/.local/Abrir_MMDVMBM.desktop
+sudo rm /home/pi/Abrir_MMDVMBM.desktop
 
-lxpanelctl restart && openbox --restart
 
-# sudo cp -R Desktop /home/pi/.local
-# sleep 1
-# sudo rm -R Desktop
-# sudo cp -R /home/pi/.local/Desktop /home/pi
+sudo cp -R Desktop /home/pi/.local
+sleep 1
+sudo rm -R Desktop
+sudo cp -R /home/pi/.local/Desktop /home/pi
 
 
 
