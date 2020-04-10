@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Organizar Iconos
+Comment=Organiza iconos
+Exec=sh colocar_iconos.sh
+Icon=/home/pi/V104/ICONO_ICO.png
+Path=/home/pi/V104
+Terminal=false
+StartupNotify=false

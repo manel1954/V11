@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=AbrirsoloDstar
+Comment=
+Exec=sh -c "cd /home/pi/V104/; lxterminal --geometry=80x15 -e sudo sh ejecutar_solodstar.sh"
+Icon=/home/pi/V104/SOLO_D-STAR.png
+Path=/home/pi/V104
+Terminal=false
+StartupNotify=false
+Name[es_ES]=Abrir solo DSTAR
+ 

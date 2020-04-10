@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+TryExec=lxterminal
+Exec=sh -c 'cd /home/pi/V104;sudo sh ejecutar_ircDDB.sh'
+Icon=/home/pi/V104/ICONO_IRCDDB_OFF.png
+Type=Application
+StartupNotify=false
+Categories=GTK;Utility;TerminalEmulator;
+Terminal=false
+Name[es_ES]=Abrir ircDDB
+Hidden=false
+Comment[es_ES]=EA3EIZ

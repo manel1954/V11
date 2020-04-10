@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+TryExec=lxterminal
+Exec=sh -c 'cd /home/pi/V104;lxterminal --geometry=80x15 -e sudo sh ejecutar_YSF2DMR.sh'
+Icon=/home/pi/V104/ICONO_YSF2DMR_OFF.png
+Type=Application
+StartupNotify=false
+Categories=GTK;Utility;TerminalEmulator;
+Terminal=false
+Name[es_ES]=Abrir YSF2DMR
+Hidden=false
+Comment[es_ES]=EA3EIZ

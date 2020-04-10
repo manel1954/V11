@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+TryExec=lxterminal
+Exec=sh -c 'cd /home/pi/V104;lxterminal --geometry=72x15 -e sudo sh reboot.sh'
+Icon=/home/pi/V104/ICONO_REINICIAR_IMAGEN.png
+Type=Application
+StartupNotify=false
+Categories=GTK;Utility;TerminalEmulator;
+Terminal=false
+Name[es_ES]=Reiniciar IMAGEN
+Hidden=false
+Comment[es_ES]=EA3EIZ

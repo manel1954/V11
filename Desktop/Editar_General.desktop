@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+TryExec=lxterminal
+Exec=sh -c "cd /home/pi/V104;lxterminal --geometry=80x25 -e sudo sh editar_general.sh"
+Icon=/home/pi/V104/ICONO_EDITOR_GENERAL.png
+Type=Application
+StartupNotify=false
+Categories=GTK;Utility;TerminalEmulator;
+Terminal=false
+Name[es_ES]=Editor GENERAL
+Hidden=false
+Comment[es_ES]=EA3EIZ
+X-KeepTerminal=false

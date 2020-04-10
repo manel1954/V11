@@ -1,0 +1,11 @@
+[Desktop Entry]
+Exec=sh -c "cd /home/pi/V104;lxterminal --geometry=80x25 -e sudo sh editar_C4FM.sh"
+Icon=/home/pi/V104/ICONO_EDITAR_YSF.png
+Type=Application
+StartupNotify=false
+Categories=GTK;Utility;TerminalEmulator;
+Terminal=false
+Name[es_ES]=Editar YSF FCS & YCS
+Hidden=false
+Comment[es_ES]=EA3EIZ
+X-KeepTerminal=false
