@@ -58,8 +58,8 @@ sleep 2
 #Actualiza todos los iconos y Quita todos los iconos verdes que se quedan al cerrar la imagen
 
 
-cp $usuario/Desktop/Activar_dvswitch.desktop $usuario/.local #deja el icono en el estado que se reinició
-cp $usuario/Desktop/Activar_NextionDriver.desktop $usuario/.local #deja el icono en el estado que se reinició
+sudo cp $usuario/Desktop/Activar_dvswitch.desktop $usuario/.local #deja el icono en el estado que se reinició
+sudo cp $usuario/Desktop/Activar_NextionDriver.desktop $usuario/.local #deja el icono en el estado que se reinició
 #sudo cp $usuario/Desktop/Abrir_ircDDBGateway.desktop $usuario #deja con el terminal en el estado que se reinició
 #sudo cp $usuario/Desktop/Abrir_D-STARRepeater.desktop $usuario #deja con el terminal en el estado que se reinició
 
@@ -70,10 +70,11 @@ cp $usuario/Desktop/Activar_NextionDriver.desktop $usuario/.local #deja el icono
 sudo rm -R /home/pi/Desktop
 cd /home/pi/V105
 
-cp -R Desktop /home/pi
+sudo cp -R Desktop /home/pi
+sudo chmod 777 -R /home/pi/Desktop
 
-cp $usuario/.local/Activar_dvswitch.desktop $usuario/Desktop #deja el icono en el estado que se reinició
-cp $usuario/.local/Activar_NextionDriver.desktop $usuario/Desktop #deja el icono en el estado que se reinició
+sudo cp $usuario/.local/Activar_dvswitch.desktop $usuario/Desktop #deja el icono en el estado que se reinició
+sudo cp $usuario/.local/Activar_NextionDriver.desktop $usuario/Desktop #deja el icono en el estado que se reinició
 #sudo cp $usuario/Abrir_ircDDBGateway.desktop $usuario/Desktop #deja con el terminal en el estado que se reinició
 #sudo cp $usuario/Abrir_D-STARRepeater.desktop $usuario/Desktop #deja con el terminal en el estado que se reinició
 
