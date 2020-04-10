@@ -29,18 +29,12 @@ sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_bm.sh'" /hom
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_BM_ON.png" /home/pi/Abrir_MMDVMBM.desktop
 sed -i "10c Name[es_ES]=Cerrar BM" /home/pi/Abrir_MMDVMBM.desktop
 sed -i "7c MMDVMBM=ON" /home/pi/status.ini
+
 cd /home/pi
 sudo cp Abrir_MMDVMBM.desktop /home/pi/Desktop
-
 sudo rm /home/pi/Desktop/Abrir_MMDVMBM.desktop
 sleep 3
 sudo cp Abrir_MMDVMBM.desktop /home/pi/Desktop
-
-
-
-
-
-
 
 cd /home/pi/MMDVMHost
 echo "\33[38;5;138m"

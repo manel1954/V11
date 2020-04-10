@@ -8,19 +8,11 @@ sed -i "4cExec=sh -c 'cd /home/pi/$SCRIPTS_version; lxterminal --geometry=80x15 
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_BM_OFF.png" /home/pi/Abrir_MMDVMBM.desktop
 sed -i "10c Name[es_ES]=Abrir BM" /home/pi/Abrir_MMDVMBM.desktop
 sed -i "7c MMDVMBM=OFF" /home/pi/status.ini
+
 cd /home/pi
-
 sudo cp Abrir_MMDVMBM.desktop /home/pi/Desktop
-
 sudo rm /home/pi/Desktop/Abrir_MMDVMBM.desktop
 sleep 3
 sudo cp Abrir_MMDVMBM.desktop /home/pi/Desktop
-#cd /home/pi
-#sudo cp -R Desktop /home/pi/.local
-#sleep 1
-#sudo rm /home/pi/Desktop/Abrir_MMDVMBM.desktop
-
-#sudo chmod 777 -R /home/pi/Desktop
-
 
 
