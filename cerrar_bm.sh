@@ -12,14 +12,15 @@ cd /home/pi
 
 sudo cp Abrir_MMDVMBM.desktop /home/pi/Desktop
 
-sudo rm /home/pi/Abrir_MMDVMBM.desktop
-
-cd /home/pi
-sudo cp -R Desktop /home/pi/.local
-sleep 1
 sudo rm /home/pi/Desktop/Abrir_MMDVMBM.desktop
 sleep 3
-sudo chmod 777 -R /home/pi/Desktop
-sudo cp /home/pi/.local/Desktop/Abrir_MMDVMBM.desktop /home/pi/Desktop
+sudo cp Abrir_MMDVMBM.desktop /home/pi/Desktop
+#cd /home/pi
+#sudo cp -R Desktop /home/pi/.local
+#sleep 1
+#sudo rm /home/pi/Desktop/Abrir_MMDVMBM.desktop
+
+#sudo chmod 777 -R /home/pi/Desktop
+
 
 
