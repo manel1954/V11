@@ -7,7 +7,7 @@ Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Terminal=false
-Name[es_ES]=Editar DExtra BlueDV
+Name[es_ES]=Editar DExtra
 Hidden=false
 Comment[es_ES]=EA3EIZ
 
