@@ -1,10 +1,12 @@
 [Desktop Entry]
-Version=1.0
-Type=Application
-Name=Restaurar ICONOS
-Comment=Organiza iconos
+Encoding=UTF-8
+TryExec=lxterminal
 Exec=sh colocar_iconos.sh
 Icon=/home/pi/V105/ICONO_ICO.png
-Path=/home/pi/V105
-Terminal=false
+Type=Application
 StartupNotify=false
+Categories=GTK;Utility;TerminalEmulator;
+Terminal=false
+Name[es_ES]=Restaurar ICONOS
+Hidden=false
+Comment[es_ES]=EA3EIZ
