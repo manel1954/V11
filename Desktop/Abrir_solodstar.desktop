@@ -2,11 +2,11 @@
 Version=1.0
 Type=Application
 Name=AbrirsoloDstar
-Comment=a
+Comment=
 Exec=sh -c "cd /home/pi/V105/; lxterminal --geometry=80x15 -e sudo sh ejecutar_solodstar.sh"
 Icon=/home/pi/V105/SOLO_D-STAR.png
 Path=/home/pi/V105
 Terminal=false
 StartupNotify=false
-Name[es_ES]=SOLO DSTAR
+Name[es_ES]=SOLO  DSTAR
  
