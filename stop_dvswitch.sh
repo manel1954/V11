@@ -50,7 +50,7 @@ echo "                            SE REINICIARÁ EL SISTEMA                     
 echo -n "${BLANCO}"
 echo "   ***************************************************************************"	
 sleep 5
-#sudo reboot
+sudo reboot
 else
 echo "no desactiva"
 fi
