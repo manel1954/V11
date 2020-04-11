@@ -12,18 +12,18 @@ SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 
 echo "${BLANCO}"
 echo "   ***************************************************************************"
-echo -n "${VERDE}"
+echo "${VERDE}"
 echo "                                  ADVERTENCIA!!                               "
 echo ""
 echo -n "${ROJO}"
 echo "                   AL ACTIVAR DVSWITCH SE REINICIARÁ EL SISTEMA               "
                            
 echo "                            PARA GUARDAR LOS CAMBIOS                          "
-echo -n "${BLANCO}"
+echo "${BLANCO}"
 echo "   ***************************************************************************"	
 
-echo "${VERDE}"
-read -p 'Quieres activar DVSWITCH? S/N ' seguir   
+echo "${cian}"
+read -p '   Quieres activar DVSWITCH? S/N ' seguir   
 if [ "$seguir" = 'S' -o "$seguir" = 's' ];then 
 
 cd /home/pi/Desktop
