@@ -15,3 +15,4 @@ frecuencia=$frecuencia$puerto
 echo "Frecuencia: $frecuencia"
 echo "Puerto: $puerto"
 echo ""
+read a
