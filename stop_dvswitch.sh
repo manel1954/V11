@@ -4,6 +4,22 @@ sed -i "18c DVSWITCH=OFF" /home/pi/status.ini
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 
+echo "${BLANCO}"
+echo "   ***************************************************************************"
+echo "${VERDE}"
+echo "                                  ADVERTENCIA!!                               "
+echo ""
+echo -n "${ROJO}"
+echo "                AL DESACTIVAR DVSWITCH SE REINICIARÁ EL SISTEMA               "
+                           
+echo "                            PARA GUARDAR LOS CAMBIOS                          "
+echo "${BLANCO}"
+echo "   ***************************************************************************"	
+
+echo "${CIAN}"
+read -p '   Quieres activar DVSWITCH? S/N ' seguir   
+if [ "$seguir" = 'S' -o "$seguir" = 's' ];then 
+
 cd /home/pi/Desktop
 sudo cp Activar_dvswitch.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; lxterminal -e sudo sh ejecutar_dvswitch.sh'" /home/pi/Activar_dvswitch.desktop
@@ -32,4 +48,7 @@ echo "                            SE REINICIARÁ EL SISTEMA                     
 echo -n "${BLANCO}"
 echo "   ***************************************************************************"	
 sleep 5
-sudo reboot
+#sudo reboot
+else
+echo "no desactiva"
+fi
