@@ -22,7 +22,7 @@ echo "                            PARA GUARDAR LOS CAMBIOS                      
 echo "${BLANCO}"
 echo "   ***************************************************************************"	
 
-echo "${cian}"
+echo "${CIAN}"
 read -p '   Quieres activar DVSWITCH? S/N ' seguir   
 if [ "$seguir" = 'S' -o "$seguir" = 's' ];then 
 
