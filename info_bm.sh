@@ -20,7 +20,7 @@ AMARILLO="\033[1;33m"
 CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
-
+figlet ea3eiz
 echo "${BLANCO}"
 echo "       INFORMACIÓN MMDVM1 (BM)"
 echo "${VERDE}"
@@ -31,5 +31,5 @@ echo "${CIAN}  Puerto:     ${AMARILLO}$puerto   "
 echo "${VERDE}"
 echo "  ********************************"
 echo "${CIAN}"
-echo "  Cierre en 10 segundos"
+echo "  Se cerrará en 10 segundos"
 sleep 10
