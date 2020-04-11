@@ -22,3 +22,14 @@ sudo systemctl stop md380-emu.service
 sudo systemctl stop mmdvm_bridge.service
 sudo systemctl stop nxdngateway.service
 
+echo "${BLANCO}"
+echo "\v\v\v\v\v\v\v\v"
+echo "   ***************************************************************************"
+echo -n "${VERDE}"
+echo "                           SE HA DESACTIVADO DVSWITCH                         "
+echo -n "${ROJO}"                           
+echo "                            SE REINICIARÁ EL SISTEMA                          "
+echo -n "${BLANCO}"
+echo "   ***************************************************************************"	
+sleep 5
+sudo reboot
