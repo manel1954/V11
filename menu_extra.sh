@@ -67,11 +67,9 @@ clear
 #sudo cp $usuario/Desktop/Abrir_ircDDBGateway.desktop $usuario #deja con el terminal en el estado que se reinició
 #sudo cp $usuario/Desktop/Abrir_D-STARRepeater.desktop $usuario #deja con el terminal en el estado que se reinició
 
-sudo rm -R /home/pi/Desktop
-cd /home/pi/V105
-
-sudo cp -R Desktop /home/pi
-
+cd $usuario/$SCRIPTS_version/Desktop
+cp * $usuario/Desktop
+sudo chmod 777 -R $usuario/Desktop
 
 
 #  sudo cp $usuario/.local/Activar_dvswitch.desktop $usuario/Desktop #deja el icono en el estado que se reinició

@@ -14,10 +14,6 @@ sudo cp Abrir_MMDVMPLUS.desktop /home/pi/Desktop
 
 sudo rm /home/pi/Abrir_MMDVMPLUS.desktop
 
-sudo cp -R Desktop /home/pi/.local
-sleep 1
-sudo rm -R Desktop
-sudo cp -R /home/pi/.local/Desktop /home/pi
-sudo chmod 777 -R $usuario/Desktop
+
 
 
