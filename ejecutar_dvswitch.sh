@@ -61,7 +61,7 @@ echo -n "${BLANCO}"
 echo "   ***************************************************************************"	
 sleep 5
 sed -i "18c DVSWITCH=ON" /home/pi/status.ini
-#sudo reboot	
+sudo reboot	
 else
 echo "no lo activa"
 fi

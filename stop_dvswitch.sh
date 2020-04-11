@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
 
-sed -i "18c DVSWITCH=OFF" /home/pi/status.ini
+
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 
@@ -17,7 +17,7 @@ echo "${BLANCO}"
 echo "   ***************************************************************************"	
 
 echo "${CIAN}"
-read -p '   Quieres activar DVSWITCH? S/N ' seguir   
+read -p '   Quieres Desactivar DVSWITCH? S/N ' seguir   
 if [ "$seguir" = 'S' -o "$seguir" = 's' ];then 
 
 cd /home/pi/Desktop
@@ -37,6 +37,8 @@ sudo systemctl stop ircddbgateway.service
 sudo systemctl stop md380-emu.service
 sudo systemctl stop mmdvm_bridge.service
 sudo systemctl stop nxdngateway.service
+
+sed -i "18c DVSWITCH=OFF" /home/pi/status.ini
 
 echo "${BLANCO}"
 echo "\v\v\v\v\v\v\v\v"
