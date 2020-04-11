@@ -8,4 +8,4 @@ Icon=/home/pi/V105/ICONO_DVRPTR_OFF.png
 Path=/home/pi/V10
 Terminal=false
 StartupNotify=false
-Name[es_ES]=Abrir DVRPTR
+Name[es_ES]=DVRPTR

@@ -7,6 +7,6 @@ Type=Application
 StartupNotify=false
 Categories=Hamradio;System;Utility;
 Terminal=false
-Name[es_ES]=Abrir DV4MINI
+Name[es_ES]=DV4MINI
 Hidden=false
 Comment[es_ES]=EA3EIZ

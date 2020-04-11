@@ -8,5 +8,5 @@ StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Name[en_US]=MMDVM Connect Screen
 Terminal=false
-Name[es_ES]=Abrir QTEL
+Name[es_ES]=QTEL
 Hidden=false
