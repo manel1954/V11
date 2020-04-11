@@ -15,7 +15,7 @@ echo "                AL DESACTIVAR DVSWITCH SE REINICIARÁ EL SISTEMA          
 echo "                            PARA GUARDAR LOS CAMBIOS                          "
 echo "${BLANCO}"
 echo "   ***************************************************************************"	
-
+read a
 echo "${CIAN}"
 read -p '   Quieres Desactivar DVSWITCH? S/N ' seguir   
 if [ "$seguir" = 'S' -o "$seguir" = 's' ];then 

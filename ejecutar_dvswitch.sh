@@ -65,4 +65,4 @@ sudo reboot
 else
 echo "no lo activa"
 fi
-fi				
+				
