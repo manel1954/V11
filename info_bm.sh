@@ -33,8 +33,7 @@ echo "  ********************************"
 echo "${CIAN}"
 echo "  Se cerrará en 10 segundos"
 #sleep 10
-for i in $(seq 1 2 20)
-do
-   echo "Welcome $i times"
+for (( times = 1; times < 20; times++ )); 
+do    /usr/sbin/rpcinfo -p | grep ypbind > /dev/null 2>&1 && \            ypwhich > /dev/null 2>&1
 done
 read a
