@@ -54,4 +54,3 @@ echo -n "1."
 sleep 1
 echo -n "0"
 sleep 1
-read a
