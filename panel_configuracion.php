@@ -162,7 +162,7 @@ $sala_fcs = exec("sed -n '42p' /home/pi/YSFClients/YSFGateway/YSFGateway.ini");
 $sala_fcs = substr("$sala_fcs", 11, 5);
 
 //COMPROBAMOS SI EL DVSWITCH ESTÁ ACTIVADO EN EL ESCRITORIO DE LA IMAGEN V10
-$dvswitch = exec("sed -n '18p' /home/pi/status.ini");
+$dvswitch = exec("sed -n '18p' /home/pi/.local");
 if ($dvswitch=="DVSWITCH=ON"){
 ?>
 <!-- ============================================== -->

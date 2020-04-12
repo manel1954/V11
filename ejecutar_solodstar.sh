@@ -9,7 +9,7 @@ AMARILLO="\033[1;33m"
 CIAN="\033[1;36m"
 GRIS="\033[0m"
 
-estado_dvswitch=$(awk "NR==18" /home/pi/status.ini)
+estado_dvswitch=$(awk "NR==18" /home/pi/.local)
 if [ "$estado_dvswitch" = 'DVSWITCH=ON' ];then
 
 echo "${ROJO}"
@@ -52,7 +52,7 @@ sudo cp Abrir_solodstar.desktop /home/pi
 sed -i "6c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_solodstar.sh'" /home/pi/Abrir_solodstar.desktop
 sed -i "7c Icon=/home/pi/$SCRIPTS_version/SOLO_D-STAR_ON.png" /home/pi/Abrir_solodstar.desktop
 sed -i "11c Name[es_ES]=Cerrar solo DSTAR" /home/pi/Abrir_solodstar.desktop
-sed -i "13c SOLODSTAR=ON" /home/pi/status.ini
+sed -i "13c SOLODSTAR=ON" /home/pi/.local
 cd /home/pi
 sudo cp Abrir_solodstar.desktop /home/pi/Desktop
 
@@ -63,7 +63,7 @@ sudo cp Abrir_ircDDB.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_ircDDB.sh'" /home/pi/Abrir_ircDDB.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_IRCDDB_ON.png" /home/pi/Abrir_ircDDB.desktop
 sed -i "10c Name[es_ES]=Cerrar ircDDB" /home/pi/Abrir_ircDDB.desktop
-sed -i "1c D-STAR=ON" /home/pi/status.ini
+sed -i "1c D-STAR=ON" /home/pi/.local
 cd /home/pi
 sudo cp Abrir_ircDDB.desktop /home/pi/Desktop
 
@@ -88,7 +88,7 @@ sudo cp Abrir_solodstar.desktop /home/pi
 sed -i "6c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; lxterminal --geometry=80x15 -e sudo sh ejecutar_solodstar.sh'" /home/pi/Abrir_solodstar.desktop
 sed -i "7c Icon=/home/pi/$SCRIPTS_version/SOLO_D-STAR.png" /home/pi/Abrir_solodstar.desktop
 sed -i "11c Name[es_ES]=Abrir solo DSTAR" /home/pi/Abrir_solodstar.desktop
-sed -i "13c SOLODSTAR=OFF" /home/pi/status.ini
+sed -i "13c SOLODSTAR=OFF" /home/pi/.local
 cd /home/pi
 sudo cp Abrir_solodstar.desktop /home/pi/Desktop
 
@@ -101,7 +101,7 @@ sleep 1
 sed -i "4cExec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh ejecutar_ircDDB.sh'" /home/pi/Abrir_ircDDB.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_IRCDDB_OFF.png" /home/pi/Abrir_ircDDB.desktop
 sed -i "10c Name[es_ES]=Abrir ircDDB" /home/pi/Abrir_ircDDB.desktop
-sed -i "1c D-STAR=OFF" /home/pi/status.ini
+sed -i "1c D-STAR=OFF" /home/pi/.local
 sleep 1
 cd /home/pi
 sudo cp Abrir_ircDDB.desktop /home/pi/Desktop
@@ -141,7 +141,7 @@ sudo cp Abrir_solodstar.desktop /home/pi
 sed -i "6c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_solodstar.sh'" /home/pi/Abrir_solodstar.desktop
 sed -i "7c Icon=/home/pi/$SCRIPTS_version/SOLO_D-STAR_ON.png" /home/pi/Abrir_solodstar.desktop
 sed -i "11c Name[es_ES]=Cerrar solo DSTAR" /home/pi/Abrir_solodstar.desktop
-sed -i "13c SOLODSTAR=ON" /home/pi/status.ini
+sed -i "13c SOLODSTAR=ON" /home/pi/.local
 cd /home/pi
 sudo cp Abrir_solodstar.desktop /home/pi/Desktop
 
@@ -152,7 +152,7 @@ sudo cp Abrir_ircDDB.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_ircDDB.sh'" /home/pi/Abrir_ircDDB.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_IRCDDB_ON.png" /home/pi/Abrir_ircDDB.desktop
 sed -i "10c Name[es_ES]=Cerrar ircDDB" /home/pi/Abrir_ircDDB.desktop
-sed -i "1c D-STAR=ON" /home/pi/status.ini
+sed -i "1c D-STAR=ON" /home/pi/.local
 cd /home/pi
 sudo cp Abrir_ircDDB.desktop /home/pi/Desktop
 
@@ -179,7 +179,7 @@ sudo cp Abrir_solodstar.desktop /home/pi
 sed -i "6c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; lxterminal --geometry=80x15 -e sudo sh ejecutar_solodstar.sh'" /home/pi/Abrir_solodstar.desktop
 sed -i "7c Icon=/home/pi/$SCRIPTS_version/SOLO_D-STAR.png" /home/pi/Abrir_solodstar.desktop
 sed -i "11c Name[es_ES]=Abrir solo DSTAR" /home/pi/Abrir_solodstar.desktop
-sed -i "13c SOLODSTAR=OFF" /home/pi/status.ini
+sed -i "13c SOLODSTAR=OFF" /home/pi/.local
 cd /home/pi
 sudo cp Abrir_solodstar.desktop /home/pi/Desktop
 
@@ -191,7 +191,7 @@ sleep 1
 sed -i "4cExec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh ejecutar_ircDDB.sh'" /home/pi/Abrir_ircDDB.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_IRCDDB_OFF.png" /home/pi/Abrir_ircDDB.desktop
 sed -i "10c Name[es_ES]=Abrir ircDDB" /home/pi/Abrir_ircDDB.desktop
-sed -i "1c D-STAR=OFF" /home/pi/status.ini
+sed -i "1c D-STAR=OFF" /home/pi/.local
 sleep 1
 
 

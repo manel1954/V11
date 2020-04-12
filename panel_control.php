@@ -157,7 +157,7 @@ $tg = " TG: " . substr($tg, 13, 10);
 				    <img src="imagenes/BRANDMEISTER.png" width="210" ></img>
 
         <?php
-        $aa = exec('awk "NR==7{print;exit}" /home/pi/status.ini');
+        $aa = exec('awk "NR==7{print;exit}" /home/pi/.local');
         if ($aa=="MMDVMBM=ON"){ 
         ?>
               <head> 
@@ -190,7 +190,7 @@ $tg = " TG: " . substr($tg, 13, 10);
             <img src="imagenes/DMR_PLUS.png" width="210" ></img>
 
         <?php
-        $plus = exec('awk "NR==6{print;exit}" /home/pi/status.ini');
+        $plus = exec('awk "NR==6{print;exit}" /home/pi/.local');
         if ($plus=="MMDVMPLUS=ON"){ 
         ?>
               <head> 
@@ -232,7 +232,7 @@ $tg = " TG: " . substr($tg, 13, 10);
                       <img src="imagenes/MMDVM.png" width=81 ></img><br>
 
         <?php
-        $plus = exec('awk "NR==5{print;exit}" /home/pi/status.ini');
+        $plus = exec('awk "NR==5{print;exit}" /home/pi/.local');
         if ($plus=="MMDVM=ON"){ 
         ?>
               <head> 
@@ -261,7 +261,7 @@ $tg = " TG: " . substr($tg, 13, 10);
               <div  class="col-md-4 text-center thumbnail">
               <img src="imagenes/YSF2DMR.png" width="103" ></img><br>
 <?php
-        $ysf2 = exec('awk "NR==14{print;exit}" /home/pi/status.ini');
+        $ysf2 = exec('awk "NR==14{print;exit}" /home/pi/.local');
         if ($ysf2=="YSF2DMR=ON"){ 
         ?>
               <head>
@@ -310,7 +310,7 @@ $tg = " TG: " . substr($tg, 13, 10);
                          </div>
 
         <?php
-              $ysf = exec('awk "NR==3{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==3{print;exit}" /home/pi/.local');
               if ($ysf=="YSF=ON"){ 
         ?>
               <head> 
@@ -328,7 +328,7 @@ $tg = " TG: " . substr($tg, 13, 10);
         ?>
 
         <?php
-              $ysf = exec('awk "NR==4{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==4{print;exit}" /home/pi/.local');
               if ($ysf=="DV4mini=ON"){ 
         ?>
               <head> 
@@ -347,7 +347,7 @@ $tg = " TG: " . substr($tg, 13, 10);
 
 
         <?php
-              $ysf = exec('awk "NR==1{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==1{print;exit}" /home/pi/.local');
               if ($ysf=="D-STAR=ON"){ 
         ?>
               <head> 
@@ -365,7 +365,7 @@ $tg = " TG: " . substr($tg, 13, 10);
         ?>
 
         <?php
-              $ysf = exec('awk "NR==2{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==2{print;exit}" /home/pi/.local');
               if ($ysf=="BlueDV=ON"){ 
         ?>
               <head> 
@@ -384,7 +384,7 @@ $tg = " TG: " . substr($tg, 13, 10);
 
 
         <?php
-              $ysf = exec('awk "NR==11{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==11{print;exit}" /home/pi/.local');
               if ($ysf=="AMBE_SERVER=ON"){ 
         ?>
               <head> 
@@ -403,7 +403,7 @@ $tg = " TG: " . substr($tg, 13, 10);
 
 
         <?php
-              $ysf = exec('awk "NR==14{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==14{print;exit}" /home/pi/.local');
               if ($ysf=="YSF2DMR=ON"){ 
         ?>
               <head> 
@@ -423,7 +423,7 @@ $tg = " TG: " . substr($tg, 13, 10);
 
 
         <?php
-              $ysf = exec('awk "NR==15{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==15{print;exit}" /home/pi/.local');
               if ($ysf=="DMR2YSF=ON"){ 
         ?>
               <head> 
@@ -443,7 +443,7 @@ $tg = " TG: " . substr($tg, 13, 10);
 
 
         <?php
-              $ysf = exec('awk "NR==5{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==5{print;exit}" /home/pi/.local');
               if ($ysf=="MMDVM=ON"){ 
         ?>
               <head> 
@@ -464,7 +464,7 @@ $tg = " TG: " . substr($tg, 13, 10);
 
 
         <?php
-              $ysf = exec('awk "NR==7{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==7{print;exit}" /home/pi/.local');
               if ($ysf=="MMDVMBM=ON"){ 
         ?>
               <head> 
@@ -497,7 +497,7 @@ $tg = " TG: " . substr($tg, 13, 10);
                       </div>
 
         <?php
-              $ysf = exec('awk "NR==8{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==8{print;exit}" /home/pi/.local');
               if ($ysf=="SVXLINK=ON"){ 
         ?>
               <head> 
@@ -515,7 +515,7 @@ $tg = " TG: " . substr($tg, 13, 10);
         ?>
 
         <?php
-              $ysf = exec('awk "NR==9{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==9{print;exit}" /home/pi/.local');
               if ($ysf=="dstarrepeater=ON"){ 
         ?>
               <head> 
@@ -534,7 +534,7 @@ $tg = " TG: " . substr($tg, 13, 10);
 
 
         <?php
-              $nxdn = exec('awk "NR==17{print;exit}" /home/pi/status.ini');
+              $nxdn = exec('awk "NR==17{print;exit}" /home/pi/.local');
               if ($nxdn=="NXDN=ON"){ 
         ?>
               <head> 
@@ -552,7 +552,7 @@ $tg = " TG: " . substr($tg, 13, 10);
         ?>
 
         <?php
-              $ysf = exec('awk "NR==12{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==12{print;exit}" /home/pi/.local');
               if ($ysf=="SOLOFUSION=ON"){ 
         ?>
               <head> 
@@ -570,7 +570,7 @@ $tg = " TG: " . substr($tg, 13, 10);
         ?>
 
         <?php
-              $ysf = exec('awk "NR==13{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==13{print;exit}" /home/pi/.local');
               if ($ysf=="SOLODSTAR=ON"){ 
         ?>
               <head> 
@@ -593,7 +593,7 @@ $tg = " TG: " . substr($tg, 13, 10);
 
 
 <?php
-              $ysf = exec('awk "NR==16{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==16{print;exit}" /home/pi/.local');
               if ($ysf=="DMR2NXDN=ON"){ 
         ?>
               <head> 
@@ -611,7 +611,7 @@ $tg = " TG: " . substr($tg, 13, 10);
         ?>
 
 <?php
-              $ysf = exec('awk "NR==10{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==10{print;exit}" /home/pi/.local');
               if ($ysf=="MMDVMESPECIAL=ON"){ 
         ?>
               <head> 
@@ -630,7 +630,7 @@ $tg = " TG: " . substr($tg, 13, 10);
 
 
         <?php
-              $ysf = exec('awk "NR==6{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==6{print;exit}" /home/pi/.local');
               if ($ysf=="MMDVMPLUS=ON"){ 
         ?>
               <head> 
@@ -648,7 +648,7 @@ $tg = " TG: " . substr($tg, 13, 10);
         ?>
 
         <?php
-              $ysf = exec('awk "NR==20{print;exit}" /home/pi/status.ini');
+              $ysf = exec('awk "NR==20{print;exit}" /home/pi/.local');
               if ($ysf=="DVRPTR=ON"){ 
         ?>
               <head> 

@@ -10,7 +10,7 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
-estado_dvswitch=$(awk "NR==18" /home/pi/status.ini)
+estado_dvswitch=$(awk "NR==18" /home/pi/.local)
 if [ "$estado_dvswitch" = 'DVSWITCH=ON' ];then
 
 echo "${ROJO}"
@@ -25,7 +25,7 @@ sudo cp Abrir_ircDDB.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_ircDDB.sh'" /home/pi/Abrir_ircDDB.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_IRCDDB_ON.png" /home/pi/Abrir_ircDDB.desktop
 sed -i "10c Name[es_ES]=Cerrar ircDDB" /home/pi/Abrir_ircDDB.desktop
-sed -i "1c D-STAR=ON" /home/pi/status.ini
+sed -i "1c D-STAR=ON" /home/pi/.local
 cd /home/pi
 sudo cp Abrir_ircDDB.desktop /home/pi/Desktop
 sleep 1
@@ -55,7 +55,7 @@ sudo cp Abrir_ircDDB.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_ircDDB.sh'" /home/pi/Abrir_ircDDB.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_IRCDDB_ON.png" /home/pi/Abrir_ircDDB.desktop
 sed -i "10c Name[es_ES]=Cerrar ircDDB" /home/pi/Abrir_ircDDB.desktop
-sed -i "1c D-STAR=ON" /home/pi/status.ini
+sed -i "1c D-STAR=ON" /home/pi/.local
 cd /home/pi
 sudo cp Abrir_ircDDB.desktop /home/pi/Desktop
 sleep 1

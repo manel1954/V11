@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
 
-estado_dvswitch=$(awk "NR==18" /home/pi/status.ini)
+estado_dvswitch=$(awk "NR==18" /home/pi/.local)
 if [ "$estado_dvswitch" = 'DVSWITCH=OFF' ];then
 sudo systemctl stop ysfgateway.service
 sudo systemctl stop dmr2ysf.service
@@ -266,7 +266,7 @@ rm $usuario/RXF_NXDN.desktop
 sudo chmod 777 -R $usuario/Desktop
 
 sleep 2
-estado_dvswitch=$(awk "NR==18" /home/pi/status.ini)
+estado_dvswitch=$(awk "NR==18" /home/pi/.local)
 if [ "$estado_dvswitch" = 'DVSWITCH=OFF' ];then
 sudo systemctl stop ysfgateway.service
 sudo systemctl stop dmr2ysf.service

@@ -12,14 +12,14 @@ sudo cp Abrir_ircDDB.desktop /home/pi
 sed -i "4cExec=sh -c 'cd /home/pi/$SCRIPTS_version;sudo sh ejecutar_ircDDB.sh'" /home/pi/Abrir_ircDDB.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_IRCDDB_OFF.png" /home/pi/Abrir_ircDDB.desktop
 sed -i "10c Name[es_ES]=Abrir ircDDB" /home/pi/Abrir_ircDDB.desktop
-sed -i "1c D-STAR=OFF" /home/pi/status.ini
+sed -i "1c D-STAR=OFF" /home/pi/.local
 
 cd /home/pi
 sudo cp Abrir_ircDDB.desktop /home/pi/Desktop
 
 sudo rm /home/pi/Abrir_ircDDB.desktop
 
-estado_dvswitch=$(awk "NR==18" /home/pi/status.ini)
+estado_dvswitch=$(awk "NR==18" /home/pi/.local)
 if [ "$estado_dvswitch" = 'DVSWITCH=ON' ];then
 
 # Pone Enable=1 en [Dstar Network]
