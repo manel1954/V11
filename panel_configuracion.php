@@ -115,7 +115,7 @@ elseif ($sistema=="ysf")
     $IPCS22="";
 }
 
-$version_dvswitch = exec("sed -n '11p'  /home/pi/info.ini");
+$version_dvswitch = exec("sed -n '11p'  /home/pi//home/pi/.local");
 $id = exec("sed -n '38p'  /opt/Analog_Bridge/Analog_Bridge.ini");
 $id = substr("$id", 15, 9);
 

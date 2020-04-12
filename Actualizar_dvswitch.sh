@@ -25,7 +25,7 @@ read activar
 case "$activar" in
 [sS]* )
 
-version=$(awk "NR==10" $usuario/info.ini)
+version=$(awk "NR==10" $usuario//home/pi/.local)
 
 if [ $version = 10 ]
 then
