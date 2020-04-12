@@ -33,8 +33,8 @@ echo "  ********************************"
 echo "${CIAN}"
 echo "  Se cerrará en 10 segundos"
 sleep 10
-for i in 1 2 3 4 5
+for i 5
 do
- echo "Hello $i"
+ echo "Hello"
 done
 read a
