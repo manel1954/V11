@@ -1219,7 +1219,7 @@ do
                         read memoria1
                         echo "<<<<<< Haciendo copia de seguridad de la M1 >>>>>"
                         sleep 3
-                        sudo sed -i "275c $memoria1" /home/pi/MMDVMHost/MMDVMBM.ini_copia
+                        sudo sed -i "275c MEMO 1" /home/pi/MMDVMHost/MMDVMBM.ini_copia
                         sed -i "$primer $memoria1" $usuario/info_panel_control.ini
                         sudo cp -f $usuario/MMDVMHost/$DIRECTORIO $usuario/MMDVMHost/$DIRECTORIO_copia
 			                  break;;
