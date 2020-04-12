@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+TryExec=lxterminal
+Exec=sh -c "cd /home/pi/V11;lxterminal --geometry=85x52 -e sudo sh  editar_dmrgateway.sh"
+Icon=/home/pi/V11/ICONO_EDITAR_DMRPLUS.png
+Type=Application
+StartupNotify=false
+Categories=GTK;Utility;TerminalEmulator;
+Name[en_US]=MMDVM Connect Screen
+Terminal=false
+Name[es_ES]=Editar DMRGATEWAY
+Hidden=false
+Comment[es_ES]=
