@@ -387,7 +387,7 @@ echo ""
                     cp -R /home/pi/.local/RESTAURAR/Downloads /home/pi
                     cp /home/pi/.local/RESTAURAR/INFO_RXF /home/pi
                     cp /home/pi/.local/RESTAURAR/info_panel_control.ini /home/pi
-                    cp /home/pi/.local/RESTAURAR/status.ini /home/pi
+                    cp /home/pi/.local/RESTAURAR/status.ini /home/pi/.local
                     cp /home/pi/.local/RESTAURAR/autoarranque.ini /home/pi
                     cp /home/pi/.local/RESTAURAR/tg_ysf.txt /home/pi
                     cp /home/pi/.local/RESTAURAR/nombre_salas_ysf.txt /home/pi                       

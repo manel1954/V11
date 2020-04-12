@@ -23,23 +23,23 @@ SCRIPTS_version="V11"
 version="V11-"
 version=$version$actualizacion
 #pone todos los status de inicio en OFF
-sed -i "1c D-STAR=OFF" $usuario/status.ini
-sed -i "2c BlueDV=OFF" $usuario/status.ini
-sed -i "3c YSF=OFF" $usuario/status.ini
-sed -i "4c DV4mini=OFF" $usuario/status.ini
-sed -i "5c MMDVM=OFF" $usuario/status.ini
-sed -i "6c MMDVMPLUS=OFF" $usuario/status.ini
-sed -i "7c MMDVMBM=OFF" $usuario/status.ini
-sed -i "8c SVXLINK=OFF" $usuario/status.ini
-sed -i "9c dstarrepeater=OFF" $usuario/status.ini
-sed -i "10c MMDVMLIBRE=OFF" $usuario/status.ini
-sed -i "11c AMBE_SERVER=OFF" $usuario/status.ini
-sed -i "12c SOLOFUSION=OFF" $usuario/status.ini
-sed -i "13c SOLODSTAR=OFF" $usuario/status.ini
-sed -i "14c YSF2DMR=OFF" $usuario/status.ini
-sed -i "15c DMR2YSF=OFF" $usuario/status.ini
-sed -i "16c DMR2NXDN=OFF" $usuario/status.ini
-sed -i "17c NXDN=OFF" $usuario/status.ini
+sed -i "1c D-STAR=OFF" $usuario/.local/status.ini
+sed -i "2c BlueDV=OFF" $usuario/.local/status.ini
+sed -i "3c YSF=OFF" $usuario/.local/status.ini
+sed -i "4c DV4mini=OFF" $usuario/.local/status.ini
+sed -i "5c MMDVM=OFF" $usuario/.local/status.ini
+sed -i "6c MMDVMPLUS=OFF" $usuario/.local/status.ini
+sed -i "7c MMDVMBM=OFF" $usuario/.local/status.ini
+sed -i "8c SVXLINK=OFF" $usuario/.local/status.ini
+sed -i "9c dstarrepeater=OFF" $usuario/.local/status.ini
+sed -i "10c MMDVMLIBRE=OFF" $usuario/.local/status.ini
+sed -i "11c AMBE_SERVER=OFF" $usuario/.local/status.ini
+sed -i "12c SOLOFUSION=OFF" $usuario/.local/status.ini
+sed -i "13c SOLODSTAR=OFF" $usuario/.local/status.ini
+sed -i "14c YSF2DMR=OFF" $usuario/.local/status.ini
+sed -i "15c DMR2YSF=OFF" $usuario/.local/status.ini
+sed -i "16c DMR2NXDN=OFF" $usuario/.local/status.ini
+sed -i "17c NXDN=OFF" $usuario/.local/status.ini
 
 
 #Actualiza Imagen
