@@ -18,7 +18,7 @@ caracteres=`expr index $address $buscar`
 caracteres_linea=`expr $caracteres - 1`
 numero_linea_address=`expr substr $address 1 $caracteres_linea`
 mode=$(awk "NR==$numero_linea_address" /home/pi/MMDVMHost/MMDVMBM.ini)
-address=`expr substr $address 13 20`
+address=`expr substr $address 13 30`
 address="  "$address
 
 #Colores
