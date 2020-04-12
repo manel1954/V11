@@ -1235,7 +1235,7 @@ do
                         clear
                         echo "<<<<<< Restaurando copia de seguridad de la M1 >>>>>"
                         sleep 3
-                        sed -i "275c MEMORIA1" $usuario/MMDVMHost/$DIRECTORIO_copia
+                        sudo sed -i "275c MEMORIA_copia1" /home/pi/MMDVMHost/MMDVMBM.ini_copia
                         sudo cp -f $usuario/MMDVMHost/$DIRECTORIO_copia $usuario/MMDVMHost/$DIRECTORIO
                         
 			                  break;;
