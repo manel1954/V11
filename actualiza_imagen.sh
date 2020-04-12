@@ -24,13 +24,13 @@ echo "${CIAN}"
 sleep 2
 
 			# 01-04-2020 arregla no escribe port en FCS.ini
-			#sudo cp $usuario/V105/cambia_configuracion_port.php /var/www/html/
+			#sudo cp $usuario/V11/cambia_configuracion_port.php /var/www/html/
 
                         # 03-04-2012020 añade el options manual para DMR+
-                        #sudo cp $usuario/V105/sistema_plus.php /var/www/html/
-                        #sudo cp $usuario/V105/cambia_reflector_dmrplus.php /var/www/html/
-                        #sudo cp $usuario/V105/cambia_options_dmrplus.php /var/www/html/
-                        #sudo cp $usuario/V105/panel_configuracion.php /var/www/html/
+                        #sudo cp $usuario/V11/sistema_plus.php /var/www/html/
+                        #sudo cp $usuario/V11/cambia_reflector_dmrplus.php /var/www/html/
+                        #sudo cp $usuario/V11/cambia_options_dmrplus.php /var/www/html/
+                        #sudo cp $usuario/V11/panel_configuracion.php /var/www/html/
 
 
                         # 09-04-2020 copia YSFGateway.ini
@@ -38,7 +38,7 @@ sleep 2
                         #if [ "$comprueba" = 'YSFGateway_OK' ];then 
                         #eho "No copia el fichero YSFGateway.ini"                       
                         #else
-                        #cp $usuario/V105/YSFGateway.ini /$usuario/YSFClients/YSFGateway/
+                        #cp $usuario/V11/YSFGateway.ini /$usuario/YSFClients/YSFGateway/
                         #sudo sed -i "21c YSFGateway_OK" $usuario/.local/versiones_YSF2DMR_DMR2YSF_DMR2NXDN.ini                        
                         #fi
 

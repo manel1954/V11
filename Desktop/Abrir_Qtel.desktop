@@ -2,7 +2,7 @@
 Encoding=UTF-8
 TryExec=lxterminal
 Exec=qtel
-Icon=/home/pi/V105/Qtel.png
+Icon=/home/pi/V11/Qtel.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;

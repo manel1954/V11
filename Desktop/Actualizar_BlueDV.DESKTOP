@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd /home/pi/V105;lxterminal --geometry=80x15 -e sudo sh  Actualizar_BlueDV.sh"
-Icon=/home/pi/V105/ICONO_ACTUALIZAR_BLUEDV.png
+Exec=sh -c "cd /home/pi/V11;lxterminal --geometry=80x15 -e sudo sh  Actualizar_BlueDV.sh"
+Icon=/home/pi/V11/ICONO_ACTUALIZAR_BLUEDV.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;

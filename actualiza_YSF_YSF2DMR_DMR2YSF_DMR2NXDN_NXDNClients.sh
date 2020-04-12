@@ -12,7 +12,7 @@ MARRON="\33[38;5;138m"
 
                         # 09-04-2020 copia YSFGateway.ini
                        
-                        cp /home/pi/V105/YSFGateway.ini /home/pi/YSFClients/YSFGateway/
+                        cp /home/pi/V11/YSFGateway.ini /home/pi/YSFClients/YSFGateway/
                         sudo sed -i "21c YSFGateway_OK" /home/pi/.local/versiones_YSF2DMR_DMR2YSF_DMR2NXDN.ini
                         echo "${VERDE}"
                         echo "************************************************************"

@@ -30,9 +30,9 @@
 						sudo mv /usr/local/bin/ircddbgatewayconfig /usr/local/bin/ircddbgatewayconfig_2016
 						sudo mv /usr/local/bin/remotecontrol /usr/local/bin/remotecontrol_2016
 
-						sudo cp /home/pi/V105/ircddbgateway /usr/bin/ircddbgateway
-						sudo cp /home/pi/V105/ircddbgatewayconfig /usr/bin/ircddbgatewayconfig
-						sudo cp /home/pi/V105/remotecontrol /usr/bin/remotecontrol
+						sudo cp /home/pi/V11/ircddbgateway /usr/bin/ircddbgateway
+						sudo cp /home/pi/V11/ircddbgatewayconfig /usr/bin/ircddbgatewayconfig
+						sudo cp /home/pi/V11/remotecontrol /usr/bin/remotecontrol
 
 						sudo rm -R /usr/share/opendv
 						sudo mkdir /usr/share/opendv

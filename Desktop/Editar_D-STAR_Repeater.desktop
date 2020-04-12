@@ -2,7 +2,7 @@
 Encoding=UTF-8
 TryExec=lxterminal
 Exec=sudo dstarrepeaterconfig
-Icon=/home/pi/V105/Editar_repeater.png
+Icon=/home/pi/V11/Editar_repeater.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;

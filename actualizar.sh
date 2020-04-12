@@ -17,10 +17,10 @@ fi
 # path usuario
 usuario="/home/pi"
 usuario="$usuario"
-SCRIPTS_version="V105"
+SCRIPTS_version="V11"
 actualizacion=$(awk "NR==1" /home/pi/.config/autostart/actualizacion)
-SCRIPTS_version="V105"
-version="V105-"
+SCRIPTS_version="V11"
+version="V11-"
 version=$version$actualizacion
 #pone todos los status de inicio en OFF
 sed -i "1c D-STAR=OFF" $usuario/status.ini
@@ -286,9 +286,9 @@ sudo systemctl stop nxdngateway.service
 else
 echo ""
 fi
-sudo rm -R /home/pi/V105/associacioader.com
-sudo rm -R /home/pi/V105/Desktop/associacioader.com
-sudo rm /home/pi/V105/Desktop/st-data
+sudo rm -R /home/pi/V11/associacioader.com
+sudo rm -R /home/pi/V11/Desktop/associacioader.com
+sudo rm /home/pi/V11/Desktop/st-data
 sudo rm /home/pi/Desktop/st-data
 
 

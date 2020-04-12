@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd /home/pi/V105;lxterminal --geometry=80x25 -e sudo sh editar_general.sh"
-Icon=/home/pi/V105/ICONO_EDITOR_GENERAL.png
+Exec=sh -c "cd /home/pi/V11;lxterminal --geometry=80x25 -e sudo sh editar_general.sh"
+Icon=/home/pi/V11/ICONO_EDITOR_GENERAL.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;

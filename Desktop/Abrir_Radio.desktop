@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c 'cd /home/pi/V105; lxterminal --geometry=80x15 -e sudo sh ejecutar_radio.sh'
-Icon=/home/pi/V105/MMDVM.png
+Exec=sh -c 'cd /home/pi/V11; lxterminal --geometry=80x15 -e sudo sh ejecutar_radio.sh'
+Icon=/home/pi/V11/MMDVM.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;

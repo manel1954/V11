@@ -449,7 +449,7 @@ h6{
     </div>
 
     <div class="col-md-2 callsign">
-        <span>V105&nbsp;<?php echo $indicativo;?></span>
+        <span>V11&nbsp;<?php echo $indicativo;?></span>
     </div>
 
 </div>

@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd /home/pi/V105;lxterminal --geometry=80x43 -e sudo sh  editar_YSF2DMR.sh"
-Icon=/home/pi/V105/ICONO_EDITAR_YSF2DMR.png
+Exec=sh -c "cd /home/pi/V11;lxterminal --geometry=80x43 -e sudo sh  editar_YSF2DMR.sh"
+Icon=/home/pi/V11/ICONO_EDITAR_YSF2DMR.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;

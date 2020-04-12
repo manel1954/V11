@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c 'cd /home/pi/V105; lxterminal --geometry=72x8 -e sudo sh ejecutar_dstarrepeater.sh; sudo dstarrepeater & sudo ircddbgateway -gui'
-Icon=/home/pi/V105/repeater.png
+Exec=sh -c 'cd /home/pi/V11; lxterminal --geometry=72x8 -e sudo sh ejecutar_dstarrepeater.sh; sudo dstarrepeater & sudo ircddbgateway -gui'
+Icon=/home/pi/V11/repeater.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;

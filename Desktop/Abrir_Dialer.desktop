@@ -6,6 +6,6 @@ Exec=sh -c "cd /home/pi/bmxtg; python bmxtg.py"
 Terminal=false
 Type=Application
 #Encoding=UTF-8
-Icon=/home/pi/V105/DIALER.png
+Icon=/home/pi/V11/DIALER.png
 Categories=Hamradio;System;Utility;
 Comment[es_ES]=

@@ -113,7 +113,7 @@ do
 			[sS]* ) echo ""
                         if [ "$version" = "2019" ]
                         then
-                        cd /home/pi/V105
+                        cd /home/pi/V11
                         sh editar_ircddbgateway.sh 
                         else  
                         clear       

@@ -1,8 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 Terminal=true
-Exec=sh -c "cd  /home/pi/V105; lxterminal --geometry=78x30 -e sudo sh menu_extra.sh"
-Icon=/home/pi/V105/ICONO_MENU_EXTRA.png
+Exec=sh -c "cd  /home/pi/V11; lxterminal --geometry=78x30 -e sudo sh menu_extra.sh"
+Icon=/home/pi/V11/ICONO_MENU_EXTRA.png
 Type=Application
 Categories=GTK;Utility;TerminalEmulator;
 Name[en_US]=MMDVM Connect Screen

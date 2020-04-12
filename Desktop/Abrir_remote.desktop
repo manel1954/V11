@@ -2,7 +2,7 @@
 Encoding=UTF-8
 TryExec=lxterminal
 Exec=remotecontrol
-Icon=/home/pi/V105/REMOTE_CONTROL.png
+Icon=/home/pi/V11/REMOTE_CONTROL.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
