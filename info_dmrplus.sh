@@ -33,7 +33,7 @@ GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 #figlet $puerto
 echo "${BLANCO}"
-echo "           INFORMACIÓN MMDVM1 (BM)"
+echo "           INFORMACIÓN MMDVM2 (DMR+)"
 echo "${VERDE}"
 echo "  ******************************************"
 echo ""
