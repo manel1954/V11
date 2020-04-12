@@ -20,7 +20,7 @@ AMARILLO="\033[1;33m"
 CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
-figlet $puerto
+#figlet $puerto
 echo "${BLANCO}"
 echo "       INFORMACIÓN MMDVM1 (BM)"
 echo "${VERDE}"
