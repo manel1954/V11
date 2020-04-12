@@ -32,17 +32,7 @@ echo "${VERDE}"
 echo "  ********************************"
 echo "${ROJO}"
 
-echo -n "  Cerrando 10."
-sleep 1
-echo -n "9."
-sleep 1
-echo -n "8."
-sleep 1
-echo -n "7."
-sleep 1
-echo -n "6."
-sleep 1
-echo -n "5."
+echo -n "  Se cerrará en 5."
 sleep 1
 echo -n "4."
 sleep 1
