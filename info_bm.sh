@@ -32,9 +32,9 @@ echo "${VERDE}"
 echo "  ********************************"
 echo "${CIAN}"
 echo "  Se cerrará en 10 segundos"
-sleep 10
-for i 5
+#sleep 10
+for i in $(seq 1 2 20)
 do
- echo "Hello"
+   echo "Welcome $i times"
 done
 read a
