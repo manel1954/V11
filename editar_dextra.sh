@@ -29,10 +29,6 @@ echo ""
 echo  "${CIAN}   2)${AMARILLO} Editar fichero DExtra_Host.txt"
 echo ""
 echo  "${CIAN}   3)${BLANCO} Editar parámetros principales Ircddbgateway"
-echo ""
-echo  "${CIAN}   4)${VERDE} Actualizar Ircddbgateway"
-echo ""
-echo  "${CIAN}   5)${MARRON} Recuperar configuración inicial Ircddbgateway"
 echo "\v\v"
 echo "   ${ROJO}0) Salir"
 echo "\v\v"
@@ -59,13 +55,7 @@ do
                         
 
                         #Actualiza reflectores 
-                      
-                        #ircddbgateway -gui 2016
-                        #cd /usr/local/share/opendv/
-                        #sudo curl --fail -o DExtra_Hosts.txt -s http://www.pistar.uk/downloads/DExtra_Hosts.txt
-                        #sudo curl --fail -o DCS_Hosts.txt -s http://www.pistar.uk/downloads/DCS_Hosts.txt
-                        #sudo curl --fail -o DPlus_Hosts.txt -s http://www.pistar.uk/downloads/DPlus_Hosts.txt
-
+                
                         #ircddbgateway -gui 2019
                         cd /usr/share/opendv/
                         sudo curl --fail -o DExtra_Hosts.txt -s http://www.pistar.uk/downloads/DExtra_Hosts.txt
@@ -141,49 +131,6 @@ do
                         break;;
 			[nN]* ) echo ""
 			break;;
-esac
-done;;
-4) echo ""
-while true
-do
-
-                      
-                        actualizar=S 
-                        case $actualizar in
-                        [sS]* ) echo ""
-                        if [ "$version" = "2019" ]
-                        then 
-                        clear       
-                        echo "${VERDE}"
-                        echo "            *******************************************************"
-                        echo "${AMARILLO}"
-                        echo "                     YA TIENES LA ÚLTIMA VERSIÓN:${CIAN} 20190402  "
-                        echo "${VERDE}"
-                        echo "            *******************************************************"
-                        sleep 3
-                        else
-                        cd /home/pi/V105
-                        sh actualizar_ircddb_2019.sh
-                        fi
-                        break;;
-                        [nN]* ) echo ""
-                        break;;
-esac
-done;;
-5) echo ""
-while true
-do
-
-                      
-                        echo -n "${AMARILLO}"
-                        read -p '   Estás seguro S/N?: ' actualizar
-                        case $actualizar in
-                        [sS]* ) echo ""
-                        cd /home/pi/V105
-                        cp ircddbgateway_config_inicial /etc/ircddbgateway
-                        break;;
-                        [nN]* ) echo ""
-                        break;;
 esac
 done;;
 0) echo ""
