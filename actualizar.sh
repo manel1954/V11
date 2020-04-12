@@ -174,93 +174,93 @@ frbm=`sed -n '13p'  $usuario/MMDVMHost/MMDVMBM.ini`
 frplus=`sed -n '13p'  $usuario/MMDVMHost/MMDVMPLUS.ini`
 sudo wget -post-data http://associacioader.com/prueba1.php?callBM=$bm'&'callPLUS=$plus'&'masterBM=$masterbm'&'masterPLUS=$masterplus'&'radio=$masterradio'&'version=$version'&'DMR2YSF=$masterDMR2YSF'&'YSFGateway=$masterYSFGateway
 #Lee el fichero INFO_NXDN para poner los datos en los iconos INFO TXF                        
-frecuencia=$(awk "NR==1" $usuario/INFO_RXF)
-cd $usuario/Desktop/
-cp RXF_BM.desktop $usuario/
-sed -i "11c Name=$frecuencia" $usuario/RXF_BM.desktop
-cd $usuario
-cp RXF_BM.desktop $usuario/Desktop
-rm $usuario/RXF_BM.desktop
+# frecuencia=$(awk "NR==1" $usuario/INFO_RXF)
+# cd $usuario/Desktop/
+# cp RXF_BM.desktop $usuario/
+# sed -i "11c Name=$frecuencia" $usuario/RXF_BM.desktop
+# cd $usuario
+# cp RXF_BM.desktop $usuario/Desktop
+# rm $usuario/RXF_BM.desktop
 
-frecuencia=$(awk "NR==2" $usuario/INFO_RXF)
-cd $usuario/Desktop/
-cp RXF_DMRPLUS.desktop $usuario/
-sed -i "11c Name=$frecuencia" $usuario/RXF_DMRPLUS.desktop
-cd $usuario
-cp RXF_DMRPLUS.desktop $usuario/Desktop
-rm $usuario/RXF_DMRPLUS.desktop
+# frecuencia=$(awk "NR==2" $usuario/INFO_RXF)
+# cd $usuario/Desktop/
+# cp RXF_DMRPLUS.desktop $usuario/
+# sed -i "11c Name=$frecuencia" $usuario/RXF_DMRPLUS.desktop
+# cd $usuario
+# cp RXF_DMRPLUS.desktop $usuario/Desktop
+# rm $usuario/RXF_DMRPLUS.desktop
 
-frecuencia=$(awk "NR==3" $usuario/INFO_RXF)
-cd $usuario/Desktop/
-cp RXF_LIBRE.desktop $usuario/
-sed -i "11c Name=$frecuencia" $usuario/RXF_LIBRE.desktop
-cd $usuario
-cp RXF_LIBRE.desktop $usuario/Desktop
-rm $usuario/RXF_LIBRE.desktop
+# frecuencia=$(awk "NR==3" $usuario/INFO_RXF)
+# cd $usuario/Desktop/
+# cp RXF_LIBRE.desktop $usuario/
+# sed -i "11c Name=$frecuencia" $usuario/RXF_LIBRE.desktop
+# cd $usuario
+# cp RXF_LIBRE.desktop $usuario/Desktop
+# rm $usuario/RXF_LIBRE.desktop
 
-frecuencia=$(awk "NR==4" $usuario/INFO_RXF)
-cd $usuario/Desktop/
-cp RXF_RADIO.desktop $usuario/
-sed -i "11c Name=$frecuencia" $usuario/RXF_RADIO.desktop
-cd $usuario
-cp RXF_RADIO.desktop $usuario/Desktop
-rm $usuario/RXF_RADIO.desktop
+# frecuencia=$(awk "NR==4" $usuario/INFO_RXF)
+# cd $usuario/Desktop/
+# cp RXF_RADIO.desktop $usuario/
+# sed -i "11c Name=$frecuencia" $usuario/RXF_RADIO.desktop
+# cd $usuario
+# cp RXF_RADIO.desktop $usuario/Desktop
+# rm $usuario/RXF_RADIO.desktop
 
-frecuencia=$(awk "NR==6" $usuario/INFO_RXF)
-cd $usuario/Desktop/
-cp RXF_SOLOFUSION.desktop $usuario/
-sed -i "11c Name=$frecuencia" $usuario/RXF_SOLOFUSION.desktop
-cd $usuario
-cp RXF_SOLOFUSION.desktop $usuario/Desktop
-rm $usuario/RXF_SOLOFUSION.desktop
+# frecuencia=$(awk "NR==6" $usuario/INFO_RXF)
+# cd $usuario/Desktop/
+# cp RXF_SOLOFUSION.desktop $usuario/
+# sed -i "11c Name=$frecuencia" $usuario/RXF_SOLOFUSION.desktop
+# cd $usuario
+# cp RXF_SOLOFUSION.desktop $usuario/Desktop
+# rm $usuario/RXF_SOLOFUSION.desktop
 
-frecuencia=$(awk "NR==5" $usuario/INFO_RXF)
-cd $usuario/Desktop/
-cp RXF_DSTAR.desktop $usuario/
-sed -i "11c Name=$frecuencia" $usuario/RXF_DSTAR.desktop
-cd $usuario
-cp RXF_DSTAR.desktop $usuario/Desktop
-rm $usuario/RXF_DSTAR.desktop
+# frecuencia=$(awk "NR==5" $usuario/INFO_RXF)
+# cd $usuario/Desktop/
+# cp RXF_DSTAR.desktop $usuario/
+# sed -i "11c Name=$frecuencia" $usuario/RXF_DSTAR.desktop
+# cd $usuario
+# cp RXF_DSTAR.desktop $usuario/Desktop
+# rm $usuario/RXF_DSTAR.desktop
 
-frecuencia=$(awk "NR==6" $usuario/INFO_RXF)
-cd $usuario/Desktop/
-cp RXF_C4FM.desktop $usuario/
-sed -i "11c Name=$frecuencia" $usuario/RXF_C4FM.desktop
-cd $usuario
-cp RXF_C4FM.desktop $usuario/Desktop
-rm $usuario/RXF_C4FM.desktop
+# frecuencia=$(awk "NR==6" $usuario/INFO_RXF)
+# cd $usuario/Desktop/
+# cp RXF_C4FM.desktop $usuario/
+# sed -i "11c Name=$frecuencia" $usuario/RXF_C4FM.desktop
+# cd $usuario
+# cp RXF_C4FM.desktop $usuario/Desktop
+# rm $usuario/RXF_C4FM.desktop
 
-frecuencia=$(awk "NR==13" $usuario/INFO_RXF)
-cd $usuario/Desktop/
-cp RXF_YSF2DMR.desktop $usuario/
-sed -i "11c Name=$frecuencia" $usuario/RXF_YSF2DMR.desktop
-cd $usuario
-cp RXF_YSF2DMR.desktop $usuario/Desktop
-rm $usuario/RXF_YSF2DMR.desktop
+# frecuencia=$(awk "NR==13" $usuario/INFO_RXF)
+# cd $usuario/Desktop/
+# cp RXF_YSF2DMR.desktop $usuario/
+# sed -i "11c Name=$frecuencia" $usuario/RXF_YSF2DMR.desktop
+# cd $usuario
+# cp RXF_YSF2DMR.desktop $usuario/Desktop
+# rm $usuario/RXF_YSF2DMR.desktop
 
-frecuencia=$(awk "NR==14" $usuario/INFO_RXF)
-cd $usuario/Desktop/
-cp RXF_DMR2YSF.desktop $usuario/
-sed -i "11c Name=$frecuencia" $usuario/RXF_DMR2YSF.desktop
-cd $usuario
-cp RXF_DMR2YSF.desktop $usuario/Desktop
-rm $usuario/RXF_DMR2YSF.desktop
+# frecuencia=$(awk "NR==14" $usuario/INFO_RXF)
+# cd $usuario/Desktop/
+# cp RXF_DMR2YSF.desktop $usuario/
+# sed -i "11c Name=$frecuencia" $usuario/RXF_DMR2YSF.desktop
+# cd $usuario
+# cp RXF_DMR2YSF.desktop $usuario/Desktop
+# rm $usuario/RXF_DMR2YSF.desktop
 
-frecuencia=$(awk "NR==15" $usuario/INFO_RXF)
-cd $usuario/Desktop/
-cp RXF_DMR2NXDN.desktop $usuario/
-sed -i "11c Name=$frecuencia" $usuario/RXF_DMR2NXDN.desktop
-cd $usuario
-cp RXF_DMR2NXDN.desktop $usuario/Desktop
-rm $usuario/RXF_DMR2NXDN.desktop
+# frecuencia=$(awk "NR==15" $usuario/INFO_RXF)
+# cd $usuario/Desktop/
+# cp RXF_DMR2NXDN.desktop $usuario/
+# sed -i "11c Name=$frecuencia" $usuario/RXF_DMR2NXDN.desktop
+# cd $usuario
+# cp RXF_DMR2NXDN.desktop $usuario/Desktop
+# rm $usuario/RXF_DMR2NXDN.desktop
 
-frecuencia=$(awk "NR==17" $usuario/INFO_RXF)
-cd $usuario/Desktop/
-cp RXF_NXDN.desktop $usuario/
-sed -i "11c Name=$frecuencia" $usuario/RXF_NXDN.desktop
-cd $usuario
-cp RXF_NXDN.desktop $usuario/Desktop
-rm $usuario/RXF_NXDN.desktop
+# frecuencia=$(awk "NR==17" $usuario/INFO_RXF)
+# cd $usuario/Desktop/
+# cp RXF_NXDN.desktop $usuario/
+# sed -i "11c Name=$frecuencia" $usuario/RXF_NXDN.desktop
+# cd $usuario
+# cp RXF_NXDN.desktop $usuario/Desktop
+# rm $usuario/RXF_NXDN.desktop
 #=================================================================================
 
 sudo chmod 777 -R $usuario/Desktop
