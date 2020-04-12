@@ -38,6 +38,7 @@ echo ""
 echo "${CIAN}  Frecuencia: ${AMARILLO}$frecuencia   "
 echo "${CIAN}  Puerto:   ${AMARILLO}$puerto   "
 echo "${CIAN}  Servidor: ${AMARILLO}$address   "
+echo "${CIAN}  Memoria: ${AMARILLO}$address   "
 echo "${VERDE}"
 echo "  ******************************************"
 echo "${ROJO}"
@@ -54,3 +55,4 @@ echo -n "1."
 sleep 1
 echo -n "0"
 sleep 1
+read a
