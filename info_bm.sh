@@ -12,6 +12,15 @@ frecuencia=$(awk "NR==13" /home/pi/MMDVMHost/MMDVMBM.ini)
 frecuencia=`expr substr $frecuencia 13 17`
 frecuencia=$frecuencia
 
+address=`grep -n -m 1 "^Address=" /home/pi/MMDVMHost/MMDVMBM.ini`
+buscar=":"
+caracteres=`expr index $address $buscar`
+caracteres_linea=`expr $caracteres - 1`
+numero_linea_address=`expr substr $address 1 $caracteres_linea`
+mode=$(awk "NR==$numero_linea_address" /home/pi/MMDVMHost/MMDVMBM.ini)
+address=`expr substr $address 9 20`
+address="  "$address
+
 #Colores
 ROJO="\033[1;31m"
 VERDE="\033[1;32m"
