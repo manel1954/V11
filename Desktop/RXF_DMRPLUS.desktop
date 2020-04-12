@@ -1,12 +1,12 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=ls
+Exec=sh -c "cd /home/pi/V105;lxterminal --geometry=46x13 -e sudo sh info_bm.sh"
 Icon=/home/pi/V105/ICONO_INFO.png
 Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Name[en_US]=MMDVM Connect Screen
 Terminal=false
-Name=0
+Name=DMR+
 Hidden=false
