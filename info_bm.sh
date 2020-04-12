@@ -30,27 +30,27 @@ echo "${CIAN}  Frecuencia: ${AMARILLO}$frecuencia   "
 echo "${CIAN}  Puerto:     ${AMARILLO}$puerto   "
 echo "${VERDE}"
 echo "  ********************************"
-echo "${CIAN}"
-echo "  Se cerrará en 10 segundos"
-echo -n "  Cerrando 10.."
+echo "${ROJO}"
+
+echo -n "  Cerrando 10."
 sleep 1
-echo -n "9.."
+echo -n "9."
 sleep 1
-echo -n "8.."
+echo -n "8."
 sleep 1
-echo -n "7.."
+echo -n "7."
 sleep 1
-echo -n "6.."
+echo -n "6."
 sleep 1
-echo -n "5.."
+echo -n "5."
 sleep 1
-echo -n "4.."
+echo -n "4."
 sleep 1
-echo -n "3.."
+echo -n "3."
 sleep 1
-echo -n "2.."
+echo -n "2."
 sleep 1
-echo -n "1.."
+echo -n "1."
 sleep 1
-echo -n "0.."
+echo -n "0."
 sleep 1
