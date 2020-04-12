@@ -32,8 +32,24 @@ echo "${VERDE}"
 echo "  ********************************"
 echo "${CIAN}"
 echo "  Se cerrará en 10 segundos"
+echo -n "1.."
+sleep 1
+echo -n "2.."
+sleep 1
+echo -n "3.."
+sleep 1
+echo -n "4.."
+sleep 1
+echo -n "5.."
+sleep 1
+echo -n "6.."
+sleep 1
+echo -n "7.."
+sleep 1
+echo -n "8.."
+sleep 1
+echo -n "8.."
+sleep 1
 #sleep 10
-for (( times = 1; times < 20; times++ )); 
-do    /usr/sbin/rpcinfo -p | grep ypbind > /dev/null 2>&1 && \            ypwhich > /dev/null 2>&1
-done
+
 read a
