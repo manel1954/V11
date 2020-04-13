@@ -17,12 +17,12 @@ MARRON="\33[38;5;138m"
 echo "${CIAN}"
 echo "********************************************************************************"
 echo -n "${BLANCO}"
-echo "                      ACTUALIZANDO POSIBLES CAMBIOS                     "
+echo "                      ACTUALIZANDO POSIBLES CAMBIOS                             "
 echo -n "${VERDE}"
-echo "                          EN LA IMAGEN ADER ${AMARILLO}$SCRIPTS_version${VERDE}                         "
+echo "                          EN LA IMAGEN ADER ${AMARILLO}$SCRIPTS_version${VERDE} "
+echo "${CIAN}"
 echo "********************************************************************************"
 echo "${GRIS}"
-
 sleep 2
 
 			# 01-04-2020 arregla no escribe port en FCS.ini
