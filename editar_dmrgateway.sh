@@ -3,9 +3,17 @@ while true
 do
 clear
 
-idioma=$(awk "NR==1" /home/pi/.local/idioma)
+idioma=$(awk "NR==1" /home/pi/.local/language)
 if [ $idioma = English ]; then
-OPTION="Chose an Option"
+OPTION=$(awk "NR==2" /home/pi/.local/language)
+
+
+
+
+
+
+
+#OPTION="Chose an Option"
 PUERTO="Port for DVMEGA punctured in Raspberry PI"
 INDICATIVO="Enter your call sign"
 VALORINDICATIVO="Current value call sign"
