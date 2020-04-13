@@ -78,7 +78,7 @@ echo -n "${CIAN}   9)${GRIS} $MODIFICAR Password Brandmeister - ${AMARILLO}"
 pas_BM=$(awk "NR==66" /home/pi/DMRGateway/DMRGateway.ini)
 echo "$pas_BM"
 
-echo -n "${CIAN}   10)${GRIS} $MODIFICAR Address DMR+          - ${AMARILLO}"
+echo -n "${CIAN}  10)${GRIS} $MODIFICAR Address DMR+          - ${AMARILLO}"
 address_PLUS=$(awk "NR==73" /home/pi/DMRGateway/DMRGateway.ini)
 echo "$address_PLUS"
 
