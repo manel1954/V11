@@ -14,12 +14,14 @@ CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
 
-echo "${VERDE}"
-echo "********************************************************************************"
-echo "   *                     ACTUALIZANDO POSIBLES CAMBIOS                     *"
-echo "   *                         EN LA IMAGEN ADER ${AMARILLO}$SCRIPTS_version${VERDE}                         *"
-echo "   *************************************************************************"
 echo "${CIAN}"
+echo "********************************************************************************"
+echo -n "${BLANCO}"
+echo "                      ACTUALIZANDO POSIBLES CAMBIOS                     "
+echo -n "${VERDE}"
+echo "                          EN LA IMAGEN ADER ${AMARILLO}$SCRIPTS_version${VERDE}                         "
+echo "********************************************************************************"
+echo "${GRIS}"
 
 sleep 2
 
