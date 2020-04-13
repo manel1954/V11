@@ -3,29 +3,20 @@ while true
 do
 clear
 
-idioma=$(awk "NR==1" /home/pi/.local/language)
+idioma=$(awk "NR==1" /home/pi/.local/autostart/idioma)
 if [ $idioma = English ]; then
-OPTION=$(awk "NR==1" /home/pi/.local/English.ini)
-
-
-
-
-
-
-
-#OPTION="Chose an Option"
+OPTION="Chose an Option"
 PUERTO="Port for DVMEGA punctured in Raspberry PI"
 INDICATIVO="Enter your call sign"
 VALORINDICATIVO="Current value call sign"
-SALIR="Exit"
+SALIR="Exit to the script  EYE!! do not go out with ctrl + c or with the x"
 RESTAURAORIGINAL="You want to restore the original file"
 SINO="Y/N"
 P_RESTAURAORIGINAL="Recover the original file"
-MODIFICAR="Change   "
+MODIFICAR="Modify   "
  
 else
-OPTION=$(awk "NR==1" /home/pi/.local/Spanish.ini)
-#OPTION="Elije una opción"
+OPTION="Elije una opción"
 PUERTO="Puerto para DVMEGA pinchado en Raspberri PI"
 INDICATIVO="Introduce tu indicativo"
 VALORINDICATIVO="Valor actual Indicativo"
@@ -270,6 +261,14 @@ do
 esac
 done;;
 0) echo ""
+clear
+echo "${AMARILLO}   **************************************************"
+echo "   *                                                *"
+echo "   *     CERRANDO SCRIPT                            *"
+echo "   *                                                *"
+echo "   **************************************************"
+sleep 1
+clear
 exit;;	
 esac
 done
