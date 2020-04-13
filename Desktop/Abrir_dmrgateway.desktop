@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c "cd /home/pi/V11; sh ejecutar_dmrgateway.sh"
+Exec=sh -c "cd /home/pi/V11; sudo sh ejecutar_dmrgateway.sh"
 Icon=/home/pi/V11/ICONO_ABRIR.png
 Type=Application
 StartupNotify=false
