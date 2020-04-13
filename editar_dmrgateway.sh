@@ -5,19 +5,13 @@ clear
 
 idioma=$(awk "NR==1" /home/pi/.local/language)
 if [ $idioma = English ]; then
-OPTION=`cat /home/pi/.local/English.ini`
-
-
-
-	
+OPTION=$(awk "NR==1" /home/pi/.local/English.ini)
 
 
 
 
 
-echo "$OPTION[1]"
 
-read a
 
 #OPTION="Chose an Option"
 PUERTO="Port for DVMEGA punctured in Raspberry PI"
