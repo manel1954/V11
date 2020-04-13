@@ -261,14 +261,6 @@ do
 esac
 done;;
 0) echo ""
-clear
-echo "${AMARILLO}   **************************************************"
-echo "   *                                                *"
-echo "   *     CERRANDO SCRIPT                            *"
-echo "   *                                                *"
-echo "   **************************************************"
-sleep 1
-clear
 exit;;	
 esac
 done
