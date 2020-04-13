@@ -5,7 +5,7 @@ clear
 
 idioma=$(awk "NR==1" /home/pi/.local/language)
 if [ $idioma = English ]; then
-OPTION=$(awk "NR==2" /home/pi/.local/language)
+OPTION=$(awk "NR==1" /home/pi/.local/English.ini)
 
 
 
@@ -24,7 +24,8 @@ P_RESTAURAORIGINAL="Recover the original file"
 MODIFICAR="Change   "
  
 else
-OPTION="Elije una opción"
+OPTION=$(awk "NR==1" /home/pi/.local/Spanish.ini)
+#OPTION="Elije una opción"
 PUERTO="Puerto para DVMEGA pinchado en Raspberri PI"
 INDICATIVO="Introduce tu indicativo"
 VALORINDICATIVO="Valor actual Indicativo"
