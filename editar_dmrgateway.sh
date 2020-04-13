@@ -11,7 +11,7 @@ OPTION=`cat /home/pi/.local/English.ini`
 
 	
 
-declare -n REFERENCIA="OPTION"
+
 
 echo ${REFERENCIA[2]}
 
