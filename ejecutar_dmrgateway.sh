@@ -10,7 +10,7 @@ cd /home/pi/Desktop
 sudo cp Abrir_dmrgateway.desktop /home/pi/
 sleep 1
 sed -i "4c Exec=sh -c 'cd /home/pi/V11; lxterminal --geometry=72x20 -e sudo sh cerrar_dmrgateway.sh'" /home/pi/Abrir_dmrgateway.desktop
-sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_CERRAR.png" /home/pi/Abrir_dmrgateway.desktop
+sed -i "5c Icon=/home/pi/V11/ICONO_CERRAR.png" /home/pi/Abrir_dmrgateway.desktop
 sed -i "10c Name[es_ES]=DMR Gateway" /home/pi/Abrir_dmrgateway.desktop
 sed -i "19c DMRGateway=OFF" /home/pi/.local/status.ini
 sleep 1
@@ -21,18 +21,10 @@ sudo rm /home/pi/Abrir_dmrgateway.desktop
 
 echo "${VERDE}"
 echo "***********************************************"
-echo "*             Opening DMRGateway             *"
-echo "***********************************************"
-echo ""
-echo "                   And                         "
-echo
-
-echo "${AMARILLO}"
-echo "***********************************************"
-echo "*             Opening MMDVM                  *"
+echo "*             Abriendo DMRGateway             *"
 echo "***********************************************"
 
-sleep 4
+sleep 2
 
 echo "${GRIS}"
 
