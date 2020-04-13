@@ -3,7 +3,7 @@ while true
 do
 clear
 
-idioma=$(awk "NR==1" /home/pi/.local/autostart/idioma)
+idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 OPTION="Chose an Option"
 PUERTO="Port for DVMEGA punctured in Raspberry PI"
