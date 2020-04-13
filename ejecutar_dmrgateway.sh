@@ -48,4 +48,4 @@ sudo ./DMRGateway DMRGateway.ini &
 sleep 2
 
 cd /home/pi/MMDVMHost
-sudo ./MMDVMHost MMDVMBM.ini 
+sudo ./MMDVMHost DMRGateway.ini 
