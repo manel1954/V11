@@ -13,7 +13,7 @@ OPTION=`cat /home/pi/.local/English.ini`
 
 
 
-echo ${REFERENCIA[2]}
+echo "${REFERENCIA[2]}"
 
 echo "$OPTION"
 
