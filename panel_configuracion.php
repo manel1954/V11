@@ -115,7 +115,7 @@ elseif ($sistema=="ysf")
     $IPCS22="";
 }
 
-$version_dvswitch = exec("sed -n '11p'  /home/pi//home/pi/.local");
+$version_dvswitch = exec("sed -n '11p'  /home/pi/.local/status.ini");
 $id = exec("sed -n '38p'  /opt/Analog_Bridge/Analog_Bridge.ini");
 $id = substr("$id", 15, 9);
 
@@ -162,7 +162,7 @@ $sala_fcs = exec("sed -n '42p' /home/pi/YSFClients/YSFGateway/YSFGateway.ini");
 $sala_fcs = substr("$sala_fcs", 11, 5);
 
 //COMPROBAMOS SI EL DVSWITCH ESTÁ ACTIVADO EN EL ESCRITORIO DE LA IMAGEN V10
-$dvswitch = exec("sed -n '18p' /home/pi/.local");
+$dvswitch = exec("sed -n '18p' /home/pi/.local/status.ini");
 if ($dvswitch=="DVSWITCH=ON"){
 ?>
 <!-- ============================================== -->

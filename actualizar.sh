@@ -266,7 +266,7 @@ sudo wget -post-data http://associacioader.com/prueba1.php?callBM=$bm'&'callPLUS
 sudo chmod 777 -R $usuario/Desktop
 
 sleep 2
-estado_dvswitch=$(awk "NR==18" /home/pi/.local)
+estado_dvswitch=$(awk "NR==18" /home/pi/.local/status.ini)
 if [ "$estado_dvswitch" = 'DVSWITCH=OFF' ];then
 sudo systemctl stop ysfgateway.service
 sudo systemctl stop dmr2ysf.service

@@ -24,7 +24,7 @@ sudo cp Abrir_ircDDB.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_ircDDB.sh'" /home/pi/Abrir_ircDDB.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_IRCDDB_ON.png" /home/pi/Abrir_ircDDB.desktop
 sed -i "10c Name[es_ES]=Cerrar ircDDB" /home/pi/Abrir_ircDDB.desktop
-sed -i "1c D-STAR=ON" /home/pi/.local
+sed -i "1c D-STAR=ON" /home/pi/.local/status.ini
 cd /home/pi
 sudo cp Abrir_ircDDB.desktop /home/pi/Desktop
 sleep 1
@@ -35,7 +35,7 @@ sudo cp Abrir_dstarrepeater.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_dstarrepeater.sh'" /home/pi/Abrir_dstarrepeater.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/REPEATER_ON.png" /home/pi/Abrir_dstarrepeater.desktop
 sed -i "10c Name[es_ES]=Cerrar DSTAR Repeater" /home/pi/Abrir_dstarrepeater.desktop
-sed -i "9c dstarrepeater=ON" /home/pi/.local
+sed -i "9c dstarrepeater=ON" /home/pi/.local/status.ini
 cd /home/pi
 sudo cp Abrir_dstarrepeater.desktop /home/pi/Desktop
 sleep 1
