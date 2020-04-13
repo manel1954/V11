@@ -9,11 +9,11 @@ OPTION="Chose an Option"
 PUERTO="Port for DVMEGA punctured in Raspberry PI"
 INDICATIVO="Enter your call sign"
 VALORINDICATIVO="Current value call sign"
-SALIR="Exit to the script  EYE!! do not go out with ctrl + c or with the x"
+SALIR="Exit"
 RESTAURAORIGINAL="You want to restore the original file"
 SINO="Y/N"
 P_RESTAURAORIGINAL="Recover the original file"
-MODIFICAR="Modify   "
+MODIFICAR="Change   "
  
 else
 OPTION="Elije una opción"
