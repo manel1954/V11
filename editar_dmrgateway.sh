@@ -74,19 +74,19 @@ echo -n "${CIAN}   8)${GRIS} $MODIFICAR Address Brandmeister  - ${AMARILLO}"
 address_BM=$(awk "NR==56" /home/pi/DMRGateway/DMRGateway.ini)
 echo "$address_BM"
 
-echo -n "${CIAN}   a)${GRIS} $MODIFICAR Password Brandmeister - ${AMARILLO}"
+echo -n "${CIAN}   9)${GRIS} $MODIFICAR Password Brandmeister - ${AMARILLO}"
 pas_BM=$(awk "NR==66" /home/pi/DMRGateway/DMRGateway.ini)
 echo "$pas_BM"
 
-echo -n "${CIAN}   9)${GRIS} $MODIFICAR Address DMR+          - ${AMARILLO}"
+echo -n "${CIAN}   10)${GRIS} $MODIFICAR Address DMR+          - ${AMARILLO}"
 address_PLUS=$(awk "NR==73" /home/pi/DMRGateway/DMRGateway.ini)
 echo "$address_PLUS"
 
-echo -n "${CIAN}  10)${GRIS} $MODIFICAR Address HBLink        - ${AMARILLO}"
+echo -n "${CIAN}  11)${GRIS} $MODIFICAR Address HBLink        - ${AMARILLO}"
 address_HBLink=$(awk "NR==87" /home/pi/DMRGateway/DMRGateway.ini)
 echo "$address_HBLink"
 
-echo -n "${CIAN}  11)${GRIS} $MODIFICAR Password HBLink       - ${AMARILLO}"
+echo -n "${CIAN}  12)${GRIS} $MODIFICAR Password HBLink       - ${AMARILLO}"
 password_HBLink=$(awk "NR==90" /home/pi/DMRGateway/DMRGateway.ini)
 echo "$password_HBLink"
 
@@ -215,7 +215,7 @@ do
                       break;;
 esac
 done;;
-a) echo ""
+9) echo ""
 while true
 do
                       echo "Valor actual del Master: ${AMARILLO}${pas_BM#*=}\33[1;37m"
@@ -229,7 +229,7 @@ do
                       break;;
 esac
 done;;
-9) echo ""
+10) echo ""
 while true
 do
                      
@@ -247,7 +247,7 @@ do
 esac
 done;;
 
-10) echo ""
+11) echo ""
 while true
 do
                       echo "Valor actual del Master: ${AMARILLO}${address_HBLink#*=}\33[1;37m"
@@ -263,7 +263,7 @@ do
                       break;;
 esac
 done;;
-11) echo ""
+12) echo ""
 while true
 do
                           echo "Valor actual del Password HBLink: ${AMARILLO}${password_HBLink#*=}\33[1;37m"
