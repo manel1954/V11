@@ -1,6 +1,6 @@
 ﻿#!/bin/bash
 
-estado_dvswitch=$(awk "NR==18" /home/pi/.local)
+estado_dvswitch=$(awk "NR==18" /home/pi/.local/status.ini)
 if [ "$estado_dvswitch" = 'DVSWITCH=OFF' ];then
 sudo systemctl stop ysfgateway.service
 sudo systemctl stop dmr2ysf.service
