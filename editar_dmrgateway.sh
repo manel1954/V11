@@ -15,7 +15,7 @@ OPTION=`cat /home/pi/.local/English.ini`
 
 
 
-echo "$OPTION"
+echo "$OPTION[1]"
 
 read a
 
