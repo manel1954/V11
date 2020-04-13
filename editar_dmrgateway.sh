@@ -174,7 +174,7 @@ do
                           actualizar=S 
                           case $actualizar in
                           [sS]* ) echo ""
-                          sed -i "46c Id=$xlx" /home/pi/DMRGateway/DMRGateway.ini
+                          sed -i "46c Startup=$xlx" /home/pi/DMRGateway/DMRGateway.ini
                           break;;
                           [nN]* ) echo ""
                           break;;
@@ -189,7 +189,7 @@ do
                           case $actualizar in
                           [sS]* ) echo ""
                           modu=`echo "$modu" | tr [:lower:] [:upper:]`
-                          sed -i "51c Id=$modu" /home/pi/DMRGateway/DMRGateway.ini
+                          sed -i "51c Module=$modu" /home/pi/DMRGateway/DMRGateway.ini
                           break;;
                           [nN]* ) echo ""
                           break;;
