@@ -74,6 +74,10 @@ echo -n "${CIAN}   8)${GRIS} $MODIFICAR Address Brandmeister  - ${AMARILLO}"
 address_BM=$(awk "NR==56" /home/pi/DMRGateway/DMRGateway.ini)
 echo "$address_BM"
 
+echo -n "${CIAN}   a)${GRIS} $MODIFICAR Password Brandmeister - ${AMARILLO}"
+address_BM=$(awk "NR==66" /home/pi/DMRGateway/DMRGateway.ini)
+echo "$pas_BM"
+
 echo -n "${CIAN}   9)${GRIS} $MODIFICAR Address DMR+          - ${AMARILLO}"
 address_PLUS=$(awk "NR==73" /home/pi/DMRGateway/DMRGateway.ini)
 echo "$address_PLUS"
@@ -206,6 +210,20 @@ do
                       master=`echo "$master" | tr -d '[[:space:]]'`
                       master=`echo "$master" | tr [:upper:] [:lower:]`
                       sed -i "56c Address=$master" /home/pi/DMRGateway/DMRGateway.ini
+                      break;;
+                      [nN]* ) echo ""
+                      break;;
+esac
+done;;
+a) echo ""
+while true
+do
+                      echo "Valor actual del Master: ${AMARILLO}${pas_BM#*=}\33[1;37m"
+                      read -p 'Password Brandmeister: ' pasbm
+                      actualizar=S 
+                      case $actualizar in
+                      [sS]* ) echo ""
+                      sed -i "66c Password=$pasbm" /home/pi/DMRGateway/DMRGateway.ini
                       break;;
                       [nN]* ) echo ""
                       break;;
