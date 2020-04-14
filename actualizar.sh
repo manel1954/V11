@@ -40,7 +40,7 @@ P_RESTAURAORIGINAL=" Recuperar fichero original"
 MODIFICAR="Modificar"
 fi
 
-
+sleep 2
 SCRIPTS_version="V11"
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_MMDVMBM.desktop
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_MMDVMPLUS.desktop
