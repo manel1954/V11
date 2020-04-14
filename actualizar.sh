@@ -52,17 +52,17 @@ sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abri
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_YSF.desktop
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_YSF2DMR.desktop
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_ambe_server.desktop
-sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_BlueDV.desktop
+#sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_BlueDV.desktop
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_DMR2NXDN.desktop
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_DMR2YSF.desktop
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_dmrgateway.desktop
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_dstarrepeater.desktop
-sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_dv4mini.desktop
+#sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_dv4mini.desktop
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_Dvrptr.desktop
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_ircDDB.desktop
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_NXDN.desktop
-sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_Qtel.desktop
-sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_remote.desktop
+#sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_Qtel.desktop
+#sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_remote.desktop
 
 
 
