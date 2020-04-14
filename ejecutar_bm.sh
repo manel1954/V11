@@ -13,6 +13,7 @@ P_RESTAURAORIGINAL="Recover the original file"
 MODIFICAR="Modify   "
  
 else
+icono=ICONO_CERRAR.png
 OPTION="Elije una opción"
 PUERTO="Puerto para DVMEGA pinchado en Raspberri PI"
 INDICATIVO="Introduce tu indicativo"
