@@ -51,9 +51,8 @@ echo "${BLANCO}"
 echo "   ***************************************************************************"	
 
 echo "${CIAN}"
-read -p '   Quieres cambiar de idioma? S/N ' seguir   
-if [ "$seguir" = 'S' -o "$seguir" = 's' ];then 
-                        actualizar=S 
+read -p '   Quieres cambiar de idioma? S/N ' actualizar   
+
                         case $actualizar in
                         [sS]* ) echo ""
                         sed -i "1c Spanish" /home/pi/.local/idioma
@@ -61,9 +60,6 @@ if [ "$seguir" = 'S' -o "$seguir" = 's' ];then
                         break;;
                         [nN]* ) echo ""
                         break;;
-                        else
-                        echo ""
-                        fi
 esac
 done;;   
 2) echo ""
