@@ -38,7 +38,21 @@ case $escoger_menu in
 while true
 do
 
-                      
+echo "${BLANCO}"
+echo "   ***************************************************************************"
+echo "${VERDE}"
+echo "                                  ADVERTENCIA!!                               "
+echo ""
+echo -n "${ROJO}"
+echo "                   AL CAMBIAR DE IDIOMA SE REINICIARÁ EL SISTEMA               "
+                           
+echo "                            PARA GUARDAR LOS CAMBIOS                          "
+echo "${BLANCO}"
+echo "   ***************************************************************************"	
+
+echo "${CIAN}"
+read -p '   Quieres cambiar de idioma? S/N ' seguir   
+if [ "$seguir" = 'S' -o "$seguir" = 's' ];then 
                         actualizar=S 
                         case $actualizar in
                         [sS]* ) echo ""
@@ -47,6 +61,9 @@ do
                         break;;
                         [nN]* ) echo ""
                         break;;
+                        else
+                        echo ""
+                        fi
 esac
 done;;   
 2) echo ""
