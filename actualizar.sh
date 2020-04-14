@@ -28,7 +28,7 @@ P_RESTAURAORIGINAL="Recover the original file"
 MODIFICAR="Modify   "
  
 else
-icono=ICONO_CERRAR.png
+icono=ICONO_abrir.png
 OPTION="Elije una opción"
 PUERTO="Puerto para DVMEGA pinchado en Raspberri PI"
 INDICATIVO="Introduce tu indicativo"
@@ -42,7 +42,7 @@ fi
 
 
 SCRIPTS_version="V11"
-sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/Abrir_MMDVMBM.desktop
+sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/Desktop/Abrir_MMDVMBM.desktop
 
 
 
