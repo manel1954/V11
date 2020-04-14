@@ -41,7 +41,7 @@ MODIFICAR="Modificar"
 fi
 
 
-
+SCRIPTS_version="V11"
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/Abrir_MMDVMBM.desktop
 
 
@@ -56,7 +56,7 @@ usuario="/home/pi"
 usuario="$usuario"
 SCRIPTS_version="V11"
 actualizacion=$(awk "NR==1" /home/pi/.config/autostart/actualizacion)
-SCRIPTS_version="V11"
+
 version="V11-"
 version=$version$actualizacion
 #pone todos los status de inicio en OFF
