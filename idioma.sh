@@ -38,6 +38,7 @@ case $escoger_menu in
 while true
 do
 
+clear
 echo "${BLANCO}"
 echo "   ***************************************************************************"
 echo "${VERDE}"
@@ -56,6 +57,7 @@ read -p '   Quieres cambiar de idioma? S/N ' actualizar
                         case $actualizar in
                         [sS]* ) echo ""
                         sed -i "1c Spanish" /home/pi/.local/idioma
+                        sudo sed -i "5c Icon=/home/pi/V11/ICONO_SPANISH" /home/pi/V11/Idioma.desktop
                         sudo reboot
                         break;;
                         [nN]* ) echo ""
@@ -66,11 +68,26 @@ done;;
 while true
 do
 
-                      
-                        actualizar=S 
+clear
+echo "${BLANCO}"
+echo "   ***************************************************************************"
+echo "${VERDE}"
+echo "                                  ADVERTENCIA!!                               "
+echo ""
+echo -n "${ROJO}"
+echo "                   AL CAMBIAR DE IDIOMA SE REINICIARÁ EL SISTEMA               "
+                           
+echo "                            PARA GUARDAR LOS CAMBIOS                          "
+echo "${BLANCO}"
+echo "   ***************************************************************************"	
+
+echo "${CIAN}"
+read -p '   Quieres cambiar de idioma? S/N ' actualizar   
+
                         case $actualizar in
                         [sS]* ) echo ""
                         sed -i "1c English" /home/pi/.local/idioma
+                        sudo sed -i "5c Icon=/home/pi/V11/ICONO_ENGLISH" /home/pi/V11/Idioma.desktop
                         sudo reboot
                         break;;
                         [nN]* ) echo ""
