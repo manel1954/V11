@@ -72,20 +72,20 @@ clear
 echo "${BLANCO}"
 echo "   ***************************************************************************"
 echo "${VERDE}"
-echo "                                  ADVERTENCIA!!                               "
+echo "                                  WARNING!!                               "
 echo ""
 echo -n "${ROJO}"
-echo "                   AL CAMBIAR DE IDIOMA SE REINICIARÁ EL SISTEMA               "
+echo "                   CHANGING THE LANGUAGE WILL RESTART THE SYSTEM               "
                            
-echo "                            PARA GUARDAR LOS CAMBIOS                          "
+echo "                              TO SAVE CHANGES                          "
 echo "${BLANCO}"
 echo "   ***************************************************************************"	
 
 echo "${CIAN}"
-read -p '   Quieres cambiar de idioma? S/N ' actualizar   
+read -p '   You want to change language? Y/N ' actualizar   
 
                         case $actualizar in
-                        [sS]* ) echo ""
+                        [yY]* ) echo ""
                         sed -i "1c English" /home/pi/.local/idioma
                         sudo sed -i "5c Icon=/home/pi/V11/ICONO_ENGLISH.png" /home/pi/V11/Desktop/Idioma.desktop
                         sudo reboot
