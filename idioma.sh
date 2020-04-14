@@ -42,7 +42,7 @@ do
                         actualizar=S 
                         case $actualizar in
                         [sS]* ) echo ""
-                        sed -i "1c Spanish" /home/pi/.local/status.ini
+                        sed -i "1c Spanish" /home/pi/.local/idioma
                         sudo reboot
                         break;;
                         [nN]* ) echo ""
@@ -57,7 +57,7 @@ do
                         actualizar=S 
                         case $actualizar in
                         [sS]* ) echo ""
-                        sed -i "1c English" /home/pi/.local/status.ini
+                        sed -i "1c English" /home/pi/.local/idioma
                         sudo reboot
                         break;;
                         [nN]* ) echo ""
