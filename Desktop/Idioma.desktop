@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 TryExec=lxterminal
-Exec=sh -c 'cd /home/pi/V11;sudo sh idioma.sh'
+Exec=sh -c 'cd /home/pi/V11;lxterminal --geometry=78x16 -e sudo sh idioma.sh'
 Icon=/home/pi/V11/ICONO_SPANISH.png
 Type=Application
 StartupNotify=false
