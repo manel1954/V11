@@ -16,7 +16,7 @@ fi
 
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
-icono=ICONO_INFO.png
+icono=ICONO_ABRIR_BM.png
 OPTION="Chose an Option"
 PUERTO="Port for DVMEGA punctured in Raspberry PI"
 INDICATIVO="Enter your call sign"
@@ -28,7 +28,7 @@ P_RESTAURAORIGINAL="Recover the original file"
 MODIFICAR="Modify   "
  
 else
-icono=ICONO_abrir.png
+icono=ICONO_INFO.png
 OPTION="Elije una opción"
 PUERTO="Puerto para DVMEGA pinchado en Raspberri PI"
 INDICATIVO="Introduce tu indicativo"
@@ -42,7 +42,7 @@ fi
 
 
 SCRIPTS_version="V11"
-sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/Desktop/Abrir_MMDVMBM.desktop
+sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/Desktop/Abrir_MMDVMBM.desktop
 
 
 
