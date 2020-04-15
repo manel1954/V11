@@ -64,7 +64,7 @@ sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abri
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_ircDDB.desktop
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_NXDN.desktop
 #sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_Qtel.desktop
-sudo sed -i "11c Icon=/home/pi/$SCRIPTS_version/$editor_bm" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
+sudo sed -i "11c Name[es_ES]=$editor_bm" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
 
 
 
