@@ -18,29 +18,12 @@ idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 icono=ICONO_OPEN.png
 sudo sed -i "11c Name=Edit BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
-OPTION="Chose an Option"
-PUERTO="Port for DVMEGA punctured in Raspberry PI"
-INDICATIVO="Enter your call sign"
-VALORINDICATIVO="Current value call sign"
-SALIR="Exit"
-RESTAURAORIGINAL="You want to restore the original file"
-SINO="Y/N"
-P_RESTAURAORIGINAL="Recover the original file"
-MODIFICAR="Modify   "
+
  
 else
 icono=ICONO_ABRIR.png
 sudo sed -i "11c Name=Editar BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
 editor_bm=Editar BM
-OPTION="Elije una opción"
-PUERTO="Puerto para DVMEGA pinchado en Raspberri PI"
-INDICATIVO="Introduce tu indicativo"
-VALORINDICATIVO="Valor actual Indicativo"
-SALIR="Salir"
-RESTAURAORIGINAL="Quieres restaurar el fichero original"
-SINO="S/N"
-P_RESTAURAORIGINAL=" Recuperar fichero original"
-MODIFICAR="Modificar"
 fi
 
 sleep 2
@@ -65,7 +48,7 @@ sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abri
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_ircDDB.desktop
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_NXDN.desktop
 #sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_Qtel.desktop
-sudo sed -i "11c Name=$editor_bm" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
+
 
 
 
