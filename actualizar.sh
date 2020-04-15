@@ -183,7 +183,7 @@ sed -i "9c $masterradio" $usuario/info_panel_control.ini
 master=$(awk "NR==39" $usuario/YSFClients/YSFGateway/YSFGateway.ini)
 sed -i "21c $master" $usuario/info_panel_control.ini
 #SVXLINK
-svxlink=$(awk "NR==16" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf)
+svxlink=$(awk "NR==16" /etc/svxlink/svxlink.d/ModuleEchoLink.conf)
 sed -i "27c $svxlink" $usuario/info_panel_control.ini
 
 #YSF2DMR

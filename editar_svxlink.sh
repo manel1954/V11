@@ -21,41 +21,41 @@ echo "   ***********************************************************************
 echo ""
 echo "\33[1;31m   ModuleEchoLink.conf"
 echo -n "\33[1;36m    1)\33[0m Indicativo Echolink más  L ó R   - \33[1;33m"
-var1= sed -n '15p'  /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+var1= sed -n '15p'  /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 echo -n "\33[1;36m    2)\33[0m Password del indicativo Echolink - \33[1;33m"
-var1= sed -n '16p'  /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+var1= sed -n '16p'  /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 echo -n "\33[1;36m    3)\33[0m Información en pantalla Echolink - \33[1;33m"
-var1= sed -n '17p'  /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+var1= sed -n '17p'  /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 echo -n "\33[1;36m    4)\33[0m Información donde está conectado - \33[1;33m"
-var1= sed -n '18p'  /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+var1= sed -n '18p'  /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 echo -n "\33[1;36m    5)\33[0m ID conferencia donde se conecta  - \33[1;33m"
-var1= sed -n '26p'  /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+var1= sed -n '26p'  /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 echo "\33[1;36m    6)\33[1;32m Deshabilitar proxy  \33[1;33m"
 echo "\33[1;36m    7)\33[1;32m Habilitar proxy     \33[1;33m"
 echo -n "\33[1;33m       "
-var1= sed -n '19p'  /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+var1= sed -n '19p'  /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 echo -n "       "
-var1= sed -n '20p'  /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+var1= sed -n '20p'  /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 echo -n "       "
-var1= sed -n '21p'  /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+var1= sed -n '21p'  /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 echo "\33[1;32m"
 echo "\33[1;36m    8)\33[1;32m Abrir fichero ModuleEchoLink.conf para hacer cualquier otro cambio\33[1;33m"
 echo ""
 echo "\33[1;31m   svxlink.conf"
 echo -n "\33[1;36m    9)\33[0m Indicativo Baliza    - \33[1;33m"
-var1= sed -n '22p'  /usr/local/etc/svxlink/svxlink.conf
+var1= sed -n '22p'  /etc/svxlink/svxlink.conf
 echo -n "\33[1;36m   10)\33[0m Intervalo Baliza     - \33[1;33m"
-var1= sed -n '23p'  /usr/local/etc/svxlink/svxlink.conf
+var1= sed -n '23p'  /etc/svxlink/svxlink.conf
 echo -n "\33[1;36m   11)\33[0m Cambiar audio [Rx1]  - \33[1;33m"
-var1= sed -n '158p'  /usr/local/etc/svxlink/svxlink.conf
+var1= sed -n '158p'  /etc/svxlink/svxlink.conf
 echo -n "\33[1;36m   12)\33[0m Cambiar audio [Tx1]  - \33[1;33m"
-var1= sed -n '224p'  /usr/local/etc/svxlink/svxlink.conf
+var1= sed -n '224p'  /etc/svxlink/svxlink.conf
 echo -n "\33[1;36m   13)\33[0m Cambiar a TONOS      - \33[1;33m"
-var1= sed -n '196p'  /usr/local/etc/svxlink/svxlink.conf
+var1= sed -n '196p'  /etc/svxlink/svxlink.conf
 echo -n "\33[1;36m   14)\33[0m Cambiar a VOX        - \33[1;33m"
-var1= sed -n '186p'  /usr/local/etc/svxlink/svxlink.conf
+var1= sed -n '186p'  /etc/svxlink/svxlink.conf
 echo -n "\33[1;36m   15)\33[0m Modificar VOX_THRESH - \33[1;33m"
-var1= sed -n '168p'  /usr/local/etc/svxlink/svxlink.conf
+var1= sed -n '168p'  /etc/svxlink/svxlink.conf
 echo "\33[1;36m   16)\33[1;32m Utilizar para conectarse a la conferencia *ADER*\33[1;33m"
 echo "\33[1;36m   17)\33[1;32m Utilizar para conectarse a la conferencia *CZR-ESP*\33[1;33m"
 echo "\33[1;36m   18)\33[1;32m Utilizar para conectarse a la conferencia *REM-ESP*\33[1;33m"
@@ -87,7 +87,7 @@ do
                         case $actualizar in
 			[sS]* ) echo ""
 			echo "Introduce tu indicativo:"
-                        sed -i "15c CALLSIGN=$indicativo" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+                        sed -i "15c CALLSIGN=$indicativo" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -102,7 +102,7 @@ do
                         case $actualizar in
 			[sS]* ) echo ""
 			echo "Introduce password licencia Echolink:"
-           sed -i "16c PASSWORD=$password1" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+           sed -i "16c PASSWORD=$password1" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -117,7 +117,7 @@ do
 			[sS]* ) echo ""
 			echo "Introduce password licencia Echolink:"
 
-           sed -i "17c SYSOPNAME=$sysop" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+           sed -i "17c SYSOPNAME=$sysop" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -131,7 +131,7 @@ do
                         case $actualizar in
 			[sS]* ) echo ""
 			echo "Introduce password licencia Echolink:"
-           sed -i "18c LOCATION=$location" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+           sed -i "18c LOCATION=$location" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -145,7 +145,7 @@ do
                         case $actualizar in
 			[sS]* ) echo ""
 			echo "Introduce password licencia Echolink:"
-           sed -i "26c AUTOCON_ECHOLINK_ID=$id" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+           sed -i "26c AUTOCON_ECHOLINK_ID=$id" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -158,9 +158,9 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-sed -i "19c #PROXY_SERVER=dirección o ip" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
-sed -i "20c #PROXY_PORT=número puerto" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
-sed -i "21c #PROXY_PASSWORD=password" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+sed -i "19c #PROXY_SERVER=dirección o ip" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
+sed -i "20c #PROXY_PORT=número puerto" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
+sed -i "21c #PROXY_PASSWORD=password" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
                         break;;
 			[nN]* ) echo ""
 			break;;
@@ -173,11 +173,11 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo -n ""
-sed -i "19c PROXY_SERVER=$ip" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+sed -i "19c PROXY_SERVER=$ip" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
                         read -p 'Entrar puerto del proxy ' puerto
-sed -i "20c PROXY_PORT=$puerto" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+sed -i "20c PROXY_PORT=$puerto" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
                         read -p 'Entrar password del proxy ' passproxy
-sed -i "21c PROXY_PASSWORD=$passproxy" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+sed -i "21c PROXY_PASSWORD=$passproxy" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 
                         break;;
 			[nN]* ) echo ""
@@ -193,7 +193,7 @@ do
                               actualizar=S 
                               case $actualizar in
 			[sS]* ) echo ""
-                              geany /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+                              geany /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -206,8 +206,8 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-           sed -i "22c CALLSIGN=$callsign" /usr/local/etc/svxlink/svxlink.conf
-           sed -i "47c CALLSIGN=$callsign" /usr/local/etc/svxlink/svxlink.conf
+           sed -i "22c CALLSIGN=$callsign" /etc/svxlink/svxlink.conf
+           sed -i "47c CALLSIGN=$callsign" /etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -221,7 +221,7 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-           sed -i "23c SHORT_IDENT_INTERVAL=$baliza" /usr/local/etc/svxlink/svxlink.conf
+           sed -i "23c SHORT_IDENT_INTERVAL=$baliza" /etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -235,7 +235,7 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-           sed -i "158c AUDIO_DEV=alsa:plughw:$audiorx" /usr/local/etc/svxlink/svxlink.conf
+           sed -i "158c AUDIO_DEV=alsa:plughw:$audiorx" /etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -248,7 +248,7 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-           sed -i "224c AUDIO_DEV=alsa:plughw:$audiotx" /usr/local/etc/svxlink/svxlink.conf
+           sed -i "224c AUDIO_DEV=alsa:plughw:$audiotx" /etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -265,14 +265,14 @@ do
                         case $actualizar in
 			[sS]* ) echo ""
 
-sed -i "186c SQL_DET=CTCSS" /usr/local/etc/svxlink/svxlink.conf
-sed -i "196c CTCSS_FQ=$tono" /usr/local/etc/svxlink/svxlink.conf
-sed -i "195c CTCSS_MODE=3" /usr/local/etc/svxlink/svxlink.conf
-sed -i "197c CTCSS_SNR_OFFSET=0" /usr/local/etc/svxlink/svxlink.conf
-sed -i "198c CTCSS_OPEN_THRESH=6" /usr/local/etc/svxlink/svxlink.conf
-sed -i "199c CTCSS_CLOSE_THRESH=4" /usr/local/etc/svxlink/svxlink.conf
-sed -i "200c CTCSS_BPF_LOW=60" /usr/local/etc/svxlink/svxlink.conf
-sed -i "201c CTCSS_BPF_HIGH=80" /usr/local/etc/svxlink/svxlink.conf
+sed -i "186c SQL_DET=CTCSS" /etc/svxlink/svxlink.conf
+sed -i "196c CTCSS_FQ=$tono" /etc/svxlink/svxlink.conf
+sed -i "195c CTCSS_MODE=3" /etc/svxlink/svxlink.conf
+sed -i "197c CTCSS_SNR_OFFSET=0" /etc/svxlink/svxlink.conf
+sed -i "198c CTCSS_OPEN_THRESH=6" /etc/svxlink/svxlink.conf
+sed -i "199c CTCSS_CLOSE_THRESH=4" /etc/svxlink/svxlink.conf
+sed -i "200c CTCSS_BPF_LOW=60" /etc/svxlink/svxlink.conf
+sed -i "201c CTCSS_BPF_HIGH=80" /etc/svxlink/svxlink.conf
 
 			break;;
 			[nN]* ) echo ""
@@ -287,13 +287,13 @@ do
                         case $actualizar in
 			[sS]* ) echo ""
 
-sed -i "186c SQL_DET=VOX" /usr/local/etc/svxlink/svxlink.conf
-sed -i "195c #CTCSS_MODE=3" /usr/local/etc/svxlink/svxlink.conf
-sed -i "197c #CTCSS_SNR_OFFSET=0" /usr/local/etc/svxlink/svxlink.conf
-sed -i "198c #CTCSS_OPEN_THRESH=6" /usr/local/etc/svxlink/svxlink.conf
-sed -i "199c #CTCSS_CLOSE_THRESH=4" /usr/local/etc/svxlink/svxlink.conf
-sed -i "200c #CTCSS_BPF_LOW=60" /usr/local/etc/svxlink/svxlink.conf
-sed -i "201c #CTCSS_BPF_HIGH=80" /usr/local/etc/svxlink/svxlink.conf
+sed -i "186c SQL_DET=VOX" /etc/svxlink/svxlink.conf
+sed -i "195c #CTCSS_MODE=3" /etc/svxlink/svxlink.conf
+sed -i "197c #CTCSS_SNR_OFFSET=0" /etc/svxlink/svxlink.conf
+sed -i "198c #CTCSS_OPEN_THRESH=6" /etc/svxlink/svxlink.conf
+sed -i "199c #CTCSS_CLOSE_THRESH=4" /etc/svxlink/svxlink.conf
+sed -i "200c #CTCSS_BPF_LOW=60" /etc/svxlink/svxlink.conf
+sed -i "201c #CTCSS_BPF_HIGH=80" /etc/svxlink/svxlink.conf
 
 			break;;
 			[nN]* ) echo ""
@@ -307,7 +307,7 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-sed -i "168c VOX_THRESH=$tono" /usr/local/etc/svxlink/svxlink.conf
+sed -i "168c VOX_THRESH=$tono" /etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -319,8 +319,8 @@ do
             actualizar=S 
             case $actualizar in
 			[sS]* ) echo ""
-sed -i "18c LOCATION=Connect to *ADER*" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
-sed -i "26c AUTOCON_ECHOLINK_ID=840690" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+sed -i "18c LOCATION=Connect to *ADER*" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
+sed -i "26c AUTOCON_ECHOLINK_ID=840690" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -333,8 +333,8 @@ do
             actualizar=S 
             case $actualizar in
 			[sS]* ) echo ""
-sed -i "18c LOCATION=Connect to *CZR-ESP*" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
-sed -i "26c AUTOCON_ECHOLINK_ID=3268" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+sed -i "18c LOCATION=Connect to *CZR-ESP*" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
+sed -i "26c AUTOCON_ECHOLINK_ID=3268" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -346,8 +346,8 @@ do
             actualizar=S 
             case $actualizar in
 			[sS]* ) echo ""
-sed -i "18c LOCATION=Connect to *REM-ESP*" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
-sed -i "26c AUTOCON_ECHOLINK_ID=3386" /usr/local/etc/svxlink/svxlink.d/ModuleEchoLink.conf
+sed -i "18c LOCATION=Connect to *REM-ESP*" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
+sed -i "26c AUTOCON_ECHOLINK_ID=3386" /etc/svxlink/svxlink.d/ModuleEchoLink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -359,9 +359,9 @@ do
             actualizar=S 
             case $actualizar in
 			[sS]* ) echo ""
-sed -i "227c PTT_PORT=/dev/ttyUSB0" /usr/local/etc/svxlink/svxlink.conf
-sed -i "226c PTT_TYPE=SerialPin" /usr/local/etc/svxlink/svxlink.conf
-sed -i "228c PTT_PIN=DTRRTS" /usr/local/etc/svxlink/svxlink.conf
+sed -i "227c PTT_PORT=/dev/ttyUSB0" /etc/svxlink/svxlink.conf
+sed -i "226c PTT_TYPE=SerialPin" /etc/svxlink/svxlink.conf
+sed -i "228c PTT_PIN=DTRRTS" /etc/svxlink/svxlink.conf
 sed -i "19c #echo 17 > /sys/class/gpio/export" /etc/rc.local
 sed -i "20c #chmod 777 -R /sys/class/gpio/gpio17" /etc/rc.local
 sed -i "21c #echo "out" > /sys/class/gpio/gpio17/direction" /etc/rc.local
@@ -377,9 +377,9 @@ do
             case $actualizar in
 			[sS]* ) echo ""
 
-sed -i "227c PTT_PORT=/dev/ttyAMA0" /usr/local/etc/svxlink/svxlink.conf
-sed -i "226c PTT_TYPE=GPIO" /usr/local/etc/svxlink/svxlink.conf
-sed -i "228c PTT_PIN=gpio17" /usr/local/etc/svxlink/svxlink.conf
+sed -i "227c PTT_PORT=/dev/ttyAMA0" /etc/svxlink/svxlink.conf
+sed -i "226c PTT_TYPE=GPIO" /etc/svxlink/svxlink.conf
+sed -i "228c PTT_PIN=gpio17" /etc/svxlink/svxlink.conf
 sed -i "19c echo 17 > /sys/class/gpio/export" /etc/rc.local
 sed -i "20c chmod 777 -R /sys/class/gpio/gpio17" /etc/rc.local
 sed -i "21c echo "out" > /sys/class/gpio/gpio17/direction" /etc/rc.local
@@ -473,7 +473,7 @@ do
                               actualizar=S 
                               case $actualizar in
 			[sS]* ) echo ""
-                              geany /usr/local/etc/svxlink/svxlink.conf
+                              geany /etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
