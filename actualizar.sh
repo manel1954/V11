@@ -17,7 +17,7 @@ fi
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 icono=ICONO_OPEN.png
-editor_bm=Edit BM
+sudo sed -i "11c Name=Edit BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
 OPTION="Chose an Option"
 PUERTO="Port for DVMEGA punctured in Raspberry PI"
 INDICATIVO="Enter your call sign"
@@ -30,6 +30,7 @@ MODIFICAR="Modify   "
  
 else
 icono=ICONO_ABRIR.png
+sudo sed -i "11c Name=Editar BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
 editor_bm=Editar BM
 OPTION="Elije una opción"
 PUERTO="Puerto para DVMEGA pinchado en Raspberri PI"
