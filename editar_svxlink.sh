@@ -15,7 +15,7 @@ MARRON="\33[38;5;138m"
 echo "${VERDE}"
 echo "   **************************************************************************"
 echo "   *                                                                        *"
-echo "   *    Script para Modificar ModuleEcholink y svxlink    \33[1;31m by EA3EIZ  \33[1;32m      *"
+echo "   *  Script para Modificar ModuleEcholink y svxlink 19.09.1  \33[1;31m by EA3EIZ  \33[1;32m  *"
 echo "   *                                                                        *"
 echo "   **************************************************************************"
 echo ""
@@ -235,7 +235,7 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-           sed -i "158c AUDIO_DEV=alsa:plughw:$audiorx" /etc/svxlink/svxlink.conf
+           sed -i "183c AUDIO_DEV=alsa:plughw:$audiorx" /etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -248,7 +248,7 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-           sed -i "224c AUDIO_DEV=alsa:plughw:$audiotx" /etc/svxlink/svxlink.conf
+           sed -i "255c AUDIO_DEV=alsa:plughw:$audiotx" /etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -307,7 +307,7 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-sed -i "168c VOX_THRESH=$tono" /etc/svxlink/svxlink.conf
+			sed -i "194c VOX_THRESH=$tono" /etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
