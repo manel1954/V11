@@ -235,7 +235,7 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-           sed -i "183c AUDIO_DEV=alsa:plughw:$audiorx" /usr/local/etc/svxlink/svxlink.conf
+           sed -i "158c AUDIO_DEV=alsa:plughw:$audiorx" /usr/local/etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -248,7 +248,7 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-           sed -i "255c AUDIO_DEV=alsa:plughw:$audiotx" /usr/local/etc/svxlink/svxlink.conf
+           sed -i "224c AUDIO_DEV=alsa:plughw:$audiotx" /usr/local/etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
@@ -307,7 +307,7 @@ do
                         actualizar=S 
                         case $actualizar in
 			[sS]* ) echo ""
-sed -i "194c VOX_THRESH=$tono" /usr/local/etc/svxlink/svxlink.conf
+sed -i "168c VOX_THRESH=$tono" /usr/local/etc/svxlink/svxlink.conf
 			break;;
 			[nN]* ) echo ""
 			break;;
