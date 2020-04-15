@@ -17,6 +17,7 @@ fi
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 icono=ICONO_OPEN.png
+editor_bm=Edit BM
 OPTION="Chose an Option"
 PUERTO="Port for DVMEGA punctured in Raspberry PI"
 INDICATIVO="Enter your call sign"
@@ -29,6 +30,7 @@ MODIFICAR="Modify   "
  
 else
 icono=ICONO_ABRIR.png
+editor_bm=Editar BM
 OPTION="Elije una opción"
 PUERTO="Puerto para DVMEGA pinchado en Raspberri PI"
 INDICATIVO="Introduce tu indicativo"
@@ -62,7 +64,7 @@ sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abri
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_ircDDB.desktop
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_NXDN.desktop
 #sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_Qtel.desktop
-#sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_remote.desktop
+sudo sed -i "11c Icon=/home/pi/$SCRIPTS_version/$editor_bm" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
 
 
 
