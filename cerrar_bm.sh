@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo killall MMDVMBM
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 icono=ICONO_OPEN.png
