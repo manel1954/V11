@@ -63,8 +63,8 @@ read -p '   Quieres cambiar de idioma? S/N ' actualizar
                         sudo sed -i "11c Name[es_ES]=SOLO FUSION" /home/pi/V11/Desktop/Abrir_solofusion.desktop
                         sudo sed -i "11c Name[es_ES]=SOLO  DSTAR" /home/pi/V11/Desktop/Abrir_solodstar.desktop
                         sudo sed -i "10c Name[es_ES]=Actualizar IMAGEN" /home/pi/V11/Desktop/Actualiza_imagen.desktop
-                        sudo sed -i "10c Name[es_ES]=Reiniciar IMAGE" /home/pi/V11/Desktop/Reinciar_Imagen.desktop
-                        sudo sed -i "10c Name[es_ES]=Apagar IMAGE" /home/pi/V11/Desktop/Apagar_Imagen.desktop
+                        sudo sed -i "10c Name[es_ES]=Reiniciar IMAGEN" /home/pi/V11/Desktop/Reinciar_Imagen.desktop
+                        sudo sed -i "10c Name[es_ES]=Apagar IMAGEN" /home/pi/V11/Desktop/Apagar_Imagen.desktop
                         sudo sed -i "10c Name[es_ES]=MENU EXTRA" /home/pi/V11/Desktop/Menu_extra.desktop
                         sudo sed -i "10c Name[es_ES]=Actualizar MMDVM" /home/pi/V11/Desktop/Actualizar_MMDVMHost.desktop
                         sudo sed -i "10c Name[es_ES]=Actualizar IDS" /home/pi/V11/Desktop/Actualizar_IDS.desktop
@@ -81,8 +81,7 @@ read -p '   Quieres cambiar de idioma? S/N ' actualizar
                         sudo sed -i "11c Name[es_ES]=Actualizar DV4mini" /home/pi/V11/Desktop/Actualizar_DV4mini.desktop
                         sudo sed -i "10c Name[es_ES]=Editar DExtra" /home/pi/V11/Desktop/Editar_DExtra_Bluedv.desktop
                         sudo sed -i "11c Name[es_ES]=Actualizar BlueDV" /home/pi/V11/Desktop/Actualizar_BlueDV.DESKTOP
-                        sudo sed -i "10c Name[es_ES]=Editar BlueDV" /home/pi/V11/Desktop/Editar_DMRPLUS.desktop
-                        sudo sed -i "11c Name[es_ES]=Editar DMR+" /home/pi/V11/Desktop/Editar_BLUEDV.desktop
+                        sudo sed -i "11c Name[es_ES]=Editar BlueDV" /home/pi/V11/Desktop/Editar_BLUEDV.desktop
                         sudo sed -i "7c Name[es_ES]=Editar ircDDB" /home/pi/V11/Desktop/Configurar_ircddb.desktop
                         sudo sed -i "11c Name[es_ES]=Editar DSTAR Repeater" /home/pi/V11/Desktop/Editar_D-STAR_Repeater.desktop
                         sudo sed -i "10c Name[es_ES]=Editar YSF2DMR" /home/pi/V11/Desktop/Editar_YSF2DMR.desktop
@@ -147,8 +146,7 @@ read -p '   You want to change language? Y/N ' actualizar
                         sudo sed -i "11c Name[es_ES]=Update DV4mini" /home/pi/V11/Desktop/Actualizar_DV4mini.desktop
                         sudo sed -i "10c Name[es_ES]=Edit DExtra" /home/pi/V11/Desktop/Editar_DExtra_Bluedv.desktop
                         sudo sed -i "11c Name[es_ES]=Update BlueDV" /home/pi/V11/Desktop/Actualizar_BlueDV.DESKTOP
-                        sudo sed -i "10c Name[es_ES]=Edit BlueDV" /home/pi/V11/Desktop/Editar_DMRPLUS.desktop
-                        sudo sed -i "11c Name[es_ES]=Edit DMR+" /home/pi/V11/Desktop/Editar_BLUEDV.desktop
+                        sudo sed -i "11c Name[es_ES]=Edit BlueDV" /home/pi/V11/Desktop/Editar_BLUEDV.desktop
                         sudo sed -i "7c Name[es_ES]=Edit ircDDB" /home/pi/V11/Desktop/Configurar_ircddb.desktop
                         sudo sed -i "11c Name[es_ES]=Edit DSTAR Repeater" /home/pi/V11/Desktop/Editar_D-STAR_Repeater.desktop
                         sudo sed -i "10c Name[es_ES]=Edit YSF2DMR" /home/pi/V11/Desktop/Editar_YSF2DMR.desktop
