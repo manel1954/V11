@@ -101,7 +101,7 @@ read -p '   You want to change language? Y/N ' actualizar
                         sudo rm -R /home/pi/Desktop
                         sleep 1
                         cp -R /home/pi/.local/Desktop /home/pi
-                        sudo reboot
+                        #sudo reboot
                         break;;
                         [nN]* ) echo ""
                         break;;
