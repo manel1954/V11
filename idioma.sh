@@ -83,7 +83,7 @@ read -p '   Quieres cambiar de idioma? S/N ' actualizar
                         sudo sed -i "11c Name[es_ES]=Actualizar BlueDV" /home/pi/V11/Desktop/Actualizar_BlueDV.DESKTOP
                         sudo sed -i "11c Name[es_ES]=Editar BlueDV" /home/pi/V11/Desktop/Editar_BLUEDV.desktop
                         sudo sed -i "7c Name[es_ES]=Editar ircDDB" /home/pi/V11/Desktop/Configurar_ircddb.desktop
-                        sudo sed -i "11c Name[es_ES]=Editar DSTAR Repeater" /home/pi/V11/Desktop/Editar_D-STAR_Repeater.desktop
+                        sudo sed -i "11c Name[es_ES]=Edita DSTAR Repeater" /home/pi/V11/Desktop/Editar_D-STAR_Repeater.desktop
                         sudo sed -i "10c Name[es_ES]=Editar YSF2DMR" /home/pi/V11/Desktop/Editar_YSF2DMR.desktop
                         sudo sed -i "11c Name[es_ES]=Editar DMR2YSF" /home/pi/V11/Desktop/Editar_MMDVMDMR2YSF.desktop
                         sudo sed -i "11c Name[es_ES]=Editar DMR2NXDN" /home/pi/V11/Desktop/Editar_MMDVMDMR2NXDN.desktop
