@@ -59,7 +59,7 @@ read -p '   Quieres cambiar de idioma? S/N ' actualizar
                         sed -i "1c Spanish" /home/pi/.local/idioma
                         sudo sed -i "5c Icon=/home/pi/V11/ICONO_SPANISH.png" /home/pi/V11/Desktop/Idioma.desktop
                         sudo sed -i "11c Name=Editar BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
-                        sudo sed -i "13c Name=Editar BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
+                        sudo sed -i "21c 0" /home/pi/.local/status.ini
                         sudo reboot
                         break;;
                         [nN]* ) echo ""
@@ -91,7 +91,6 @@ read -p '   You want to change language? Y/N ' actualizar
                         sed -i "1c English" /home/pi/.local/idioma
                         sudo sed -i "5c Icon=/home/pi/V11/ICONO_ENGLISH.png" /home/pi/V11/Desktop/Idioma.desktop
                         sudo sed -i "11c Name=Edit BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
-                        sudo sed -i "13c Name=Edit BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
                         sudo sed -i "21c 0" /home/pi/.local/status.ini
                         sudo reboot
                         break;;

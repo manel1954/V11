@@ -339,7 +339,7 @@ echo "No reinicia de nuevo"
 else
 REINICIAR=`expr $REINICIAR + 1`
 sudo sed -i "21c $REINICIAR" /home/pi/.local/status.ini
-#sudo reboot
+sudo reboot
 
 fi
 
