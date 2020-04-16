@@ -95,7 +95,18 @@ read -p '   You want to change language? Y/N ' actualizar
                         sudo sed -i "11c Name=Edit BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
                         sudo sed -i "11c Name[es_ES]=ONLY FUSION" /home/pi/V11/Desktop/Abrir_solofusion.desktop
                         sudo sed -i "11c Name[es_ES]=ONLY  DSTAR" /home/pi/V11/Desktop/Abrir_solodstar.desktop
-
+                        sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
+                        sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Reiniciar_Imagen.desktop
+                        sudo sed -i "10c Name[es_ES]=Restart IMAGE" /home/pi/V11/Desktop/Actualizar_imagen.desktop
+                        sudo sed -i "10c Name[es_ES]=Turn Off IMAGE" /home/pi/V11/Desktop/Apagar_Imagen.desktop
+                        sudo sed -i "10c Name[es_ES]=EXTRA MENU" /home/pi/V11/Desktop/Menu_extra.desktop
+                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
+                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
+                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
+                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
+                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
+                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
+                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
                         sudo reboot
                         break;;
                         [nN]* ) echo ""
