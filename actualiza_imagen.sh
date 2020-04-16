@@ -50,7 +50,7 @@ sleep 2
                         sleep 1
 
 #Actualiza AUTORRANQUEV104
-                        cd $usuario/AUTOARRANQUEV104
+                        cd $usuario/AUTOARRANQUEV11
                         git pull
                         sleep 1
 
