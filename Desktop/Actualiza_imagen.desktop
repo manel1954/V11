@@ -7,6 +7,6 @@ Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Terminal=false
-Name[es_ES]=Actualizar Update
+Name[es_ES]=Actualizar IMAGEN
 Hidden=false
 X-KeepTerminal=true

@@ -7,6 +7,6 @@ Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Terminal=false
-Name[es_ES]=Actualizar Update IDS
+Name[es_ES]=Actualizar IDS
 Hidden=false
 Comment[es_ES]=EA3EIZ
