@@ -94,7 +94,7 @@ read -p '   You want to change language? Y/N ' actualizar
                         sudo sed -i "5c Icon=/home/pi/V11/ICONO_ENGLISH.png" /home/pi/V11/Desktop/Idioma.desktop
                         sudo sed -i "11c Name=Edit BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
                         sudo sed -i "11c Name[es_ES]=ONLY FUSION" /home/pi/V11/Desktop/Abrir_solofusion.desktop
-                        sudo sed -i "11c Name[es_ES]=ONLY  xDSTAR" /home/pi/V11/Desktop/Abrir_solodstar.desktop
+                        sudo sed -i "11c Name[es_ES]=ONLY  DSTAR" /home/pi/V11/Desktop/Abrir_solodstar.desktop
 
                         sudo reboot
                         break;;
