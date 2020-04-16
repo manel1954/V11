@@ -4,5 +4,5 @@ Exec=sh -c "cd /home/pi/V11; lxterminal --geometry=40x2 -e sudo sh borrar_logs.s
 Type=Application
 Terminal=false
 Comment[es_ES]=
-Name[es_ES]=Borrar logs
+Name[es_ES]=Borrar Delete Logs
 Icon=/home/pi/V11/ICONO_BORRAR_LOGS.png

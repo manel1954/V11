@@ -7,5 +7,5 @@ Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Terminal=false
-Name[es_ES]=Actualizar MMDVMHOST
+Name[es_ES]=Updare MMDVMHOST
 Hidden=false

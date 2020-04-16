@@ -7,5 +7,5 @@ Type=Application
 Categories=GTK;Utility;TerminalEmulator;
 Name[en_US]=MMDVM Connect Screen
 Terminal=false
-Name[es_ES]=COPIAR RESTAURAR
+Name[es_ES]=COPY RESTORE
 
