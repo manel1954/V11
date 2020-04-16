@@ -332,7 +332,14 @@ sudo rm /home/pi/V11/Desktop/st-data
 sudo rm /home/pi/Desktop/st-data
 
 
+REINICIAR=$(awk "NR==21" /home/pi/.local/status.ini)
+if [ "$REINICIAR" = 'REINICIAR=0' ];then
+sudo sed -i "21c REINICIAR=1" /home/pi/.local/status.ini
+sudo reboot
 
+else
+echo "No reinicia de nuevo"
+fi
 
 
 
