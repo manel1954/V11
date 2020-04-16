@@ -337,7 +337,7 @@ if [ "$REINICIAR" = 'REINICIAR=2' ];then
 echo "No reinicia de nuevo"
 
 else
-CANTIDAD=$CANTIDAD + 1
+CANTIDAD=`expr $CANTIDAD + 1`
 sudo sed -i "21c REINICIAR=$CANTIDAD" /home/pi/.local/status.ini
 #sudo reboot
 
