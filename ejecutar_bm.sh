@@ -1,7 +1,7 @@
 #!/bin/bash
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
-icono=ICONO_INFO.png
+icono=ICONO_CLOSE.png
 OPTION="Chose an Option"
 PUERTO="Port for DVMEGA punctured in Raspberry PI"
 INDICATIVO="Enter your call sign"
