@@ -60,7 +60,7 @@ read -p '   Quieres cambiar de idioma? S/N ' actualizar
                         sudo sed -i "5c Icon=/home/pi/V11/ICONO_SPANISH.png" /home/pi/V11/Desktop/Idioma.desktop
                         sudo sed -i "11c Name=Editar BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
                         sudo sed -i "11c Name[es_ES]=SOLO FUSION" /home/pi/V11/Desktop/Abrir_solofusion.desktop
-                        sudo sed -i "11c Name[es_ES]=SOLO DSTAR" /home/pi/V11/Desktop/Abrir_solodstar.desktop
+                        sudo sed -i "11c Name[es_ES]=SOLO  DSTAR" /home/pi/V11/Desktop/Abrir_solodstar.desktop
                         sudo rm -R /home/pi/Desktop
                         sleep 1
                         cp -R /home/pi/.local/Desktop /home/pi
