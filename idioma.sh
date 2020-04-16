@@ -57,10 +57,43 @@ read -p '   Quieres cambiar de idioma? S/N ' actualizar
                         case $actualizar in
                         [sS]* ) echo ""
                         sed -i "1c Spanish" /home/pi/.local/idioma
+                        
                         sudo sed -i "5c Icon=/home/pi/V11/ICONO_SPANISH.png" /home/pi/V11/Desktop/Idioma.desktop
                         sudo sed -i "11c Name=Editar BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
                         sudo sed -i "11c Name[es_ES]=SOLO FUSION" /home/pi/V11/Desktop/Abrir_solofusion.desktop
                         sudo sed -i "11c Name[es_ES]=SOLO  DSTAR" /home/pi/V11/Desktop/Abrir_solodstar.desktop
+                        sudo sed -i "10c Name[es_ES]=Actualizar IMAGEN" /home/pi/V11/Desktop/Actualiza_imagen.desktop
+                        sudo sed -i "10c Name[es_ES]=Reiniciar IMAGE" /home/pi/V11/Desktop/Reinciar_Imagen.desktop
+                        sudo sed -i "10c Name[es_ES]=Apagar IMAGE" /home/pi/V11/Desktop/Apagar_Imagen.desktop
+                        sudo sed -i "10c Name[es_ES]=MENU EXTRA" /home/pi/V11/Desktop/Menu_extra.desktop
+                        sudo sed -i "10c Name[es_ES]=Actualizar MMDVM" /home/pi/V11/Desktop/Actualizar_MMDVMHost.desktop
+                        sudo sed -i "10c Name[es_ES]=Actualizar IDS" /home/pi/V11/Desktop/Actualizar_IDS.desktop
+                        sudo sed -i "10c Name[es_ES]=COPIAR RESTAURAR" /home/pi/V11/Desktop/Copiar_Restaurar.desktop
+                        sudo sed -i "11c Name[es_ES]=AUTO ARRANQUE" /home/pi/V11/Desktop/Menu_Autoarranque.desktop
+                        sudo sed -i "7c Name[es_ES]=Borrar  LOGS" /home/pi/V11/Desktop/Borrar_Logs.desktop
+                        sudo sed -i "11c Name[es_ES]=Editar DMR+" /home/pi/V11/Desktop/Editar_DMRPLUS.desktop
+                        sudo sed -i "10c Name[es_ES]=Editar Radio" /home/pi/V11/Desktop/Editar_Radio.desktop
+                        sudo sed -i "11c Name[es_ES]=Editar Especial" /home/pi/V11/Desktop/Editar_ESPECIAL.desktop
+                        sudo sed -i "11c Name[es_ES]=Editar Solo FUSION" /home/pi/V11/Desktop/Editar_solofusion.desktop
+                        sudo sed -i "4c Name[es_ES]=Editar Solo DSTAR" /home/pi/V11/Desktop/Editar_solodstar.desktop
+                        sudo sed -i "8c Name[es_ES]=Editar YSF FCS & YCS" /home/pi/V11/Desktop/Editar_C4FM.desktop
+                        sudo sed -i "10c Name[es_ES]=Actualizar Salas YSF" /home/pi/V11/Desktop/Actualizar_salas_YSF.desktop
+                        sudo sed -i "11c Name[es_ES]=Actualizar DV4mini" /home/pi/V11/Desktop/Actualizar_DV4mini.desktop
+                        sudo sed -i "10c Name[es_ES]=Editar DExtra" /home/pi/V11/Desktop/Editar_DExtra_Bluedv.desktop
+                        sudo sed -i "11c Name[es_ES]=Actualizar BlueDV" /home/pi/V11/Desktop/Actualizar_BlueDV.DESKTOP
+                        sudo sed -i "10c Name[es_ES]=Editar BlueDV" /home/pi/V11/Desktop/Editar_DMRPLUS.desktop
+                        sudo sed -i "11c Name[es_ES]=Editar DMR+" /home/pi/V11/Desktop/Editar_BLUEDV.desktop
+                        sudo sed -i "7c Name[es_ES]=Editar ircDDB" /home/pi/V11/Desktop/Configurar_ircddb.desktop
+                        sudo sed -i "11c Name[es_ES]=Editar DSTAR Repeater" /home/pi/V11/Desktop/Editar_D-STAR_Repeater.desktop
+                        sudo sed -i "10c Name[es_ES]=Editar YSF2DMR" /home/pi/V11/Desktop/Editar_YSF2DMR.desktop
+                        sudo sed -i "11c Name[es_ES]=Editar DMR2YSF" /home/pi/V11/Desktop/Editar_MMDVMDMR2YSF.desktop
+                        sudo sed -i "11c Name[es_ES]=Editar DMR2NXDN" /home/pi/V11/Desktop/Editar_MMDVMDMR2NXDN.desktop
+                        sudo sed -i "11c Name[es_ES]=Editar NXDN" /home/pi/V11/Desktop/Editar_NXDN.desktop
+                        sudo sed -i "11c Name[es_ES]=Editar SVXLINK" /home/pi/V11/Desktop/Editar_svxlink.desktop
+                        sudo sed -i "10c Name[es_ES]=Editar AMBE SERVER" /home/pi/V11/Desktop/editar_ambe_server.desktop
+                        sudo sed -i "10c Name[es_ES]=Activar NEXTIONDRIVER" /home/pi/V11/Desktop/Activar_NextionDriver.desktop
+                        sudo sed -i "10c Name[es_ES]=Activar DVSWITCH" /home/pi/V11/Desktop/Activar_dvswitch.desktop
+
 
                         sudo reboot
                         break;;
@@ -117,7 +150,7 @@ read -p '   You want to change language? Y/N ' actualizar
                         sudo sed -i "10c Name[es_ES]=Edit BlueDV" /home/pi/V11/Desktop/Editar_DMRPLUS.desktop
                         sudo sed -i "11c Name[es_ES]=Edit DMR+" /home/pi/V11/Desktop/Editar_BLUEDV.desktop
                         sudo sed -i "7c Name[es_ES]=Edit ircDDB" /home/pi/V11/Desktop/Configurar_ircddb.desktop
-                        sudo sed -i "11c Name[es_ES]=Edit REPEATER" /home/pi/V11/Desktop/Editar_D-STAR_Repeater.desktop
+                        sudo sed -i "11c Name[es_ES]=Edit DSTAR Repeater" /home/pi/V11/Desktop/Editar_D-STAR_Repeater.desktop
                         sudo sed -i "10c Name[es_ES]=Edit YSF2DMR" /home/pi/V11/Desktop/Editar_YSF2DMR.desktop
                         sudo sed -i "11c Name[es_ES]=Edit DMR2YSF" /home/pi/V11/Desktop/Editar_MMDVMDMR2YSF.desktop
                         sudo sed -i "11c Name[es_ES]=Edit DMR2NXDN" /home/pi/V11/Desktop/Editar_MMDVMDMR2NXDN.desktop
@@ -126,26 +159,6 @@ read -p '   You want to change language? Y/N ' actualizar
                         sudo sed -i "10c Name[es_ES]=Edit AMBE SERVER" /home/pi/V11/Desktop/editar_ambe_server.desktop
                         sudo sed -i "10c Name[es_ES]=Activate NEXTIONDRIVER" /home/pi/V11/Desktop/Activar_NextionDriver.desktop
                         sudo sed -i "10c Name[es_ES]=Activate DVSWITCH" /home/pi/V11/Desktop/Activar_dvswitch.desktop
-                        #sudo sed -i "11c Name[es_ES]=Edit DMR+" /home/pi/V11/Desktop/Editar_DMRPLUS.desktop
-                        #sudo sed -i "11c Name[es_ES]=Edit DMR+" /home/pi/V11/Desktop/Editar_DMRPLUS.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
-                        #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
                         sudo reboot
                         break;;
                         [nN]* ) echo ""
