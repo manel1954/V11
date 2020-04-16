@@ -1,15 +1,4 @@
 ﻿#!/bin/bash
-REINICIAR=$(awk "NR==21" /home/pi/.local/status.ini)
-if [ "$REINICIAR" = 2 ];then
-echo "No reinicia de nuevo"
-
-else
-REINICIAR=`expr $REINICIAR + 1`
-sudo sed -i "21c $REINICIAR" /home/pi/.local/status.ini
-sudo reboot
-
-fi
-
 
 estado_dvswitch=$(awk "NR==18" /home/pi/.local/status.ini)
 if [ "$estado_dvswitch" = 'DVSWITCH=OFF' ];then
@@ -333,6 +322,7 @@ sudo rm -R /home/pi/V11/Desktop/associacioader.com
 sudo rm /home/pi/V11/Desktop/st-data
 sudo rm /home/pi/Desktop/st-data
 
+cp /home/pi/Desktop /home/pi/.local
 
 
 
