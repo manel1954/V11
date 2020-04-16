@@ -8,6 +8,6 @@ StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Name[en_US]=MMDVM Connect Screen
 Terminal=false
-Name[es_ES]=Editar SVXLINK
+Name[es_ES]=Edit SVXLINK
 Hidden=false
 Comment[es_ES]=

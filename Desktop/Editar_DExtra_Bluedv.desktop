@@ -7,7 +7,7 @@ Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Terminal=false
-Name[es_ES]=Editar DExtra
+Name[es_ES]=Edit DExtra
 Hidden=false
 Comment[es_ES]=EA3EIZ
 

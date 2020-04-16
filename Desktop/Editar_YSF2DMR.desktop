@@ -7,6 +7,6 @@ Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Terminal=false
-Name[es_ES]=Editar YSF2DMR
+Name[es_ES]=Edit YSF2DMR
 Hidden=false
 Comment[es_ES]=EA3EIZ

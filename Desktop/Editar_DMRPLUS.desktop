@@ -8,6 +8,6 @@ StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Name[en_US]=MMDVM Connect Screen
 Terminal=false
-Name[es_ES]=Editar DMR+
+Name[es_ES]=Edit DMR+
 Hidden=false
 Comment[es_ES]=

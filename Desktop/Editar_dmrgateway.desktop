@@ -8,6 +8,6 @@ StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Name[en_US]=MMDVM Connect Screen
 Terminal=false
-Name[es_ES]=Editar DMRGateway
+Name[es_ES]=Edit DMRGateway
 Hidden=false
 Comment[es_ES]=
