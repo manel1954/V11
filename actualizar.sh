@@ -31,7 +31,7 @@ sudo sed -i "11c Name=Edit BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
  
 else
 icono=ICONO_ABRIR.png
-# sudo sed -i "11c Name=Editar BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
+sudo sed -i "11c Name=Editar BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
 fi
 
 sleep 2
