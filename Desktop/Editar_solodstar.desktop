@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
 Type=Application
-Name=Edit solo DSTAR
+Name=Editar solo DSTAR
 Comment=
 Exec=sh -c "cd /home/pi/V11;lxterminal --geometry=85x52 -e sudo sh  editar_MMDVMDSTAR.sh"
 Icon=/home/pi/V11/ICONO_EDITAR_SOLODSTAR.png

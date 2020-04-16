@@ -7,7 +7,7 @@ Type=Application
 StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Terminal=false
-Name[es_ES]=Edit BlueDV
+Name[es_ES]=Editar BlueDV
 Hidden=false
 Comment[es_ES]=EA3EIZ
 
