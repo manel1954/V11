@@ -106,10 +106,10 @@ read -p '   You want to change language? Y/N ' actualizar
                         sudo sed -i "7c Name[es_ES]=Delete  LOGS" /home/pi/V11/Desktop/Borrar_Logs.desktop
                         sudo sed -i "11c Name[es_ES]=Edit DMR+" /home/pi/V11/Desktop/Editar_DMRPLUS.desktop
                         sudo sed -i "10c Name[es_ES]=Edit Radio" /home/pi/V11/Desktop/Editar_Radio.desktop
-                        sudo sed -i "11c Name[es_ES]=Editar Especial" /home/pi/V11/Desktop/Editar_ESPECIAL.desktop
-                        sudo sed -i "11c Name[es_ES]=Editar Only FUSION" /home/pi/V11/Desktop/Editar_solofusion.desktop
-                        sudo sed -i "4c Name[es_ES]=Editar only DSTAR" /home/pi/V11/Desktop/Editar_solodstar.desktop
-                        sudo sed -i "8c Name[es_ES]=Editar YSF FCS & YCS" /home/pi/V11/Desktop/Editar_C4FM.desktop
+                        sudo sed -i "11c Name[es_ES]=Edit Especial" /home/pi/V11/Desktop/Editar_ESPECIAL.desktop
+                        sudo sed -i "11c Name[es_ES]=Edit Only FUSION" /home/pi/V11/Desktop/Editar_solofusion.desktop
+                        sudo sed -i "4c Name[es_ES]=Edit only DSTAR" /home/pi/V11/Desktop/Editar_solodstar.desktop
+                        sudo sed -i "8c Name[es_ES]=Edit YSF FCS & YCS" /home/pi/V11/Desktop/Editar_C4FM.desktop
                         sudo sed -i "10c Name[es_ES]=Update Rooms YSF" /home/pi/V11/Desktop/Actualizar_salas_YSF.desktop
                         #sudo sed -i "11c Name[es_ES]=Edit DMR+" /home/pi/V11/Desktop/Editar_DMRPLUS.desktop
                         #sudo sed -i "11c Name[es_ES]=Edit DMR+" /home/pi/V11/Desktop/Editar_DMRPLUS.desktop
