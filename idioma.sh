@@ -116,8 +116,16 @@ read -p '   You want to change language? Y/N ' actualizar
                         sudo sed -i "11c Name[es_ES]=Update BlueDV" /home/pi/V11/Desktop/Actualizar_BlueDV.DESKTOP
                         sudo sed -i "10c Name[es_ES]=Edit BlueDV" /home/pi/V11/Desktop/Editar_DMRPLUS.desktop
                         sudo sed -i "11c Name[es_ES]=Edit DMR+" /home/pi/V11/Desktop/Editar_BLUEDV.desktop
-                        sudo sed -i "7c Name[es_ES]=Edit ircDDB" /home/pi/V11/Desktop/Configuraar_ircddb.desktop
+                        sudo sed -i "7c Name[es_ES]=Edit ircDDB" /home/pi/V11/Desktop/Configurar_ircddb.desktop
                         sudo sed -i "11c Name[es_ES]=Edit REPEATER" /home/pi/V11/Desktop/Editar_D-STAR_Repeater.desktop
+                        sudo sed -i "10c Name[es_ES]=Edit YSF2DMR" /home/pi/V11/Desktop/Editar_YSF2DMR.desktop
+                        sudo sed -i "11c Name[es_ES]=Edit DMR2YSF" /home/pi/V11/Desktop/Editar_MMDVMDMR2YSF.desktop
+                        sudo sed -i "11c Name[es_ES]=Edit DMR2NXDN" /home/pi/V11/Desktop/Editar_MMDVMDMR2NXDN.desktop
+                        sudo sed -i "11c Name[es_ES]=Edit NXDN" /home/pi/V11/Desktop/Editar_NXDN.desktop
+                        sudo sed -i "11c Name[es_ES]=Edit SVXLINK" /home/pi/V11/Desktop/Editar_svxlink.desktop
+                        sudo sed -i "10c Name[es_ES]=Edit AMBE SERVER" /home/pi/V11/Desktop/editar_ambe_server.desktop
+                        sudo sed -i "10c Name[es_ES]=Activate NEXTIONDRIVER" /home/pi/V11/Desktop/Activar_NextionDriver.desktop
+                        sudo sed -i "10c Name[es_ES]=Activate DVSWITCH" /home/pi/V11/Desktop/Activar_dvswitch.desktop
                         #sudo sed -i "11c Name[es_ES]=Edit DMR+" /home/pi/V11/Desktop/Editar_DMRPLUS.desktop
                         #sudo sed -i "11c Name[es_ES]=Edit DMR+" /home/pi/V11/Desktop/Editar_DMRPLUS.desktop
                         #sudo sed -i "10c Name[es_ES]=Update IMAGEN" /home/pi/V11/Desktop/Actualizar_imagen.desktop
