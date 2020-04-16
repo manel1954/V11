@@ -322,7 +322,7 @@ sudo rm -R /home/pi/V11/Desktop/associacioader.com
 sudo rm /home/pi/V11/Desktop/st-data
 sudo rm /home/pi/Desktop/st-data
 
-cp /home/pi/Desktop /home/pi/.local
+sudo cp /home/pi/Desktop /home/pi/.local
 
 
 
