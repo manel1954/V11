@@ -1,10 +1,13 @@
 #!/bin/bash
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
-icono=ICONO_OPEN.png
- 
+icono=ICONO_CLOSE.png
+icono_NO=ICONO_OPEN.png
+
 else
-icono=ICONO_ABRIR.png
+icono=ICONO_CERRAR.png
+icono_NO=ICONO_ABRIR.png
+
 fi
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
