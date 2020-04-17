@@ -20,9 +20,12 @@ sed -i "6c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; lxterminal --geometry=80x15
 sed -i "7c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/Abrir_solodstar.desktop
 sed -i "11c Name[es_ES]=Abrir solo DSTAR" /home/pi/Abrir_solodstar.desktop
 sed -i "13c SOLODSTAR=OFF" /home/pi/.local/status.ini
+
+
+sleep 20
+
 cd /home/pi
 sudo cp Abrir_solodstar.desktop /home/pi/Desktop
-read a
 sudo rm /home/pi/Abrir_solodstar.desktop
 
 
