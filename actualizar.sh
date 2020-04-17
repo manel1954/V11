@@ -19,11 +19,15 @@ if [ $idioma = English ]; then
 icono=ICONO_OPEN.png
 sudo sed -i "11c Name[es_ES]=Only FUSION" /home/pi/V11/Desktop/RXF_SOLOFUSION.desktop
 sudo sed -i "11c Name[es_ES]=Only DSTAR" /home/pi/V11/Desktop/RXF_DSTAR.desktop
+sudo sed -i "10c Name[es_ES]=Deactivate Dvswitch" /home/pi/V11/Desktop/Activar_dvswitch.desktop
+sudo sed -i "10c Name[es_ES]=Deactivate NextionDriv" /home/pi/V11/Desktop/Activar_NextionDriver.desktop
  
 else
 icono=ICONO_ABRIR.png
 sudo sed -i "11c Name[es_ES]=Solo FUSION" /home/pi/V11/Desktop/RXF_SOLOFUSION.desktop
 sudo sed -i "11c Name[es_ES]=Solo DSTAR" /home/pi/V11/Desktop/RXF_DSTAR.desktop
+sudo sed -i "10c Name[es_ES]=Deactivar Dvswitch" /home/pi/V11/Desktop/Activar_dvswitch.desktop
+sudo sed -i "10c Name[es_ES]=Deactivar NextionDriv" /home/pi/V11/Desktop/Activar_NextionDriver.desktop
 fi
 
 sleep 2
