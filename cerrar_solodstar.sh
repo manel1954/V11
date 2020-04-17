@@ -17,12 +17,12 @@ SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 cd /home/pi/Desktop
 sudo cp Abrir_solodstar.desktop /home/pi
 sed -i "6c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; lxterminal --geometry=80x15 -e sudo sh ejecutar_solodstar.sh'" /home/pi/Abrir_solodstar.desktop
-sudo sed -i "7c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/Abrir_solodstar.desktop
+sed -i "7c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/Abrir_solodstar.desktop
 sed -i "11c Name[es_ES]=Abrir solo DSTAR" /home/pi/Abrir_solodstar.desktop
 sed -i "13c SOLODSTAR=OFF" /home/pi/.local/status.ini
 cd /home/pi
 sudo cp Abrir_solodstar.desktop /home/pi/Desktop
-sleep 4
+read a
 sudo rm /home/pi/Abrir_solodstar.desktop
 
 
