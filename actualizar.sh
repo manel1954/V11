@@ -27,7 +27,7 @@ icono=ICONO_ABRIR.png
 sudo sed -i "11c Name[es_ES]=Solo FUSION" /home/pi/V11/Desktop/RXF_SOLOFUSION.desktop
 sudo sed -i "11c Name[es_ES]=Solo DSTAR" /home/pi/V11/Desktop/RXF_DSTAR.desktop
 sudo sed -i "10c Name[es_ES]=Deactivar Dvswitch" /home/pi/V11/Desktop/Activar_dvswitch.desktop
-sudo sed -i "10c Name[es_ES]=Deactivar NextionDriv" /home/pi/V11/Desktop/Activar_NextionDriver.desktop
+sudo sed -i "10c Name[es_ES]=Desactivar NextionDriv" /home/pi/V11/Desktop/Activar_NextionDriver.desktop
 fi
 
 sleep 2
