@@ -26,3 +26,4 @@ sudo rm /home/pi/Abrir_MMDVMBM.desktop
 
 
 
+

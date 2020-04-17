@@ -9,6 +9,7 @@ icono=ICONO_CERRAR.png
 icono_NO=ICONO_ABRIR.png
 
 fi
+
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 cd /home/pi/Desktop
 cp Abrir_MMDVMBM.desktop /home/pi
@@ -39,5 +40,4 @@ cd /home/pi
 cp Abrir_MMDVMBM.desktop /home/pi/Desktop
 sleep 1
 sudo rm /home/pi/Abrir_MMDVMBM.desktop
-
 
