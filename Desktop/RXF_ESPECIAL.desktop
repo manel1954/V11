@@ -8,5 +8,5 @@ StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Terminal=false
 Comment[es_ES]=EA3EIZ
-Name[en_US]=ESPECIAL
+Name[es_ES]=ESPECIAL
 Hidden=false
