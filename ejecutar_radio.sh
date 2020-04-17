@@ -9,6 +9,7 @@ icono=ICONO_CERRAR.png
 icono_NO=ICONO_ABRIR.png
 
 fi
+
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 cd /home/pi/Desktop
 sudo cp Abrir_Radio.desktop /home/pi
