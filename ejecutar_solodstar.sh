@@ -1,4 +1,14 @@
 #!/bin/bash
+idioma=$(awk "NR==1" /home/pi/.local/idioma)
+if [ $idioma = English ]; then
+icono=ICONO_CLOSE.png
+icono_NO=ICONO_OPEN.png
+
+else
+icono=ICONO_CERRAR.png
+icono_NO=ICONO_ABRIR.png
+
+fi
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 #Colores
@@ -24,33 +34,12 @@ echo " *************************************************************************
 echo " **************************   ABRIENDO SOLO DSTAR    **************************"
 echo " ******************************************************************************"
 sleep 2
-#Escribe en el fichero INFO_RXF para poner los datos del icono INFO TXF
-mode=`grep -n -m 1 "^Port=" /home/pi/MMDVMHost/MMDVMDSTAR.ini`
-buscar=":"
-caracteres=`expr index $mode $buscar`
-caracteres_linea=`expr $caracteres - 1`
-numero_linea_port=`expr substr $mode 1 $caracteres_linea`
-mode=$(awk "NR==$numero_linea_port" /home/pi/MMDVMHost/MMDVMDSTAR.ini)
-puerto=`expr substr $mode 11 9`
-puerto="  "$puerto
-cd /home/pi/Desktop
-sudo cp RXF_DSTAR.desktop /home/pi
-frecuencia=$(awk "NR==13" /home/pi/MMDVMHost/MMDVMDSTAR.ini)
-frecuencia=`expr substr $frecuencia 13 9`
-frecuencia=$frecuencia$puerto
-sed -i "11c Name=$frecuencia" /home/pi/RXF_DSTAR.desktop
-
-sudo cp /home/pi/RXF_DSTAR.desktop /home/pi/Desktop
-
-sudo rm /home/pi/RXF_DSTAR.desktop                       
-sed -i "5c $frecuencia" /home/pi/INFO_RXF
-# FIN Escribe en el fichero INFO_RXF para poner los datos del icono INFO TXF 
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 cd /home/pi/Desktop
 sudo cp Abrir_solodstar.desktop /home/pi
 sed -i "6c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_solodstar.sh'" /home/pi/Abrir_solodstar.desktop
-sed -i "7c Icon=/home/pi/$SCRIPTS_version/SOLO_D-STAR_ON.png" /home/pi/Abrir_solodstar.desktop
+sed -i "7c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/Abrir_solodstar.desktop
 sed -i "11c Name[es_ES]=Cerrar solo DSTAR" /home/pi/Abrir_solodstar.desktop
 sed -i "13c SOLODSTAR=ON" /home/pi/.local/status.ini
 cd /home/pi
@@ -61,7 +50,7 @@ sudo rm /home/pi/Abrir_solodstar.desktop
 cd /home/pi/Desktop
 sudo cp Abrir_ircDDB.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_ircDDB.sh'" /home/pi/Abrir_ircDDB.desktop
-sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_IRCDDB_ON.png" /home/pi/Abrir_ircDDB.desktop
+sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/Abrir_ircDDB.desktop
 sed -i "10c Name[es_ES]=Cerrar ircDDB" /home/pi/Abrir_ircDDB.desktop
 sed -i "1c D-STAR=ON" /home/pi/.local/status.ini
 cd /home/pi
@@ -86,7 +75,7 @@ sudo ircddbgateway -gui & sudo ./MMDVMDSTAR MMDVMDSTAR.ini
 cd /home/pi/Desktop
 sudo cp Abrir_solodstar.desktop /home/pi
 sed -i "6c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; lxterminal --geometry=80x15 -e sudo sh ejecutar_solodstar.sh'" /home/pi/Abrir_solodstar.desktop
-sed -i "7c Icon=/home/pi/$SCRIPTS_version/SOLO_D-STAR.png" /home/pi/Abrir_solodstar.desktop
+sed -i "7c Icon=/home/pi/$SCRIPTS_version/$iconoi_NO" /home/pi/Abrir_solodstar.desktop
 sed -i "11c Name[es_ES]=Abrir solo DSTAR" /home/pi/Abrir_solodstar.desktop
 sed -i "13c SOLODSTAR=OFF" /home/pi/.local/status.ini
 cd /home/pi
@@ -99,7 +88,7 @@ cd /home/pi/Desktop
 sudo cp Abrir_ircDDB.desktop /home/pi
 sleep 1
 sed -i "4cExec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh ejecutar_ircDDB.sh'" /home/pi/Abrir_ircDDB.desktop
-sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_IRCDDB_OFF.png" /home/pi/Abrir_ircDDB.desktop
+sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono_NO" /home/pi/Abrir_ircDDB.desktop
 sed -i "10c Name[es_ES]=Abrir ircDDB" /home/pi/Abrir_ircDDB.desktop
 sed -i "1c D-STAR=OFF" /home/pi/.local/status.ini
 sleep 1
@@ -113,33 +102,12 @@ echo " *************************************************************************
 echo " **************************   ABRIENDO SOLO DSTAR    **************************"
 echo " ******************************************************************************"
 sleep 2
-#Escribe en el fichero INFO_RXF para poner los datos del icono INFO TXF
-mode=`grep -n -m 1 "^Port=" /home/pi/MMDVMHost/MMDVMDSTAR.ini`
-buscar=":"
-caracteres=`expr index $mode $buscar`
-caracteres_linea=`expr $caracteres - 1`
-numero_linea_port=`expr substr $mode 1 $caracteres_linea`
-mode=$(awk "NR==$numero_linea_port" /home/pi/MMDVMHost/MMDVMDSTAR.ini)
-puerto=`expr substr $mode 11 9`
-puerto="  "$puerto
-cd /home/pi/Desktop
-sudo cp RXF_DSTAR.desktop /home/pi
-frecuencia=$(awk "NR==13" /home/pi/MMDVMHost/MMDVMDSTAR.ini)
-frecuencia=`expr substr $frecuencia 13 9`
-frecuencia=$frecuencia$puerto
-sed -i "11c Name=$frecuencia" /home/pi/RXF_DSTAR.desktop
-
-sudo cp /home/pi/RXF_DSTAR.desktop /home/pi/Desktop
-
-sudo rm /home/pi/RXF_DSTAR.desktop                       
-sed -i "5c $frecuencia" /home/pi/INFO_RXF
-# FIN Escribe en el fichero INFO_RXF para poner los datos del icono INFO TXF 
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 cd /home/pi/Desktop
 sudo cp Abrir_solodstar.desktop /home/pi
 sed -i "6c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_solodstar.sh'" /home/pi/Abrir_solodstar.desktop
-sed -i "7c Icon=/home/pi/$SCRIPTS_version/SOLO_D-STAR_ON.png" /home/pi/Abrir_solodstar.desktop
+sed -i "7c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/Abrir_solodstar.desktop
 sed -i "11c Name[es_ES]=Cerrar solo DSTAR" /home/pi/Abrir_solodstar.desktop
 sed -i "13c SOLODSTAR=ON" /home/pi/.local/status.ini
 cd /home/pi
@@ -150,7 +118,7 @@ sudo rm /home/pi/Abrir_solodstar.desktop
 cd /home/pi/Desktop
 sudo cp Abrir_ircDDB.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_ircDDB.sh'" /home/pi/Abrir_ircDDB.desktop
-sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_IRCDDB_ON.png" /home/pi/Abrir_ircDDB.desktop
+sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/Abrir_ircDDB.desktop
 sed -i "10c Name[es_ES]=Cerrar ircDDB" /home/pi/Abrir_ircDDB.desktop
 sed -i "1c D-STAR=ON" /home/pi/.local/status.ini
 cd /home/pi
@@ -177,7 +145,7 @@ sudo ircddbgateway -gui & sudo ./MMDVMDSTAR MMDVMDSTAR.ini
 cd /home/pi/Desktop
 sudo cp Abrir_solodstar.desktop /home/pi
 sed -i "6c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; lxterminal --geometry=80x15 -e sudo sh ejecutar_solodstar.sh'" /home/pi/Abrir_solodstar.desktop
-sed -i "7c Icon=/home/pi/$SCRIPTS_version/SOLO_D-STAR.png" /home/pi/Abrir_solodstar.desktop
+sed -i "7c Icon=/home/pi/$SCRIPTS_version/$icono_NO" /home/pi/Abrir_solodstar.desktop
 sed -i "11c Name[es_ES]=Abrir solo DSTAR" /home/pi/Abrir_solodstar.desktop
 sed -i "13c SOLODSTAR=OFF" /home/pi/.local/status.ini
 cd /home/pi
@@ -189,7 +157,7 @@ cd /home/pi/Desktop
 sudo cp Abrir_ircDDB.desktop /home/pi
 sleep 1
 sed -i "4cExec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh ejecutar_ircDDB.sh'" /home/pi/Abrir_ircDDB.desktop
-sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_IRCDDB_OFF.png" /home/pi/Abrir_ircDDB.desktop
+sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono_NO" /home/pi/Abrir_ircDDB.desktop
 sed -i "10c Name[es_ES]=Abrir ircDDB" /home/pi/Abrir_ircDDB.desktop
 sed -i "1c D-STAR=OFF" /home/pi/.local/status.ini
 sleep 1
@@ -199,7 +167,6 @@ sleep 1
 
 cd /home/pi
 sudo cp Abrir_ircDDB.desktop /home/pi/Desktop
-
 
 
 
