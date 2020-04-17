@@ -17,14 +17,13 @@ fi
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 icono=ICONO_OPEN.png
-infof=Only FUSION
-infod=Only DSTAR
-
+sudo sed -i "11c Name[es_ES]=Only FUSION" /home/pi/V11/Desktop/RXF_SOLOFUSION.desktop
+sudo sed -i "11c Name[es_ES]=Only DSTAR" /home/pi/V11/Desktop/RXF_DSTAR.desktop
  
 else
 icono=ICONO_ABRIR.png
-infof=SOLO FUSION
-infod=SOLO DSTAR
+sudo sed -i "11c Name[es_ES]=Solo FUSION" /home/pi/V11/Desktop/RXF_SOLOFUSION.desktop
+sudo sed -i "11c Name[es_ES]=Solo DSTAR" /home/pi/V11/Desktop/RXF_DSTAR.desktop
 fi
 
 sleep 2
@@ -49,8 +48,7 @@ sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abri
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_ircDDB.desktop
 sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_NXDN.desktop
 #sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/V11/Desktop/Abrir_Qtel.desktop
-sudo sed -i "11c Icon=/home/pi/$SCRIPTS_version/$infof" /home/pi/V11/Desktop/RXF_SOLOFUSION.desktop
-sudo sed -i "11c Icon=/home/pi/$SCRIPTS_version/$infod" /home/pi/V11/Desktop/RXF_DSTAR.desktop
+
 
 
 
