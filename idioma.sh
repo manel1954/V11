@@ -90,11 +90,11 @@ read -p '   Quieres cambiar de idioma? S/N ' actualizar
                         sudo sed -i "11c Name[es_ES]=Editar NXDN" /home/pi/V11/Desktop/Editar_NXDN.desktop
                         sudo sed -i "11c Name[es_ES]=Editar SVXLINK" /home/pi/V11/Desktop/Editar_svxlink.desktop
                         sudo sed -i "10c Name[es_ES]=Editar AMBE SERVER" /home/pi/V11/Desktop/editar_ambe_server.desktop
-                        sudo sed -i "10c Name[es_ES]=Activar NEXTIONDRIVER" /home/pi/V11/Desktop/Activar_NextionDriver.desktop
+                        sudo sed -i "10c Name[es_ES]=Activar NEXTIOND" /home/pi/V11/Desktop/Activar_NextionDriver.desktop
                         sudo sed -i "10c Name[es_ES]=Activar DVSWITCH" /home/pi/V11/Desktop/Activar_dvswitch.desktop
                         sudo sed -i "11c Name[es_ES]=Nota Versión" /home/pi/V11/Desktop/Nota_version.desktop
                         sudo sed -i "10c Name[es_ES]=Editor General" /home/pi/V11/Desktop/Editar_General.desktop
-                        sudo sed -i "11c Name[es_ES]=Editar DMRGateway" /home/pi/V11/Desktop/Editar_dmrgateway.desktop
+                        sudo sed -i "11c Name[es_ES]=Editar Gateway" /home/pi/V11/Desktop/Editar_dmrgateway.desktop
                         sudo reboot
                         break;;
                         [nN]* ) echo ""
@@ -156,11 +156,11 @@ read -p '   You want to change language? Y/N ' actualizar
                         sudo sed -i "11c Name[es_ES]=Edit NXDN" /home/pi/V11/Desktop/Editar_NXDN.desktop
                         sudo sed -i "11c Name[es_ES]=Edit SVXLINK" /home/pi/V11/Desktop/Editar_svxlink.desktop
                         sudo sed -i "10c Name[es_ES]=Edit AMBE SERVER" /home/pi/V11/Desktop/editar_ambe_server.desktop
-                        sudo sed -i "10c Name[es_ES]=Activate NEXTIONDRIVER" /home/pi/V11/Desktop/Activar_NextionDriver.desktop
+                        sudo sed -i "10c Name[es_ES]=Activate NEXTIOND" /home/pi/V11/Desktop/Activar_NextionDriver.desktop
                         sudo sed -i "10c Name[es_ES]=Activate DVSWITCH" /home/pi/V11/Desktop/Activar_dvswitch.desktop
                         sudo sed -i "11c Name[es_ES]=Note Version" /home/pi/V11/Desktop/Nota_version.desktop
                         sudo sed -i "10c Name[es_ES]=General Editor" /home/pi/V11/Desktop/Editar_General.desktop
-                        sudo sed -i "11c Name[es_ES]=Edit DMRGateway" /home/pi/V11/Desktop/Editar_dmrgateway.desktop
+                        sudo sed -i "11c Name[es_ES]=Edit Gateway" /home/pi/V11/Desktop/Editar_dmrgateway.desktop
                         sudo reboot
                         break;;
                         [nN]* ) echo ""
