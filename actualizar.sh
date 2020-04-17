@@ -15,32 +15,6 @@ echo ""
 fi
 
 
-#Actualiza todos los iconos y Quita todos los iconos verdes que se quedan al cerrar la imagen
-#============================================================================================
-
-# excepto estos que tienen que mantener su status
-sudo cp $usuario/Desktop/Activar_dvswitch.desktop $usuario/.local #deja el icono en el estado que se reinició
-sudo cp $usuario/Desktop/Activar_NextionDriver.desktop $usuario/.local #deja el icono en el estado que se reinició
-
-cd $usuario/$SCRIPTS_version/Desktop
-cp * $usuario/Desktop
-sudo chmod 777 -R $usuario/Desktop
-
-# excepto estos que tienen que mantener su status
-sudo cp $usuario/.local/Activar_dvswitch.desktop $usuario/Desktop #deja el icono en el estado que se reinició
-sudo cp $usuario/.local/Activar_NextionDriver.desktop $usuario/Desktop #deja el icono en el estado que se reinició
-
-#=============================================================================================
-
-
-
-
-
-
-
-
-
-
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 icono=ICONO_OPEN.png
@@ -118,7 +92,22 @@ git pull
 
 sleep 2
 
+#Actualiza todos los iconos y Quita todos los iconos verdes que se quedan al cerrar la imagen
+#============================================================================================
 
+# excepto estos que tienen que mantener su status
+sudo cp $usuario/Desktop/Activar_dvswitch.desktop $usuario/.local #deja el icono en el estado que se reinició
+sudo cp $usuario/Desktop/Activar_NextionDriver.desktop $usuario/.local #deja el icono en el estado que se reinició
+
+cd $usuario/$SCRIPTS_version/Desktop
+cp * $usuario/Desktop
+sudo chmod 777 -R $usuario/Desktop
+
+# excepto estos que tienen que mantener su status
+sudo cp $usuario/.local/Activar_dvswitch.desktop $usuario/Desktop #deja el icono en el estado que se reinició
+sudo cp $usuario/.local/Activar_NextionDriver.desktop $usuario/Desktop #deja el icono en el estado que se reinició
+
+#=============================================================================================
 
 #pone todos los datos de DMR+ , Brandameiter, svxlink etc en panel_control.ini
 bm=`sed -n '2p'  $usuario/MMDVMHost/MMDVMBM.ini`
