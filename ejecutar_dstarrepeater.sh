@@ -1,4 +1,15 @@
 #!/bin/bash
+idioma=$(awk "NR==1" /home/pi/.local/idioma)
+if [ $idioma = English ]; then
+icono=ICONO_CLOSE.png
+icono_NO=ICONO_OPEN.png
+
+else
+icono=ICONO_CERRAR.png
+icono_NO=ICONO_ABRIR.png
+
+fi
+
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 #Colores
 ROJO="\033[1;31m"
@@ -22,7 +33,7 @@ echo "                  ***********************************************"
 cd /home/pi/Desktop
 sudo cp Abrir_ircDDB.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_ircDDB.sh'" /home/pi/Abrir_ircDDB.desktop
-sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_IRCDDB_ON.png" /home/pi/Abrir_ircDDB.desktop
+sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/Abrir_ircDDB.desktop
 sed -i "10c Name[es_ES]=Cerrar ircDDB" /home/pi/Abrir_ircDDB.desktop
 sed -i "1c D-STAR=ON" /home/pi/.local/status.ini
 cd /home/pi
@@ -33,7 +44,7 @@ sudo rm /home/pi/Abrir_ircDDB.desktop
 cd /home/pi/Desktop
 sudo cp Abrir_dstarrepeater.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; sudo sh cerrar_dstarrepeater.sh'" /home/pi/Abrir_dstarrepeater.desktop
-sed -i "5c Icon=/home/pi/$SCRIPTS_version/REPEATER_ON.png" /home/pi/Abrir_dstarrepeater.desktop
+sed -i "5c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/Abrir_dstarrepeater.desktop
 sed -i "10c Name[es_ES]=Cerrar DSTAR Repeater" /home/pi/Abrir_dstarrepeater.desktop
 sed -i "9c dstarrepeater=ON" /home/pi/.local/status.ini
 cd /home/pi
@@ -52,4 +63,5 @@ sudo systemctl stop ircddbgateway
 sudo systemctl restart mmdvm_bridge.service
 
  
+
 
