@@ -8,5 +8,5 @@ StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Name[en_US]=
 Terminal=false
-Name[en_US]=DMR2YSF
+Name[es_ES]=DMR2YSF
 Hidden=false

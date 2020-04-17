@@ -8,5 +8,5 @@ StartupNotify=false
 Categories=GTK;Utility;TerminalEmulator;
 Name[en_US]=
 Terminal=false
-Name[en_US]=NXDN
+Name[es_ES]=NXDN
 Hidden=false
