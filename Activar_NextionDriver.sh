@@ -2,10 +2,10 @@
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 icono=ICONO_OPEN.png
-advertencia="If you deactivate NextionDriver will work the China punctured in Raspi"
-activo="DEACTIVATING NextionDriver"
-quieres="Do you want to deactivate NextionDriver? Y/N"
-ojo="EYE!! Once deactivated the Raspberry will restart"
+advertencia="If you activate NextionDriver, the Hotspot by GPIO will not work"
+activo="ACTIVATING NextionDriver"
+quieres="Do you want to activate NextionDriver? Y/N"
+ojo="EYE!! Once activated the Raspberry will restart"
 else
 icono=ICONO_ABRIR.png
 advertencia="Si activas NextionDriver no funcionaran los Hotspot por GPIO"
