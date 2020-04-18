@@ -81,9 +81,6 @@ echo "***************************************************"
             sudo cp -f svxlink.conf /etc/svxlink/
             sudo cp -f ModuleEchoLink.conf etc/svxlink/svxlink.d/
 
-            cp ircddbgateway /usr/local/etc/opendv/
-            cp dstarrepeater /usr/local/etc/opendv/
-
             cp ircddbgateway /etc/
             cp dstarrepeater /etc/
 

@@ -125,9 +125,6 @@ sleep 3
             cd /etc/svxlink/svxlink.d/
             cp -f ModuleEchoLink.conf /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
-            cp /usr/local/etc/opendv/ircddbgateway /home/pi/.local/COPIA_SEGURIDAD/Downloads
-            cp /usr/local/etc/opendv/dstarrepeater /home/pi/.local/COPIA_SEGURIDAD/Downloads
-
             cp /etc/ircddbgateway /home/pi/.local/COPIA_SEGURIDAD/Downloads
             cp /etc/dstarrepeater /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
