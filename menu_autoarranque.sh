@@ -486,8 +486,19 @@ fi
 trans=`grep "NXDN" /home/pi/.local/autoarranque.ini`
 #==================================================================================
 
+#=========================================================================*========
+echo -n "\33[1;36m   219)\33[1;33m  Poner DMRGateway en el autoarranque   - "
+var1=$(awk "NR==19" /home/pi/.local/autoarranque.ini)
+var1=`expr substr $var1 12 3`
+if [ $var1 = "OFF" ]
+then
+echo "\33[1;31m$var1"
+else
+echo "\33[1;31m"
+fi
+trans=`grep "NXDNDMRGateway" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
-echo "\33[0m "
 echo "\33[1;36m    27)\33[1;32m *** RESTABLECER LOS AUTOARRANQUES A ${RED}OFF ${VERDE}***"
 
 echo ""
@@ -1144,6 +1155,23 @@ clear
                                             cd /home/pi/AUTOARRANQUEV11
                                             sudo cp NXDN.desktop /home/pi/.config/autostart
                                             sed -i "18c NXDN=ON" /home/pi/.local/autoarranque.ini
+                                            break;;
+                                            [nN]* ) echo ""
+                                            break;;
+esac
+done;;
+219) echo ""
+while true
+do
+clear
+                                            actualizar=S
+                                            case $actualizar in
+                                            [sS]* ) echo ""
+                                            echo "Poniendo DMRGateway en el autoarranque >>>>>"
+                                            sleep 2
+                                            cd /home/pi/AUTOARRANQUEV11
+                                            sudo cp DMRGateway.desktop /home/pi/.config/autostart
+                                            sed -i "19c DMRGateway=ON" /home/pi/.local/autoarranque.ini
                                             break;;
                                             [nN]* ) echo ""
                                             break;;
