@@ -119,10 +119,10 @@ sleep 3
             cd /home/pi/bluedv/
             cp -f BlueDVconfig.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
-            cd /usr/local/etc/svxlink/
+            cd /etc/svxlink/
             cp -f svxlink.conf /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
-            cd /usr/local/etc/svxlink/svxlink.d/
+            cd /etc/svxlink/svxlink.d/
             cp -f ModuleEchoLink.conf /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
             cp /usr/local/etc/opendv/ircddbgateway /home/pi/.local/COPIA_SEGURIDAD/Downloads
@@ -287,10 +287,9 @@ sleep 3
             sudo cp -f YSFGateway.ini /home/pi/YSFClients/YSFGateway/
 
             sudo cp -f BlueDVconfig.ini /home/pi/bluedv/
-
-            sudo cp -f svxlink.conf /usr/local/etc/svxlink/
-            
-            sudo cp -f ModuleEchoLink.conf /usr/local/etc/svxlink/svxlink.d/
+           
+            sudo cp -f svxlink.conf /etc/svxlink/
+            sudo cp -f ModuleEchoLink.conf etc/svxlink/svxlink.d/
 
             cp ircddbgateway /etc/
             cp dstarrepeater /etc/

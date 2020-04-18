@@ -59,10 +59,10 @@
             cd /home/pi/bluedv/
             cp -f BlueDVconfig.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
-            cd /usr/local/etc/svxlink/
+            cd /etc/svxlink/
             cp -f svxlink.conf /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
-            cd /usr/local/etc/svxlink/svxlink.d/
+            cd /etc/svxlink/svxlink.d/
             cp -f ModuleEchoLink.conf /home/pi/.local/COPIA_SEGURIDAD/Downloads
 
             cp /usr/local/etc/opendv/ircddbgateway /home/pi/.local/COPIA_SEGURIDAD/Downloads
