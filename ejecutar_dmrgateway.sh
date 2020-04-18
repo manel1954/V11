@@ -62,3 +62,4 @@ cd /home/pi/
 sudo cp Abrir_dmrgateway.desktop /home/pi/Desktop
 sleep 1
 sudo rm /home/pi/Abrir_dmrgateway.desktop
+

@@ -24,11 +24,11 @@ echo "  ************************************************************************
 
 echo "${CIAN}  1)${BLANCO} Hacer copias: BM, DMR+, RADIO, ESPECIAL, solo FUSION, solo DSTAR, YSF"
 echo "     BlueDV, ircDDB, DSTAR Repeater, YSF2DMR, DMR2YSF, DMR2NXDN, NXDN, SVXLINK"
-echo "     DVSWITCH Y Editor GENERAL.  "
+echo "     DVSWITCH, DMRGateway Y Editor GENERAL.  "
 echo ""
 echo "${CIAN}  2)${VERDE} Restaurar copias: BM, DMR+, ESPECIAL, RADIO, solo FUSION, solo DSTAR, YSF"
 echo "     BlueDV, ircDDB, DSTAR Repeater, YSF2DMR, DMR2YSF, DMR2NXDN, NXDN, SVXLINK"
-echo "     DVSWITCH Y Editor GENERAL.  "
+echo "     DVSWITCH, DNRGateway Y Editor GENERAL.  "
 echo ""
 echo "  ${ROJO}0) Salir "
 echo ""
@@ -90,6 +90,13 @@ sleep 3
             cp -f MMDVMDSTAR.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
             cp -f MMDVMFUSION.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
             #fin  Dstar y solo Fusion  
+
+            #DMRGateway
+            cd /home/pi/MMDVMHost
+            cp -f DMRGateway.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
+            cd /home/pi/DMRGateway
+            cp -f DMRGateway.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads/DMRGateway
+            #Fin DMRGateway
 
             cd  /home/pi/YSF2DMR
             cp -f YSF2DMR.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
@@ -249,7 +256,14 @@ sleep 3
             cp -f MMDVMDSTAR.ini /home/pi/MMDVMHost
             cp -f MMDVMFUSION.ini /home/pi/MMDVMHost
             #fin  Dstar y solo Fusion
+            
+            #DMRGateway
+            cp -f DMRGateway.ini /home/pi/MMDVMHost
+            cd /home/pi/.local/COPIA_SEGURIDAD/Downloads/DMRGateway
+            cp -f DMRGateway.ini /home/pi/DMRGateway
+            #Fin DMRGateway
 
+            cd /home/pi/.local/COPIA_SEGURIDAD/Downloads
             cp -f YSF2DMR.ini /home/pi/YSF2DMR
             cp -f YSF2DMR.ini_copia_01 /home/pi/YSF2DMR
             cp -f YSF2DMR.ini_copia_02 /home/pi/YSF2DMR
