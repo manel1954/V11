@@ -2,19 +2,21 @@
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 icono=ICONO_OPEN.png
-advertencia=WARNING!!
-al_activar=ACTIVATING DVSWITCH WILL RESTART THE SYSTEM
-guardar_cambios=TO SAVE CHANGES
-activado=DVSWITCH HAS BEEN ACTIVATED
-reinicio=THE SYSTEM WILL RESTART
+advertencia="WARNING!!"
+al_activar="ACTIVATING DVSWITCH WILL RESTART THE SYSTEM"
+guardar_cambios="TO SAVE CHANGES"
+activado="DVSWITCH HAS BEEN ACTIVATED"
+reinicio="THE SYSTEM WILL RESTART"
+quieres="Do you want to Activate DVSWITCH? Y/N"
 
 else
 icono=ICONO_ABRIR.png
-advertencia=ADVERTENCIA!!
-al_activar=AL ACTIVAR DVSWITCH SE REINICIARÁ EL SISTEMA
-guardar_cambios=PARA GUARDAR LOS CAMBIOS
-activado=SE HA ACTIVADO DVSWITCH
-reinicio=SE REINICIARÁ EL SISTEMA
+advertencia="ADVERTENCIA!!"
+al_activar="AL ACTIVAR DVSWITCH SE REINICIARÁ EL SISTEMA"
+guardar_cambios="PARA GUARDAR LOS CAMBIOS"
+activado="SE HA ACTIVADO DVSWITCH"
+reinicio="SE REINICIARÁ EL SISTEMA"
+quieres="Quieres Desactivar DVSWITCH? S/N"
 fi
 
 #Colores
@@ -40,8 +42,9 @@ echo "${BLANCO}"
 echo "   ***************************************************************************"	
 
 echo "${CIAN}"
-read -p '   Quieres activar DVSWITCH? S/N ' seguir   
-if [ "$seguir" = 'S' -o "$seguir" = 's' ];then 
+echo -n "   $quieres "
+read seguir   
+if [ "$seguir" = 'S' -o "$seguir" = 's' -o "$seguir" = 'Y' -o "$seguir" = 'y' ];then
 
 cd /home/pi/Desktop
 sudo cp Activar_dvswitch.desktop /home/pi
