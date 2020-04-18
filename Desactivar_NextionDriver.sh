@@ -1,4 +1,8 @@
 #!/bin/bash
+# path usuario
+usuario="/home/pi"
+usuario="$usuario"
+
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 icono=ICONO_OPEN.png
