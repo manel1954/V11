@@ -22,7 +22,7 @@ echo -n "${ROJO}"
 echo "                               $SCRIPTS_version by EA3EIZ"
 echo -n "${VERDE}"
 echo "   ************************************************************"
-
+#==================================================================================
 echo -n "\33[1;36m   101)\33[1;37m  Quitar ircDDB del autoarranque        - \33[1;32m"
 dstar=`grep "D-STAR" /home/pi/.local/autoarranque.ini`
 dstar=`expr substr $dstar 8 3`
@@ -32,8 +32,9 @@ echo "\33[1;32m$dstar"
 else
 echo "\33[1;31m"
 fi
-dstar=`grep "D-STAR" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
+#==================================================================================
 echo -n "\33[1;36m   102)\33[1;37m  Quitar BlueDV del autoarranque        - \33[1;32m"
 bluedv=`grep "BlueDV" /home/pi/.local/autoarranque.ini`
 bluedv=`expr substr $bluedv 8 3`
@@ -43,8 +44,9 @@ echo "\33[1;32m$bluedv"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "BlueDV" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
+#==================================================================================
 echo -n "\33[1;36m   103)\33[1;37m  Quitar YSF del autoarranque           - "
 C4F=`grep "C4F" /home/pi/.local/autoarranque.ini`
 C4F=`expr substr $C4F 5 3`
@@ -54,8 +56,9 @@ echo "\33[1;32m$C4F"
 else
 echo "\33[1;31m"
 fi
-C4F=`grep "C4F" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
+#==================================================================================
 echo -n "\33[1;36m   104)\33[1;37m  Quitar DV4mini del autoarranque       - "
 DV4mini=`grep "DV4mini" /home/pi/.local/autoarranque.ini`
 DV4mini=`expr substr $DV4mini 9 3`
@@ -65,8 +68,9 @@ echo "\33[1;32m$DV4mini"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "DV4mini" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
+#==================================================================================
 echo -n "\33[1;36m   105)\33[1;37m  Quitar Radio del autoarranque         - "
 MMDVMPLACA=`grep "MMDVMPLACA" /home/pi/.local/autoarranque.ini`
 MMDVMPLACA=`expr substr $MMDVMPLACA 12 3`
@@ -76,8 +80,9 @@ echo "\33[1;32m$MMDVMPLACA"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "MMDVMPLACA" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
+#==================================================================================
 echo -n "\33[1;36m   106)\33[1;37m  Quitar DMR+ del autoarranque          - "
 MMDVMPLUS=`grep "MMDVMPLUS" /home/pi/.local/autoarranque.ini`
 MMDVMPLUS=`expr substr $MMDVMPLUS 11 3`
@@ -87,8 +92,9 @@ echo "\33[1;32m$MMDVMPLUS"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "MMDVMPLUS" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
+#==================================================================================
 echo -n "\33[1;36m   107)\33[1;37m  Quitar ESPECIAL del autoarranque      - "
 MMDVMLIBRE=`grep "MMDVMLIBRE" /home/pi/.local/autoarranque.ini`
 MMDVMLIBRE=`expr substr $MMDVMLIBRE 12 3`
@@ -98,9 +104,9 @@ echo "\33[1;32m$MMDVMLIBRE"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "MMDVMLIBRE" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
-
+#==================================================================================
 echo -n "\33[1;36m   108)\33[1;37m  Quitar BM del autoarranque            - "
 MMDVMBM=`grep "MMDVMBM" /home/pi/.local/autoarranque.ini`
 MMDVMBM=`expr substr $MMDVMBM 9 3`
@@ -110,10 +116,9 @@ echo "\33[1;32m$MMDVMBM"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "MMDVMBM" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
-
-
+#==================================================================================
 echo -n "\33[1;36m   109)\33[1;37m  Quitar SVXLINK del autoarranque       - "
 SVXLINK=`grep "SVXLINK" /home/pi/.local/autoarranque.ini`
 SVXLINK=`expr substr $SVXLINK 9 3`
@@ -123,9 +128,7 @@ echo "\33[1;32m$SVXLINK"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "SVXLINK" /home/pi/.local/autoarranque.ini`
-
-
+#==================================================================================
 
 #==================================================================================
 echo -n "\33[1;36m   110)\33[1;37m  Quitar SOLO_DSTAR del autoarranque    - \33[1;32m"
@@ -137,9 +140,7 @@ echo "\33[1;32m$solod"
 else
 echo "\33[1;31m"
 fi
-solod=`grep "SOLO_DSTAR" /home/pi/.local/autoarranque.ini`
 #=================================================================================
-
 
 #==================================================================================
 echo -n "\33[1;36m   111)\33[1;37m  Quitar SOLO_FUSION del autoarranque   - \33[1;32m"
@@ -151,7 +152,6 @@ echo "\33[1;32m$solof"
 else
 echo "\33[1;31m"
 fi
-solof=`grep "SOLO_FUSION" /home/pi/.local/autoarranque.ini`
 #=================================================================================
 
 #==================================================================================
@@ -164,7 +164,6 @@ echo "\33[1;32m$dvrptrq"
 else
 echo "\33[1;31m"
 fi
-solof=`grep "DVRPTR" /home/pi/.local/autoarranque.ini`
 #=================================================================================
 
 #==================================================================================
@@ -177,7 +176,6 @@ echo "\33[1;32m$var1"
 else
 echo "\33[1;31m"
 fi
-var2=`grep "F2DMR" /home/pi/.local/autoarranque.ini`
 #=================================================================================
 
 #==================================================================================
@@ -190,7 +188,6 @@ echo "\33[1;32m$var1"
 else
 echo "\33[1;31m"
 fi
-var2=`grep "dstarrepeater" /home/pi/.local/autoarranque.ini`
 #=================================================================================
 
 #==================================================================================
@@ -203,9 +200,7 @@ echo "\33[1;32m$var1"
 else
 echo "\33[1;31m"
 fi
-var2=`grep "dstarrepeater" /home/pi/.local/autoarranque.ini`
 #=================================================================================
-
 
 #==================================================================================
 echo -n "\33[1;36m   116)\33[1;37m  Quitar DMR2YSF del  autoarranque      - \33[1;32m"
@@ -217,9 +212,7 @@ echo "\33[1;32m$var1"
 else
 echo "\33[1;31m"
 fi
-var2=`grep "DMR2YSF" /home/pi/.local/autoarranque.ini`
 #=================================================================================
-
 
 #==================================================================================
 echo -n "\33[1;36m   117)\33[1;37m  Quitar DMR2NXDN del  autoarranque     - \33[1;32m"
@@ -232,7 +225,6 @@ echo "\33[1;32m$var1"
 else
 echo "\33[1;31m"
 fi
-var2=`grep "DMR2NXDN" /home/pi/.local/autoarranque.ini`
 #=================================================================================
 
 #==================================================================================
@@ -245,7 +237,6 @@ echo "\33[1;32m$var1"
 else
 echo "\33[1;31m"
 fi
-var2=`grep "NXDN" /home/pi/.local/autoarranque.ini`
 #=================================================================================
 
 #=========================================================================*========
@@ -261,7 +252,7 @@ fi
 
 #=================================================================================
 echo ""
-
+#==================================================================================
 echo -n "\33[1;36m   201)\33[1;33m  Poner ircDDB en el autoarranque       - "
 dstar=`grep "D-STAR" /home/pi/.local/autoarranque.ini`
 dstar=`expr substr $dstar 8 3`
@@ -271,8 +262,9 @@ echo "\33[1;31m$dstar"
 else
 echo "\33[1;31m"
 fi
-dstar=`grep "D-STAR" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
+#==================================================================================
 echo -n "\33[1;36m   202)\33[1;33m  Poner BlueDV en el autoarranque       - "
 bluedv=`grep "BlueDV" /home/pi/.local/autoarranque.ini`
 bluedv=`expr substr $bluedv 8 3`
@@ -282,8 +274,9 @@ echo "\33[1;31m$bluedv"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "BlueDV" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
+#==================================================================================
 echo -n "\33[1;36m   203)\33[1;33m  Poner YSF en el autoarranque          - "
 C4F=`grep "C4F" /home/pi/.local/autoarranque.ini`
 C4F=`expr substr $C4F 5 3`
@@ -293,8 +286,9 @@ echo "\33[1;31m$C4F"
 else
 echo "\33[1;31m"
 fi
-C4F=`grep "C4F" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
+#==================================================================================`
 echo -n "\33[1;36m   204)\33[1;33m  Poner DV4mini en el autoarranque      - "
 DV4mini=`grep "DV4mini" /home/pi/.local/autoarranque.ini`
 DV4mini=`expr substr $DV4mini 9 3`
@@ -304,8 +298,9 @@ echo "\33[1;31m$DV4mini"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "DV4mini" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
+#==================================================================================
 echo -n "\33[1;36m   205)\33[1;33m  Poner Radio en el autoarranque        - "
 MMDVMPLACA=`grep "MMDVMPLACA" /home/pi/.local/autoarranque.ini`
 MMDVMPLACA=`expr substr $MMDVMPLACA 12 3`
@@ -315,8 +310,9 @@ echo "\33[1;31m$MMDVMPLACA"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "MMDVMPLACA" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
+#==================================================================================
 echo -n "\33[1;36m   206)\33[1;33m  Poner DMR+ en autoarranque            - "
 MMDVMPLUS=`grep "MMDVMPLUS" /home/pi/.local/autoarranque.ini`
 MMDVMPLUS=`expr substr $MMDVMPLUS 11 3`
@@ -326,8 +322,9 @@ echo "\33[1;31m$MMDVMPLUS"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "MMDVMPLUS" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
+#==================================================================================
 echo -n "\33[1;36m   207)\33[1;33m  Poner ESPECIAL en autoarranque        - "
 MMDVMLIBRE=`grep "MMDVMLIBRE" /home/pi/.local/autoarranque.ini`
 MMDVMLIBRE=`expr substr $MMDVMLIBRE 12 3`
@@ -337,8 +334,9 @@ echo "\33[1;31m$MMDVMLIBRE"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "MMDVMLIBRE" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
+#==================================================================================
 echo -n "\33[1;36m   208)\33[1;33m  Poner BM en el autoarranque           - "
 MMDVMBM=`grep "MMDVMBM" /home/pi/.local/autoarranque.ini`
 MMDVMBM=`expr substr $MMDVMBM 9 3`
@@ -348,8 +346,9 @@ echo "\33[1;31m$MMDVMBM"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "MMDVMBM" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
+#==================================================================================
 echo -n "\33[1;36m   209)\33[1;33m  Poner SVXLINK en el autoarranque      - "
 SVXLINK=`grep "SVXLINK" /home/pi/.local/autoarranque.ini`
 SVXLINK=`expr substr $SVXLINK 9 3`
@@ -359,7 +358,7 @@ echo "\33[1;31m$SVXLINK"
 else
 echo "\33[1;31m"
 fi
-bluedv=`grep "SVXLINK" /home/pi/.local/autoarranque.ini`
+#==================================================================================
 
 #==================================================================================
 echo -n "\33[1;36m   210)\33[1;33m  Poner SOLO_DSTAR en el autoarranque   - "
@@ -371,7 +370,6 @@ echo "\33[1;31m$solod"
 else
 echo "\33[1;31m"
 fi
-solod=`grep "SOLO_DSTAR" /home/pi/.local/autoarranque.ini`
 #==================================================================================
 
 #==================================================================================
@@ -384,7 +382,6 @@ echo "\33[1;31m$solof"
 else
 echo "\33[1;31m"
 fi
-solof=`grep "SOLO_FUSION" /home/pi/.local/autoarranque.ini`
 #==================================================================================
 
 #==================================================================================
@@ -397,7 +394,6 @@ echo "\33[1;31m$dvrptr"
 else
 echo "\33[1;31m"
 fi
-solof=`grep "DVRPTR" /home/pi/.local/autoarranque.ini`
 #==================================================================================
 
 #==================================================================================
@@ -410,7 +406,6 @@ echo "\33[1;31m$ysf_dmr"
 else
 echo "\33[1;31m"
 fi
-trans=`grep "F2DMR" /home/pi/.local/autoarranque.ini`
 #==================================================================================
 
 #==================================================================================
@@ -423,7 +418,6 @@ echo "\33[1;31m$var1"
 else
 echo "\33[1;31m"
 fi
-trans=`grep "dstarrepeater" /home/pi/.local/autoarranque.ini`
 #==================================================================================
 
 #==================================================================================
@@ -436,7 +430,6 @@ echo "\33[1;31m$var1"
 else
 echo "\33[1;31m"
 fi
-trans=`grep "dstarrepeater" /home/pi/.local/autoarranque.ini`
 #==================================================================================
 
 #==================================================================================
@@ -449,7 +442,6 @@ echo "\33[1;31m$var1"
 else
 echo "\33[1;31m"
 fi
-trans=`grep "DMR2YSF" /home/pi/.local/autoarranque.ini`
 #==================================================================================
 
 #==================================================================================
@@ -462,7 +454,6 @@ echo "\33[1;31m$var1"
 else
 echo "\33[1;31m"
 fi
-trans=`grep "DMR2NXDN" /home/pi/.local/autoarranque.ini`
 #==================================================================================
 
 #==================================================================================
@@ -475,7 +466,6 @@ echo "\33[1;31m$var1"
 else
 echo "\33[1;31m"
 fi
-trans=`grep "NXDN" /home/pi/.local/autoarranque.ini`
 #==================================================================================
 
 #=========================================================================*========
@@ -488,7 +478,6 @@ echo "\33[1;31m$var1"
 else
 echo "\33[1;31m"
 fi
-
 #==================================================================================
 
 echo ""
