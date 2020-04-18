@@ -6,18 +6,19 @@ sudo killall MMDVMBM
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 icono=ICONO_OPEN.png
- 
+sed -i "7c Icon=/home/pi/V11/ICONO_OPEN" /home/pi/Abrir_solodstar.desktop 
 else
 icono=ICONO_ABRIR.png
+sed -i "7c Icon=/home/pi/V11/ICONO_ABRIR" /home/pi/Abrir_solodstar.desktop
 fi
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 
-# Cierra el icono Abrir Solo Dstar si no hay conexión 
+ 
 cd /home/pi/Desktop
 sudo cp Abrir_solodstar.desktop /home/pi
 sed -i "6c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; lxterminal --geometry=80x15 -e sudo sh ejecutar_solodstar.sh'" /home/pi/Abrir_solodstar.desktop
-sed -i "7c Icon=/home/pi/$SCRIPTS_version/$icono" /home/pi/Abrir_solodstar.desktop
+
 sed -i "11c Name[es_ES]=Abrir solo DSTAR" /home/pi/Abrir_solodstar.desktop
 sed -i "13c SOLODSTAR=OFF" /home/pi/.local/status.ini
 
