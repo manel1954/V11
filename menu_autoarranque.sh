@@ -1214,6 +1214,7 @@ clear
                         sudo rm DMR2YSF.desktop
                         sudo rm DMR2NXDN.desktop
                         sudo rm NXDN.desktop
+                        sudo rm DMRGateway.desktop
 
 sed -i "1c D-STAR=OFF" /home/pi/.local/autoarranque.ini
 sed -i "2c BlueDV=OFF" /home/pi/.local/autoarranque.ini
@@ -1233,7 +1234,7 @@ sed -i "15c F2DMR=OFF" /home/pi/.local/autoarranque.ini
 sed -i "16c DMR2YSF=OFF" /home/pi/.local/autoarranque.ini
 sed -i "17c DMR2NXDN=OFF" /home/pi/.local/autoarranque.ini
 sed -i "18c NXDN=OFF" /home/pi/.local/autoarranque.ini
-
+sed -i "19c DMRGateway=OFF" /home/pi/.local/autoarranque.ini
 
                         exit;
                         break;;
