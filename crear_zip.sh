@@ -36,6 +36,13 @@
             cp -f MMDVMFUSION.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
             #fin  Dstar y solo Fusion 
 
+            #DMRGateway
+            cd /home/pi/MMDVMHost
+            cp -f DMRGateway.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
+            cd /home/pi/DMRGateway
+            cp -f DMRGateway.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads/DMRGateway
+            #Fin DMRGateway
+
             cd  /home/pi/YSF2DMR
             cp -f YSF2DMR.ini /home/pi/.local/COPIA_SEGURIDAD/Downloads
             cp -f YSF2DMR.ini_copia_01 /home/pi/.local/COPIA_SEGURIDAD/Downloads
@@ -128,6 +135,7 @@ cd /home/pi/.local/COPIA_SEGURIDAD
 tar -zcvf copia.tar.gz Downloads
 cp  copia.tar.gz /var/www/html/upload/files
 sudo rm copia.tar.gz
+
 
 
 
