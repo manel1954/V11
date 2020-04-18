@@ -15,21 +15,21 @@ echo ""
 fi
 
 
-# idioma=$(awk "NR==1" /home/pi/.local/idioma)
-# if [ $idioma = English ]; then
-# icono=ICONO_OPEN.png
-# sudo sed -i "11c Name[es_ES]=Only FUSION" /home/pi/V11/Desktop/RXF_SOLOFUSION.desktop
-# sudo sed -i "11c Name[es_ES]=Only DSTAR" /home/pi/V11/Desktop/RXF_DSTAR.desktop
-# sudo sed -i "10c Name[es_ES]=Deactivate Dvswitch" /home/pi/Desktop/Activar_dvswitch.desktop
-# sudo sed -i "10c Name[es_ES]=Deactivate NextionDriv" /home/pi/Desktop/Activar_NextionDriver.desktop
+idioma=$(awk "NR==1" /home/pi/.local/idioma)
+if [ $idioma = English ]; then
+icono=ICONO_OPEN.png
+#sudo sed -i "11c Name[es_ES]=Only FUSION" /home/pi/V11/Desktop/RXF_SOLOFUSION.desktop
+#sudo sed -i "11c Name[es_ES]=Only DSTAR" /home/pi/V11/Desktop/RXF_DSTAR.desktop
+#sudo sed -i "10c Name[es_ES]=Deactivate Dvswitch" /home/pi/Desktop/Activar_dvswitch.desktop
+#sudo sed -i "10c Name[es_ES]=Deactivate NextionDriv" /home/pi/Desktop/Activar_NextionDriver.desktop
  
-# else
-# icono=ICONO_ABRIR.png
-# sudo sed -i "11c Name[es_ES]=Solo FUSION" /home/pi/V11/Desktop/RXF_SOLOFUSION.desktop
-# sudo sed -i "11c Name[es_ES]=Solo DSTAR" /home/pi/V11/Desktop/RXF_DSTAR.desktop
-# sudo sed -i "10c Name[es_ES]=Desactivar Dvswitch" /home/pi/Desktop/Activar_dvswitch.desktop
-# sudo sed -i "10c Name[es_ES]=Desactivar NextionDriv" /home/pi/Desktop/Activar_NextionDriver.desktop
-# fi
+else
+icono=ICONO_ABRIR.png
+#sudo sed -i "11c Name[es_ES]=Solo FUSION" /home/pi/V11/Desktop/RXF_SOLOFUSION.desktop
+#sudo sed -i "11c Name[es_ES]=Solo DSTAR" /home/pi/V11/Desktop/RXF_DSTAR.desktop
+#sudo sed -i "10c Name[es_ES]=Desactivar Dvswitch" /home/pi/Desktop/Activar_dvswitch.desktop
+#sudo sed -i "10c Name[es_ES]=Desactivar NextionDriv" /home/pi/Desktop/Activar_NextionDriver.desktop
+fi
 
 sleep 2
 SCRIPTS_version="V11"
