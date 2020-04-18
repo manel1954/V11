@@ -96,16 +96,30 @@ sleep 2
 #============================================================================================
 
 # excepto estos que tienen que mantener su status
-sudo cp $usuario/Desktop/Activar_dvswitch.desktop $usuario/.local #deja el icono en el estado que se reinició
-sudo cp $usuario/Desktop/Activar_NextionDriver.desktop $usuario/.local #deja el icono en el estado que se reinició
+# sudo cp $usuario/Desktop/Activar_dvswitch.desktop $usuario/.local #deja el icono en el estado que se reinició
+# sudo cp $usuario/Desktop/Activar_NextionDriver.desktop $usuario/.local #deja el icono en el estado que se reinició
 
 cd $usuario/$SCRIPTS_version/Desktop
 cp * $usuario/Desktop
 sudo chmod 777 -R $usuario/Desktop
 
+estado_dvswitch=$(awk "NR==18" /home/pi/.local/status.ini)
+if [ "$estado_dvswitch" = 'DVSWITCH=OFF' ];then
+sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_NEXTIONDRIVER_OFF.png" /home/pi/V11/Desktop/Activar_NextionDriver.desktop
+else
+sudo sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_NEXTIONDRIVER_ON.png" /home/pi/V11/Desktop/Activar_NextionDriver.desktop
+fi
+
+idioma=$(awk "NR==1" /home/pi/.local/idioma)
+if [ $idioma = English ]; then
+sudo sed -i "10c Name[es_ES]=Activate NextionDri" /home/pi/V11/Desktop/Activar_NextionDriver.desktop
+else
+sudo sed -i "10c Name[es_ES]=Activar NextionDri" /home/pi/V11/Desktop/Activar_NextionDriver.desktop
+fi
+
 # excepto estos que tienen que mantener su status
-sudo cp $usuario/.local/Activar_dvswitch.desktop $usuario/Desktop #deja el icono en el estado que se reinició
-sudo cp $usuario/.local/Activar_NextionDriver.desktop $usuario/Desktop #deja el icono en el estado que se reinició
+# sudo cp $usuario/.local/Activar_dvswitch.desktop $usuario/Desktop #deja el icono en el estado que se reinició
+# sudo cp $usuario/.local/Activar_NextionDriver.desktop $usuario/Desktop #deja el icono en el estado que se reinició
 
 #=============================================================================================
 
