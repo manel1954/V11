@@ -1,4 +1,10 @@
 ﻿#!/bin/bash
+# path usuario
+usuario="/home/pi"
+usuario=$(awk "NR==1" $usuario/.config/autostart/usuario)
+
+SCRIPTS_version=$(awk "NR==1" $usuario/.config/autostart/version)
+
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 icono=ICONO_OPEN.png
@@ -8,6 +14,7 @@ guardar_cambios="TO SAVE CHANGES"
 activado="DVSWITCH HAS BEEN DISABLED"
 reinicio="THE SYSTEM WILL RESTART"
 quieres="Do you want to Deactivate DVSWITCH? Y/N"
+sed -i "10c Name[es_ES]=Activated Dvswitch" $usuario/Desktop/Activar_dvswitch.desktop
 
 else
 icono=ICONO_ABRIR.png
@@ -17,6 +24,7 @@ guardar_cambios="PARA GUARDAR LOS CAMBIOS"
 activado="SE HA DESACACTIVADO DVSWITCH"
 reinicio="SE REINICIARÁ EL SISTEMA"
 quieres="Quieres Desactivar DVSWITCH? S/N"
+sed -i "10c Name[es_ES]=Activar Dvswitch" $usuario/Desktop/Activar_dvswitch.desktop
 fi
 
 #Colores
@@ -50,7 +58,7 @@ cd /home/pi/Desktop
 sudo cp Activar_dvswitch.desktop /home/pi
 sed -i "4c Exec=sh -c 'cd /home/pi/$SCRIPTS_version; lxterminal -e sudo sh ejecutar_dvswitch.sh'" /home/pi/Activar_dvswitch.desktop
 sed -i "5c Icon=/home/pi/$SCRIPTS_version/ICONO_DVSWITCH_OFF.png" /home/pi/Activar_dvswitch.desktop
-sed -i "10c Name[es_ES]=Activar Dvswitch" /home/pi/Activar_dvswitch.desktop
+
 cd /home/pi
 sudo cp Activar_dvswitch.desktop /home/pi/Desktop
 sudo rm /home/pi/Activar_dvswitch.desktop
@@ -81,3 +89,4 @@ sudo reboot
 else
 echo "no desactiva"
 fi
+
