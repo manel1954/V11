@@ -1,4 +1,18 @@
 #!/bin/bash
+idioma=$(awk "NR==1" /home/pi/.local/idioma)
+if [ $idioma = English ]; then
+icono=ICONO_OPEN.png
+advertencia="If you deactivate NextionDriver will work the China punctured in Raspi"
+activo="DEACTIVATING NextionDriver"
+quieres="Do you want to deactivate NextionDriver? Y/N"
+ojo="EYE!! Once deactivated the Raspberry will restart"
+else
+icono=ICONO_ABRIR.png
+advertencia="Si activas NextionDriver no funcionaran los Hotspot por GPIO"
+activo="ACTIVANDO NextionDriver"
+quieres="Quieres Activar NextionDriber? S/N"
+ojo="OJO!! Una vez activado se reiniciará la Raspberry pi"
+fi
 # path usuario
 usuario="/home/pi"
 usuario=$(awk "NR==1" $usuario/.config/autostart/usuario)
@@ -14,26 +28,26 @@ MARRON="\33[38;5;138m"
 echo "${AMARILLO}"
 echo " *********************************************************************"
 echo " *                                                                   *"
-echo " * Si activas NextionDriver no funcionará la China pinchada en Raspi *"
+echo "  $advertencia  "
 echo " *                                                                   *"
 echo " *********************************************************************"
 echo ""
 echo "${ROJO}"
 echo " *********************************************************************"
 echo " *                                                                   *"
-echo " *        OJO!! Una vez activado se reiniciará la Raspberry          *"
+echo " $ojo"
 echo " *                                                                   *"
 echo " *********************************************************************"
 echo "${CIAN}"
-echo -n " Quieres Activar NextionDriver S/N ? "
-read activar
-case "$activar" in
-[sS]* )
+echo -n "   $quieres "
+read seguir   
+if [ "$seguir" = 'S' -o "$seguir" = 's' -o "$seguir" = 'Y' -o "$seguir" = 'y' ];then
+
 clear
 echo "${VERDE}"
 echo " *********************************************************************"
 echo " *                                                                   *"
-echo " * <<<<<<<<<<<<<<<<<< ACTIVANDO NextionDriver >>>>>>>>>>>>>>>>>>>>>> *"
+echo " * <<<<<<<<<<<<<<<<<< $activo >>>>>>>>>>>>>>>>>>>>>> *"
 echo " *                                                                   *"
 echo " *********************************************************************"
 sleep 3
@@ -51,9 +65,7 @@ sudo sed -i "4c Exec=sh -c 'cd $usuario/NextionDriver/;sudo ./NextionDriver -c $
 
 sudo reboot
 
-break;;
-[nN]*) 
-exit ;;
-esac
-
+else
+echo ""
+fi
 
