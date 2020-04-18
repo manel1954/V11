@@ -69,6 +69,13 @@ read -p '   Quieres cambiar de idioma? S/N ' actualizar
                         sudo sed -i "10c Name[es_ES]=Activar NextionDriver" $usuario/Desktop/Activar_NextionDriver.desktop
                         fi
 
+                        estado_dvswitch=$(awk "NR==18" /home/pi/.local/status.ini)
+                        if [ "$estado_dvswitch" = 'DVSWITCH=ON' ];then
+                        sudo sed -i "10c Name[es_ES]=Desactivar Dvswitch" $usuario/Desktop/Activar_dvswitch.desktop
+                        else
+                        sudo sed -i "10c Name[es_ES]=Activar Dvswitch" $usuario/Desktop/Activar_dvswitch.desktop
+                        fi
+
                         sudo sed -i "5c Icon=/home/pi/V11/ICONO_SPANISH.png" /home/pi/V11/Desktop/Idioma.desktop
                         sudo sed -i "11c Name=Editar BM" /home/pi/V11/Desktop/Editar_MMDVMBM.desktop
                         sudo sed -i "11c Name[es_ES]=SOLO FUSION" /home/pi/V11/Desktop/Abrir_solofusion.desktop
@@ -141,6 +148,13 @@ read -p '   You want to change language? Y/N ' actualizar
                         sudo sed -i "10c Name[es_ES]=Deactivated NextionDriver" $usuario/Desktop/Activar_NextionDriver.desktop
                         else
                         sudo sed -i "10c Name[es_ES]=Activated NextionDriver" $usuario/Desktop/Activar_NextionDriver.desktop
+                        fi
+
+                        estado_dvswitch=$(awk "NR==18" /home/pi/.local/status.ini)
+                        if [ "$estado_dvswitch" = 'DVSWITCH=ON' ];then
+                        sudo sed -i "10c Name[es_ES]=Deactivate Dvswitch" $usuario/Desktop/Activar_dvswitch.desktop
+                        else
+                        sudo sed -i "10c Name[es_ES]=Activated Dvswitch" $usuario/Desktop/Activar_dvswitch.desktop
                         fi
 
                         sudo sed -i "5c Icon=/home/pi/V11/ICONO_ENGLISH.png" /home/pi/V11/Desktop/Idioma.desktop
