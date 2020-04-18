@@ -1,4 +1,17 @@
 #!/bin/bash
+idioma=$(awk "NR==1" /home/pi/.local/idioma)
+if [ $idioma = English ]; then
+icono=ICONO_OPEN.png
+advertencia="If you deactivate NextionDriver will work the China punctured in Raspi"
+desactivo="DEACTIVATING NextionDriver"
+quieres="Do you want to deactivate NextionDriver? Y/N"
+
+else
+icono=ICONO_ABRIR.png
+advertencia="Si Desactivas NextionDriver funcionará la China pinchada en Raspi"
+desactivo="DESACTIVANDO NextionDriver"
+quieres="Quieres Desactivar NextionDriber? S/N"
+fi
 # path usuario
 usuario="/home/pi"
 usuario="$usuario"
@@ -15,26 +28,27 @@ MARRON="\33[38;5;138m"
 echo "${AMARILLO}"
 echo " *********************************************************************"
 echo " *                                                                   *"
-echo " * Si Desactivas NextionDriver funcionará la China pinchada en Raspi *"
+echo " * $advertencia *"
 echo " *                                                                   *"
 echo " *********************************************************************"
 echo ""
 echo "${ROJO}"
 echo " *********************************************************************"
 echo " *                                                                   *"
-echo " *        OJO!! Una vez desactivado se reiniciará la Raspberry       *"
+echo " *        $reinicio       *"
 echo " *                                                                   *"
 echo " *********************************************************************"
 echo "${CIAN}"
-echo -n " Quieres Desactivar NextionDriver S/N ? "
-read desactivar
-case "$desactivar" in
-[sS]* )
+echo -n "   $quieres "
+read seguir   
+if [ "$seguir" = 'S' -o "$seguir" = 's' -o "$seguir" = 'Y' -o "$seguir" = 'y' ];then 
+read seguir
+
 clear
 echo "${VERDE}"
 echo " *********************************************************************"
 echo " *                                                                   *"
-echo " *     <<<<<<<<      DESACTIVANDO NextionDriver      >>>>>>>>>       *"
+echo " *     <<<<<<<<      $desactivo      >>>>>>>>>       *"
 echo " *                                                                   *"
 echo " *********************************************************************"
 sleep 3
@@ -52,7 +66,7 @@ sudo sed -i "4c #Exec=sh -c 'cd $usuario/NextionDriver/;sudo ./NextionDriver -c 
 
 sudo reboot
 
-break;;
-[nN]*) 
-exit ;;
-esac
+else
+echo "no desactiva"
+fi
+
