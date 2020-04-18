@@ -260,6 +260,7 @@ echo "\33[1;31m"
 fi
 var2=`grep "DMRGateway" /home/pi/.local/autoarranque.ini`
 #=================================================================================
+echo ""
 
 echo -n "\33[1;36m   201)\33[1;33m  Poner ircDDB en el autoarranque       - "
 dstar=`grep "D-STAR" /home/pi/.local/autoarranque.ini`
@@ -338,9 +339,6 @@ echo "\33[1;31m"
 fi
 bluedv=`grep "MMDVMLIBRE" /home/pi/.local/autoarranque.ini`
 
-
-
-
 echo -n "\33[1;36m   208)\33[1;33m  Poner BM en el autoarranque           - "
 MMDVMBM=`grep "MMDVMBM" /home/pi/.local/autoarranque.ini`
 MMDVMBM=`expr substr $MMDVMBM 9 3`
@@ -363,8 +361,6 @@ echo "\33[1;31m"
 fi
 bluedv=`grep "SVXLINK" /home/pi/.local/autoarranque.ini`
 
-
-
 #==================================================================================
 echo -n "\33[1;36m   210)\33[1;33m  Poner SOLO_DSTAR en el autoarranque   - "
 solod=`grep "SOLO_DSTAR" /home/pi/.local/autoarranque.ini`
@@ -377,8 +373,6 @@ echo "\33[1;31m"
 fi
 solod=`grep "SOLO_DSTAR" /home/pi/.local/autoarranque.ini`
 #==================================================================================
-
-
 
 #==================================================================================
 echo -n "\33[1;36m   211)\33[1;33m  Poner SOLO_FUSION en el autoarranque  - "
@@ -445,7 +439,6 @@ fi
 trans=`grep "dstarrepeater" /home/pi/.local/autoarranque.ini`
 #==================================================================================
 
-
 #==================================================================================
 echo -n "\33[1;36m   216)\33[1;33m  Poner DMR2YSF en el autoarranque      - "
 var1=`grep "DMR2YSF" /home/pi/.local/autoarranque.ini`
@@ -458,7 +451,6 @@ echo "\33[1;31m"
 fi
 trans=`grep "DMR2YSF" /home/pi/.local/autoarranque.ini`
 #==================================================================================
-
 
 #==================================================================================
 echo -n "\33[1;36m   217)\33[1;33m  Poner DMR2NXDN en el autoarranque     - "
@@ -496,8 +488,10 @@ echo "\33[1;31m$var1"
 else
 echo "\33[1;31m"
 fi
-trans=`grep "NXDNDMRGateway" /home/pi/.local/autoarranque.ini`
+trans=`grep "DMRGateway" /home/pi/.local/autoarranque.ini`
 #==================================================================================
+
+echo ""
 
 echo "\33[1;36m    27)\33[1;32m *** RESTABLECER LOS AUTOARRANQUES A ${RED}OFF ${VERDE}***"
 
