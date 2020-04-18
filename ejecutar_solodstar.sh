@@ -3,11 +3,15 @@ idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 icono=ICONO_CLOSE.png
 icono_NO=ICONO_OPEN.png
-
+desactiva="THIS WILL DEACTIVATE DSTAR"
+en="IN DVSWITCH"
+abriendo="OPENING ONLY DSTAR"
 else
 icono=ICONO_CERRAR.png
 icono_NO=ICONO_ABRIR.png
-
+desactiva="ESTO DESACTIVAR DSTAR"
+en="EN DVSWITCH"
+abriendo="ABRIENDO SOLO DSTAR"
 fi
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
@@ -24,14 +28,14 @@ if [ "$estado_dvswitch" = 'DVSWITCH=ON' ];then
 
 echo "${ROJO}"
 echo "                  ******************************************"
-echo "                  *        ESTO DESACTIVARÁ DSTAR          *"
-echo "                  *              EN DVSWITCH               *"
+echo "                          $desactiva          "
+echo "                                $en               "
 echo "                  ******************************************"
 sleep 3
 clear
 echo "${VERDE}"
 echo " ******************************************************************************"
-echo " **************************   ABRIENDO SOLO DSTAR    **************************"
+echo " **************************   $abriendo    **************************"
 echo " ******************************************************************************"
 sleep 2
 
