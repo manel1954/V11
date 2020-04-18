@@ -50,6 +50,8 @@ echo "***************************************************"
             cp -f DMRGateway.ini /home/pi/DMRGateway
             #Fin DMRGateway
 
+            cd /home/pi/.local/COPIA_SEGURIDAD/Downloads
+
             #solo Fusion
             cp -f MMDVMFUSION.ini /home/pi/MMDVMHost
             cp -f MMDVMFUSION.ini_copia /home/pi/MMDVMHost
