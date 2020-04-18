@@ -7,7 +7,7 @@ al_activar="ACTIVATING DVSWITCH WILL RESTART THE SYSTEM"
 guardar_cambios="TO SAVE CHANGES"
 activado="DVSWITCH HAS BEEN DISABLED"
 reinicio="THE SYSTEM WILL RESTART"
-quieres="Do you want to Deactivate DVSWITCH?"
+quieres="Do you want to Deactivate DVSWITCH? Y/N"
 
 else
 icono=ICONO_ABRIR.png
@@ -16,7 +16,7 @@ al_activar="AL ACTIVAR DVSWITCH SE REINICIARÁ EL SISTEMA"
 guardar_cambios="PARA GUARDAR LOS CAMBIOS"
 activado="SE HA DESACACTIVADO DVSWITCH"
 reinicio="SE REINICIARÁ EL SISTEMA"
-quieres="Quieres Desactivar DVSWITCH?"
+quieres="Quieres Desactivar DVSWITCH? S/N"
 fi
 
 #Colores
@@ -42,8 +42,9 @@ echo "                            $guardar_cambios                          "
 echo "${BLANCO}"
 echo "   ***************************************************************************"	
 echo "${CIAN}"
-read -p '   $quieres S/N ' seguir   
-if [ "$seguir" = 'S' -o "$seguir" = 's' ];then 
+echo $quieres""
+read seguir   
+if [ "$seguir" = 'S' -o "$seguir" = 's' -o "$seguir" = 'Y' -o "$seguir" = 'y' ];then 
 
 cd /home/pi/Desktop
 sudo cp Activar_dvswitch.desktop /home/pi
