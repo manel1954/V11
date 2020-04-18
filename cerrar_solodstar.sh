@@ -6,10 +6,10 @@ sudo killall MMDVMBM
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 icono=ICONO_OPEN.png
-sed -i "7c Icon=/home/pi/V11/ICONO_OPEN" /home/pi/Abrir_solodstar.desktop 
+sed -i "7c Icon=/home/pi/V12/ICONO_OPEN" /home/pi/Abrir_solodstar.desktop 
 else
 icono=ICONO_ABRIR.png
-sed -i "7c Icon=/home/pi/V11/ICONO_ABRIR" /home/pi/Abrir_solodstar.desktop
+sed -i "7c Icon=/home/pi/V13/ICONO_ABRIR" /home/pi/Abrir_solodstar.desktop
 fi
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
