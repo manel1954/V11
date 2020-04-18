@@ -258,7 +258,7 @@ echo "\33[1;32m$var1"
 else
 echo "\33[1;31m"
 fi
-var2=`grep "DMRGateway" /home/pi/.local/autoarranque.ini`
+
 #=================================================================================
 echo ""
 
@@ -488,7 +488,7 @@ echo "\33[1;31m$var1"
 else
 echo "\33[1;31m"
 fi
-trans=`grep "DMRGateway" /home/pi/.local/autoarranque.ini`
+
 #==================================================================================
 
 echo ""
