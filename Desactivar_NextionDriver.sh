@@ -5,13 +5,13 @@ icono=ICONO_OPEN.png
 advertencia="If you deactivate NextionDriver will work the China punctured in Raspi"
 desactivo="DEACTIVATING NextionDriver"
 quieres="Do you want to deactivate NextionDriver? Y/N"
-ojo="EYE!! Once activated the Raspberry will restart"
+ojo="EYE!! Once deactivated the Raspberry will restart"
 else
 icono=ICONO_ABRIR.png
 advertencia="Si Desactivas NextionDriver funcionará la China pinchada en Raspi"
 desactivo="DESACTIVANDO NextionDriver"
 quieres="Quieres Desactivar NextionDriber? S/N"
-ojo="OJO!! Una vez activado se reiniciará la Raspberry"
+ojo="OJO!! Una vez desactivado se reiniciará la Raspberry"
 fi
 # path usuario
 usuario="/home/pi"
