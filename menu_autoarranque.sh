@@ -258,7 +258,7 @@ echo "\33[1;32m$var1"
 else
 echo "\33[1;31m"
 fi
-var2=`grep "NXDN" /home/pi/.local/autoarranque.ini`
+var2=`grep "DMRGateway" /home/pi/.local/autoarranque.ini`
 #=================================================================================
 
 echo -n "\33[1;36m   201)\33[1;33m  Poner ircDDB en el autoarranque       - "
@@ -802,6 +802,23 @@ clear
                                             cd /home/pi/.config/autostart
                                             sudo rm NXDN.desktop
                                             sed -i "18c NXDN=OFF" /home/pi/.local/autoarranque.ini
+                                            break;; 
+                                            [nN]* ) echo ""
+                                            break;;
+esac
+done;;
+119) echo ""
+while true
+do
+clear
+                                            actualizar=S
+                                            case $actualizar in
+                                            [sS]* ) echo ""                   
+                                            echo "Quitando DMRGateway del autoarranque >>>>>"
+                                            sleep 2
+                                            cd /home/pi/.config/autostart
+                                            sudo rm DMRGateway.desktop
+                                            sed -i "19c DMRGateway=OFF" /home/pi/.local/autoarranque.ini
                                             break;; 
                                             [nN]* ) echo ""
                                             break;;
