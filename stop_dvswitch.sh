@@ -2,19 +2,19 @@
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 icono=ICONO_OPEN.png
-advertencia=WARNING!!
-al_activar=ACTIVATING DVSWITCH WILL RESTART THE SYSTEM
-guardar_cambios=TO SAVE CHANGES
-activado=DVSWITCH HAS BEEN DISABLED
-reinicio=THE SYSTEM WILL RESTART
+advertencia="WARNING!!"
+al_activar="ACTIVATING DVSWITCH WILL RESTART THE SYSTEM"
+guardar_cambios="TO SAVE CHANGES"
+activado="DVSWITCH HAS BEEN DISABLED"
+reinicio="THE SYSTEM WILL RESTART"
 
 else
 icono=ICONO_ABRIR.png
-advertencia=ADVERTENCIA!!
+advertencia="ADVERTENCIA!!"
 al_activar="AL ACTIVAR DVSWITCH SE REINICIARÁ EL SISTEMA"
-guardar_cambios=PARA GUARDAR LOS CAMBIOS
-activado=SE HA DESACACTIVADO DVSWITCH
-reinicio=SE REINICIARÁ EL SISTEMA
+guardar_cambios="PARA GUARDAR LOS CAMBIOS"
+activado="SE HA DESACACTIVADO DVSWITCH"
+reinicio="SE REINICIARÁ EL SISTEMA"
 fi
 
 #Colores
@@ -27,6 +27,7 @@ GRIS="\033[0m"
 
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 
+clear
 echo "${BLANCO}"
 echo "   ***************************************************************************"
 echo "${VERDE}"
@@ -62,6 +63,7 @@ sudo systemctl stop nxdngateway.service
 
 sed -i "18c DVSWITCH=OFF" /home/pi/.local/status.ini
 
+clear
 echo "${BLANCO}"
 echo "\v\v\v\v\v\v\v\v"
 echo "   ***************************************************************************"
