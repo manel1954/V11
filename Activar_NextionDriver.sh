@@ -42,7 +42,6 @@ echo "${CIAN}"
 echo -n "   $quieres "
 read seguir   
 if [ "$seguir" = 'S' -o "$seguir" = 's' -o "$seguir" = 'Y' -o "$seguir" = 'y' ];then
-
 clear
 echo "${VERDE}"
 echo " *********************************************************************"

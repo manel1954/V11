@@ -2,13 +2,11 @@
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
 icono=ICONO_OPEN.png
-advertencia="If you deactivate NextionDriver will work the China punctured in Raspi"
 desactivo="DEACTIVATING NextionDriver"
 quieres="Do you want to deactivate NextionDriver? Y/N"
 ojo="EYE!! Once deactivated the Raspberry will restart"
 else
 icono=ICONO_ABRIR.png
-advertencia="Si Desactivas NextionDriver no funcionaran los Hotspot por GPIO"
 desactivo="DESACTIVANDO NextionDriver"
 quieres="Quieres Desactivar NextionDriber? S/N"
 ojo="OJO!! Una vez desactivado se reiniciará la Raspberry"
@@ -26,13 +24,7 @@ AMARILLO="\033[1;33m"
 CIAN="\033[1;36m"
 GRIS="\033[0m"
 MARRON="\33[38;5;138m"
-echo "${AMARILLO}"
-echo " *********************************************************************"
-echo " *                                                                   *"
-echo "  $advertencia "
-echo " *                                                                   *"
-echo " *********************************************************************"
-echo ""
+clear
 echo "${ROJO}"
 echo " *********************************************************************"
 echo " *                                                                   *"
@@ -43,8 +35,6 @@ echo "${CIAN}"
 echo -n "   $quieres "
 read seguir   
 if [ "$seguir" = 'S' -o "$seguir" = 's' -o "$seguir" = 'Y' -o "$seguir" = 'y' ];then 
-read seguir
-
 clear
 echo "${VERDE}"
 echo " *********************************************************************"
