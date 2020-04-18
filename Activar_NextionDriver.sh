@@ -1,7 +1,9 @@
 #!/bin/bash
 # path usuario
 usuario="/home/pi"
-usuario="$usuario"
+usuario=$(awk "NR==1" $usuario/.config/autostart/usuario)
+
+SCRIPTS_version=$(awk "NR==1" $usuario/.config/autostart/version)
 
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
@@ -19,10 +21,7 @@ quieres="Quieres Activar NextionDriber? S/N"
 ojo="OJO!! Una vez activado se reiniciará la Raspberry pi"
 sudo sed -i "10c Name[es_ES]=Desactivar NextionDriver" $usuario/Desktop/Activar_NextionDriver.desktop
 fi
-# path usuario
-usuario="/home/pi"
-usuario=$(awk "NR==1" $usuario/.config/autostart/usuario)
-SCRIPTS_version=$(awk "NR==1" $usuario/.config/autostart/version)
+
 #Colores 
 ROJO="\033[1;31m"
 VERDE="\033[1;32m"

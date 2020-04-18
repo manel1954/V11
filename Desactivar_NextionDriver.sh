@@ -1,7 +1,9 @@
 #!/bin/bash
 # path usuario
 usuario="/home/pi"
-usuario="$usuario"
+usuario=$(awk "NR==1" $usuario/.config/autostart/usuario)
+
+SCRIPTS_version=$(awk "NR==1" $usuario/.config/autostart/version)
 
 idioma=$(awk "NR==1" /home/pi/.local/idioma)
 if [ $idioma = English ]; then
