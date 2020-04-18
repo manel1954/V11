@@ -9,13 +9,13 @@ icono=ICONO_OPEN.png
 desactivo="DEACTIVATING NextionDriver"
 quieres="Do you want to deactivate NextionDriver? Y/N"
 ojo="EYE!! Once deactivated the Raspberry will restart"
-sudo sed -i "10c Name[es_ES]=Activated NextionDriver" $usuario/Activar_NextionDriver.desktop
+sudo sed -i "10c Name[es_ES]=Activated NextionDriver" $usuario/Desktop/Activar_NextionDriver.desktop
 else
 icono=ICONO_ABRIR.png
 desactivo="DESACTIVANDO NextionDriver"
 quieres="Quieres Desactivar NextionDriber? S/N"
 ojo="OJO!! Una vez desactivado se reiniciará la Raspberry"
-sudo sed -i "10c Name[es_ES]=Activar NextionDriver" $usuario/Activar_NextionDriver.desktop
+sudo sed -i "10c Name[es_ES]=Activar NextionDriver" $usuario/Desktop/Activar_NextionDriver.desktop
 fi
 # path usuario
 usuario="/home/pi"

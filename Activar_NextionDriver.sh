@@ -10,14 +10,14 @@ advertencia="If you activate NextionDriver, the Hotspot by GPIO will not work"
 activo="ACTIVATING NextionDriver"
 quieres="Do you want to activate NextionDriver? Y/N"
 ojo="EYE!! Once activated the Raspberry will restart"
-sudo sed -i "10c Name[es_ES]=Deactivated NextionDriver" $usuario/Activar_NextionDriver.desktop
+sudo sed -i "10c Name[es_ES]=Deactivated NextionDriver" $usuario/Desktop/Activar_NextionDriver.desktop
 else
 icono=ICONO_ABRIR.png
 advertencia="Si activas NextionDriver no funcionaran los Hotspot por GPIO"
 activo="ACTIVANDO NextionDriver"
 quieres="Quieres Activar NextionDriber? S/N"
 ojo="OJO!! Una vez activado se reiniciará la Raspberry pi"
-sudo sed -i "10c Name[es_ES]=Desactivar NextionDriver" $usuario/Activar_NextionDriver.desktop
+sudo sed -i "10c Name[es_ES]=Desactivar NextionDriver" $usuario/Desktop/Activar_NextionDriver.desktop
 fi
 # path usuario
 usuario="/home/pi"
