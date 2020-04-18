@@ -8,7 +8,7 @@ quieres="Do you want to deactivate NextionDriver? Y/N"
 ojo="EYE!! Once deactivated the Raspberry will restart"
 else
 icono=ICONO_ABRIR.png
-advertencia="Si Desactivas NextionDriver funcionará la China pinchada en Raspi"
+advertencia="Si Desactivas NextionDriver no funcionaran los hotspot pinchados en GPIO"
 desactivo="DESACTIVANDO NextionDriver"
 quieres="Quieres Desactivar NextionDriber? S/N"
 ojo="OJO!! Una vez desactivado se reiniciará la Raspberry"
