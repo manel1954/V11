@@ -1,4 +1,21 @@
 ﻿#!/bin/bash
+idioma=$(awk "NR==1" /home/pi/.local/idioma)
+if [ $idioma = English ]; then
+icono=ICONO_OPEN.png
+advertencia=WARNING!!
+al_activar=ACTIVATING DVSWITCH WILL RESTART THE SYSTEM
+guardar_cambios=TO SAVE CHANGES
+activado=DVSWITCH HAS BEEN DISABLED
+reinicio=THE SYSTEM WILL RESTART
+
+else
+icono=ICONO_ABRIR.png
+advertencia=ADVERTENCIA!!
+al_activar=AL ACTIVAR DVSWITCH SE REINICIARÁ EL SISTEMA
+guardar_cambios=PARA GUARDAR LOS CAMBIOS
+activado=SE HA DESACACTIVADO DVSWITCH
+reinicio=SE REINICIARÁ EL SISTEMA
+fi
 
 #Colores
 ROJO="\033[1;31m"
@@ -13,12 +30,12 @@ SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 echo "${BLANCO}"
 echo "   ***************************************************************************"
 echo "${VERDE}"
-echo "                                  ADVERTENCIA!!                               "
+echo "                                  $advertencia                               "
 echo ""
 echo -n "${ROJO}"
-echo "                AL DESACTIVAR DVSWITCH SE REINICIARÁ EL SISTEMA               "
+echo "                   $al_activar               "
                            
-echo "                            PARA GUARDAR LOS CAMBIOS                          "
+echo "                            $guardar_cambios                          "
 echo "${BLANCO}"
 echo "   ***************************************************************************"	
 echo "${CIAN}"
@@ -49,9 +66,9 @@ echo "${BLANCO}"
 echo "\v\v\v\v\v\v\v\v"
 echo "   ***************************************************************************"
 echo -n "${VERDE}"
-echo "                           SE HA DESACTIVADO DVSWITCH                         "
+echo "                           $activado                            "
 echo -n "${ROJO}"                           
-echo "                            SE REINICIARÁ EL SISTEMA                          "
+echo "                           $reinicio                           "
 echo -n "${BLANCO}"
 echo "   ***************************************************************************"	
 sleep 5
