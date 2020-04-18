@@ -248,7 +248,18 @@ fi
 var2=`grep "NXDN" /home/pi/.local/autoarranque.ini`
 #=================================================================================
 
-echo "\33[1;33m"
+#=========================================================================*========
+echo -n "\33[1;36m   119)\33[1;37m  Quitar DMRGateway del  autoarranque   - \33[1;32m"
+var1=$(awk "NR==19" /home/pi/.local/autoarranque.ini)
+var1=`expr substr $var1 12 3`
+if [ $var1 = "ON" ]
+then
+echo "\33[1;32m$var1"
+else
+echo "\33[1;31m"
+fi
+var2=`grep "NXDN" /home/pi/.local/autoarranque.ini`
+#=================================================================================
 
 echo -n "\33[1;36m   201)\33[1;33m  Poner ircDDB en el autoarranque       - "
 dstar=`grep "D-STAR" /home/pi/.local/autoarranque.ini`
