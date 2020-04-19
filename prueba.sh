@@ -11,7 +11,7 @@ GRIS="\033[0m"
 SCRIPTS_version=$(awk "NR==1" /home/pi/.config/autostart/version)
 echo "${BLANCO}"
 echo "   ****************************************************************"
-echo "   *cambio en ramaNueba *"
+echo "   *cambio en ramaNueba otra prueba*"
 echo "   *       Y NO SE PODRAN VOLVER A UTILIZAR HASTA QUE NO          *"
 echo "   *                    CERREMOS EL DVSWITCH                      *"
 echo "   ****************************************************************"
